@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+<head>
+
+  <title>EricDaugherty.com - iTunes Export M3U Playist Exporter</title>
+
+  <meta name="keywords" content="Eric Daugherty EricDaugherty.com iTunes Export Playlist M3U" />
+  <meta name="description" content="Eric Daugherty's iTunes Export M3U Playist Exporter" />
+
+<?php include '../../../head.php' ?>
+
+<?php $ad = 'ad-itunes.php'; ?>
+
+</head>
+<body>
+
+  <div id="wrap">
+
+<?php include '../../../header.php'; ?>
+
+    <div id="main">
+
+      <p class="title">iTunes Export Scala</p>
+
+<?php include 'itunes-menu.php' ?>
+
+      <p class="header">Frequently Asked Questions (FAQ)</p>
+
+      <p class="header">Does iTunes Export Scala Run on Mac OS X?</p>
+
+      <p>
+        iTunesExport Scala requires the Java 1.5 Runtime Environment.  This should be pre-installed on Mac OS X.
+	  </p>
+
+      <p class="header">There are three extra characters at the begriming of the file.</p>
+
+      <p>
+        iTunesExport supports Unicode characters and therefore uses UTF-8 encoding.  These characters (EF BB BF) are the Byte Order Markers
+        that indicate the file type.  You can <a href="http://en.wikipedia.org/wiki/Byte-order_mark">read more here</a>.
+      </p>
+
+      <p>
+        At this time iTunesExport only supports UTF-8 as an output file.  This should not be an issue when using UTF-8 encoding to read the files.
+        If your playlets contain no non-ASCII characters you can remove these characters.
+      </p>
+
+      <p class="header">What is Scala and why use it?</p>
+
+      <p><a href="http://www.scala-lang.org/">Scala</a> is a hybrid Object Oriented and Functional programming language
+        that compiles to Java Byte Code and can execute on the JRE.
+      </p>
+
+      <p>
+        I created this version to support Mac OS X users who would like the iTunes Export functionality but cannot run the .Net version.
+        I was learning the Scala language when I wrote the initial version and I created this as a way to apply what I was learning to a real world problem.
+      </p>
+
+    </div>
+
+<?php include '../../../sidebar.php'; ?>
+
+<?php include '/home/content/e/d/a/edaugherty/html/wrap-end.php'; ?>
+
+  </div>
+
+<?php include '/home/content/e/d/a/edaugherty/html/footer.php'; ?>
+
+</body>
+
+</html>

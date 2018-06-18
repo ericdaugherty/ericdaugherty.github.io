@@ -1,0 +1,79 @@
+---
+layout: default
+title: SOHT (Socket over HTTP Tunneling)
+---
+    <div id="main">
+
+      <p class="title">SOHT Socket over HTTP Tunneling</p>
+
+{% include soht-navbar.html %}
+
+      <a name="Java Client" >
+      <p class="header">Java Client</p>
+      </a>
+
+      <p>
+          The Java client can be downloaded as a binary distribution or
+          a source distribution.
+      </p>
+
+      <p>
+          <a href="http://prdownloads.sourceforge.net/telnetoverhttp/soht-java-client-0.6.2.zip?download">Java Client 0.6.2</a>
+          <br/>
+          <a href="http://prdownloads.sourceforge.net/telnetoverhttp/soht-java-client-0.6.2-src.zip?download">Java Client Source 0.6.2</a>
+      </p>
+
+      <p>
+          To install the client, create a directory and extract the contents
+          of the zip file into that directory.
+      </p>
+
+      <p>
+          The client uses a properties file to map local ports to remote
+          hosts.  A sample file has been included.  Please modify this
+          file to suit your needs.
+      </p>
+
+      <p>
+          The client is packaged as executable .JAR file.  You can start it with
+          the following command:
+      </p>
+
+      <pre class="code">
+java -jar soht-client-&lt;version&gt;.jar
+      </pre>
+
+      <p>
+          where &lt;version&gt; matches the current version you are using.  You must
+          either have a soht.properties file in your current directory or specify one
+          as an argument, such as:
+      </p>
+
+      <pre class="code">
+java -jar soht-client-&lt;version&gt;.jar c:\soht.properties
+      </pre>
+
+      <p>
+          Once the mappings are configured and the client is started, you can
+          begin using your client applications.  Make sure the clients are pointed
+          at localhost using the proper port.  For example, if you setup a mapping
+          from local port 1000 to a remote telnet host, you would telnet to localhost on port 1000.
+      </p>
+
+      <p>
+          If you are using a SOHT server that requires a login, specify the username and password
+          in the properties file, as well as setting the server.loginrequired property to true.
+      </p>
+
+      <p>
+          If you use a HTTP Proxy server to access the internet, you can configure the
+          client to use the HTTP Proxy using the soht.properties file.
+      </p>
+
+      <p>
+          If you would like to use the SOCKS Proxy server feature you must enable it in
+          the propeties file.  To use this with your web browser, set the 'SOCKS Host'
+          setting to localhost:1080 (assuming you use the default port).
+      </p>
+
+    </div>

@@ -1,0 +1,38 @@
+---
+layout: default
+title: Eric Daugherty's Simple Mail Processor
+keywords: Eric Daugherty EricDaugherty.com Simple Mail Processor Email
+description: Simple Mail Processor is a Java library that allows developers to quickly and easily add the ability to process incoming emails to an application.  Simple Mail Processor is an SMTP server that handles the low level details allowing you to focus on your business functinonality.
+---
+
+    <div id="main">
+    
+{% include simplemailprocessor-navbar.html %}
+	
+  <p>
+  Simple Mail Processor is a Java library that allows developers to quickly and easily add the ability to process incoming emails to an application.  Simple Mail Processor is an SMTP server that handles the low level details allowing you to focus on your business functinonality.
+  </p>
+  
+  <p>
+  Using Simple Mail Processor is easy.  Here is a quick example of basic usage:
+  <ul>
+  <li>Download Simple Mail Processor and add it to your ClassPath</li>
+  <li>Implement the MessageProcessor interface, which consists of a single Method: <pre>void processMessage(EmailMessage emailMessage);</pre>
+  <li>Configure and start the server.  It can run embedded, or as a seperate server (a seperate server requires the use of JMS or other cross process tools).  Starting the sever can be as easy as:<pre>SMPServer server = new SMPServer(new YourMessageProcessor());
+server.start();</pre>
+  </ul>
+  
+  <p>
+  That's all it takes to get started.  Every time an email is received, your method will be called with a Java Object representation of the received message.  Simple Mail Processor does provide a rich seat of features and configuration options to support scalable applications, but remains easy to use right away.
+  </p>
+  
+  <div class="subtitle">Pricing</div>
+  <p>
+  You can start using Simple Mail Processor with the <a href="pricing/#development">limited use version</a> today.
+  </p>
+  <p>
+  <a href="pricing/#full">Full versions</a> are available at reasonable prices.  See our <a href="pricing/">Pricing Guide</a> for details.
+  </span>
+    
+    </div>
+    

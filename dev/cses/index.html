@@ -1,0 +1,82 @@
+---
+layout: default
+title: C# Email Server (CSES)
+keywords: Eric Daugherty EricDaugherty.com C# Email Mail Server Open Source
+description: Eric Daugherty's C# Email Server
+ad: 3347074744
+---
+
+    <div id="main">
+
+      <p class="title">C# Email Server (CSES)</p>
+
+{% include cses-navbar.html %}
+
+      <a name="Introduction"></a>
+      <p class="header">Introduction</p>
+
+      <p>Current release: <a href="gettingstarted.html">0.3</a></p>
+
+      <p>
+        The C# Mail Server is a C# port of the
+        <a xmlns:xhtml="http://www.w3.org/1999/xhtml" href="http://www.ericdaugherty.com/java/mailserver">Java Email Server (JES)</a>.  JES is
+        an established email server targeted at small centrally maintained
+        installations.  The C# Mail Server runs on Windows .NET 1.1 and
+        <a xmlns:xhtml="http://www.w3.org/1999/xhtml" href="http://www.go-mono.net">Mono</a>.
+      </p>
+
+      <p>
+        CSES is a project to provide the same feature set to the .NET platform.
+        However, in addition to the features of JES, CSES provides individual
+        reusable components that other applications can use to provide email
+        functionality.
+      </p>
+
+      <p>
+        The current release of CSES provides the SMTP Server component.  This
+        component allows a program to accept incoming emails and process them using
+        user defined logic.  Please see the <a xmlns:xhtml="http://www.w3.org/1999/xhtml" href="developers.html">Developers Guide
+        </a> for more information on using this component.
+      </p>
+
+      <p>
+        The current release of CSES does not implement a full SMTP/POP3 email
+        server.  However, these features are expected to be provided in upcoming
+        releases.
+      </p>
+
+      <a name="Download"</a>
+      <p class="header">Download</p>
+
+      <p>To download source, binaries, and documentation for the current version:
+
+      <p>
+        Version 0.3 - <a href="http://prdownloads.sourceforge.net/cses/cses-0.3.zip?download">cses-0.3.zip</a>
+        <br>
+        Version 0.3 Source Code - <a href="http://prdownloads.sourceforge.net/cses/cses-0.3-src.zip?download">cses-0.3-src.zip</a>
+      </p>
+
+      <p>
+        CSES was written and tested using Windows .NET 1.1.  It has also been tested
+        with <a href="http://www.go-mono.net">Mono</a> (Version 0.25 on RedHat Linux 7.3).
+        Please <a href="mailto:eric@ericdaugherty.com">email me</a> if you have any questions.
+      </p>
+
+      <a name="Install"</a>
+      <p class="header">Install</p>
+
+      <p>
+        The current relese of CSES only provides a SMTP Server component.  This component
+        can be included in other projects to enable SMTP message handling.  Please refer
+        to the <a href="developers.html">Developer Guide</a> for instructions on using this component.
+      </p>
+
+      <a name="Related Projects"</a>
+      <p class="header">Related Projects</p>
+
+      <p>
+        <a href="http://www.ericdaugherty.com/java/mailserver">Java Email Server (JES)</a> - Java version of CSES.<br/>
+        <a href="http://netdumbster.codeplex.com/">netDumpster</a> - .Net port of the Dumpster SMTP server built using code from CSES.
+      </p>
+
+    </div>

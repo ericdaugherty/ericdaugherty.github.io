@@ -1,0 +1,277 @@
+---
+layout: default
+title: iTunes Export M3U Playist Exporter
+---
+
+    <div id="main">
+
+      <p class="title">iTunes Export</p>
+
+{% include itunes-navbar.html %}
+
+      <p class="header">Change Log</p>
+      
+      <p class="header">Version TBD</p>
+      
+      <p>(GUI Only) Fixed a bug that caused the program to freeze when attempting to export 
+      a playlist that contained a track without a Location entry.</p>
+
+      <p>(GUI Only) Fixed a bug that improperty copied files when the playlist file name included a colon (:)</p>
+
+      <p>(GUI Only) Included a German tranlation.</p>
+      
+      <p class="header">Version 2.2.2 (06/01/2010)</p>
+      
+      <p>(GUI Only) Fixed bug where iTunesExport would hang when attempting to export multiple playlists with the same name.  Now, the last playlist will be exported.</p>
+      
+      <p>(GUI Only) Fixed bug where iTunesExport would hang when attempting to copy a file that does not exist.  Now the file will be skipped.</p>
+      
+      <p>(Console Only) Reduced memory usage.  Changed method to avoid DTD look-ups that uses less memory.</p>
+      
+      <p class="header">Version 2.2.1 (2/12/2010)</p>
+      
+      <p>Enhanced the playlist name filter to include characters from the Latin 1 Supplement Block.</p>
+      
+      <p>(Console Only) Replaced ad-hoc URL decoding of file paths with URLDecode class.  Now non-ASCII characters are handled correctly in file names.</p>
+      
+      <p>Added(Console)/Changed(GUI) 'addIndex' logic.  Now uses incrementing index instead of iTunes Song Index.  Index is in the order iTunes has the songs in for each playlist.</p>
+      
+      <p class="header">Version 2.2.0 (1/19/2010)</p>
+      
+      <p>Added option to exclude 'Built In' playlists, including Music, Library, Genius, Movies, etc.</p>
+      
+      <p>(GUI Only) Added auto-update functionality.  Checks for a new version every 7 days.  Can be disabled in the 'About' window.</p>
+      
+      <p>(GUI Only) Resolved issue where Finish button causes error on 'Select Playlist' screen.  Finish button is now disabled on this screen</p>
+      
+      <p>(GUI Only) Added option to 'About' screen to change between languages.  English and French currently supported</p>
+      
+      <p>(GUI Only) Improved French translation.  Thanks to MrDNA  (mrdna@laposte.net) for doing the translation.</p>
+      
+      <p>(Console Only) Fixed issue with XML validation.  This version no longer attempts to validate the XML file (required downloading DTD from apple). </p>
+      
+      <p>(Console Only) Fixed issue where spaces were being converted to underscores in playlist names.</p>
+      
+      <p class="header">Version 2.1.1 (12/7/2009)</p>
+      
+      <p>(GUI Only) Resolved issue with File Separator replacement (/ \) on Windows.</p>
+      
+      <p>iTunes uses different values for 'Type' based on the user's language.  Changed logic to match file extension instead of value of 'Type' for MP3 file matching.</p>
+      
+      <p>(GUI Only) Fixed issue where scroll bars would appear with long Music Path.</p>
+      
+      <p>(GUI Only) Fixed Show Songs feature to update the song list when a different playlist is selected.</p>
+      
+      <p>Updated processing of Playlist Name.  All characters are replaced with an underscore (_) except A-Z,a-z,0-9,.[]{}-$=.  This should resolve any issues with playlists containing illegal characters.  This may result in some characters in non-western character sets to be replaced with _.  GUI and Console versions now contain the exact same logic.</p>
+      
+      <p>(GUI Only) Implemented basic 'type to find' logic for Playlist list.  Only matches first character, and you must select an item before the search works.</p>
+
+      <p class="header">Version 2.1 (11/25/2009)</p>
+
+      <p>Added option to change the default file path separator.  This is useful if you will be using the playlist on a different operating system from the one used to export the playlist</p>
+
+      <p>iTunes 9 changed the directory structure of the music folder.  Added logic to include the 'Music' subfolder as part of the Music Path, and therefore exclude it from the iTunes Structure file copy.</p>
+      
+      <p>(GUI Only) All settings (except which playlists to export) are now saved and used as the default value on the next execution.  There is a Default/Restore Default button on the appropriate pages to reset to the default settings.</p>
+
+      <p class="header">Version 2.0 (11/04/2009)</p>
+
+      <p>Ported the iTunes Export application to AIR and Scala.  Mac OS X is now supported.</p>
+
+      <p>The features are similar but may have changed slightly due to the porting process.</p>
+
+      <p>The file copy logic has been revamped to include three seperate schemes, FLAT, ITUNES, and PLAYLIST.  The PLAYLIST option matches the 1.x logic.</p>
+
+      <p class="header">Version 1.6 (10/04/2009)</p>
+
+      <p>
+        Improved the logic for music copying.  It can now handle duplicate songs and an arbitrary number of songs in a playlist (removed the 999 song limit)  and handles duplicate files gracefully.
+        Thanks to Simon Hyde (simon@icedrop.net) for submitting the patch.
+      </p>
+
+      <p>
+        Added support for MPL playlists, used by Centrafuse (www.centrafuse.com) Car PC.  Thanks for Stavros Glezakos for submitting the patch.
+      </p>
+
+      <p class="header">Version 1.5 (11/19/2008)</p>
+
+      <p>
+        Fixed issue with invalid characters in playlist filenames. Some characters are valid in playlist names (within iTunes), but not valid in filenames for the resulting playlist files. Thanks to <a href="http://jeff.donnici.com">Jeff Donnici</a>.
+      </p>
+
+      <p>
+        Added Multi-Language support for GUI version.  Descriptions now available in English and French.  Thanks to Ayack for the translation.
+      </p>
+
+      <p>
+        Updated the Library reader and all playlist writers to use UTF-8 encoding to allow for foreign character sets.  Thanks to Stephen JANNIN for the patch.
+      </p>
+
+      <p>
+        Changed the export routine to include audio streams (files that start with http://).  However, it will not attempt to copy them if 'copy music' is selected.
+      </p>
+
+      <p>
+        Disabled tracks (tracks that are unchecked in iTunes) are now ignored.  Thanks to Jeroen Leijen for the suggestion.
+      </p>
+
+      <p class="header">Version 1.4 (1/19/2008)</p>
+
+      <p>
+        Added Zune playlist support (ZPL).  Thanks to <a href="http://jeff.donnici.com">Jeff Donnici</a>
+      </p>
+
+      <p class="header">Version 1.3.2 (11/12/2007)</p>
+
+      <p>
+        Added filter for playlist names including * character.  Now replaced with _.  Thanks to Gary Butler (gaz77a@tpg.com.au)
+      </p>
+
+      <p>
+        Added filter to ignore songs with no 'Location' Specified in the iTunes Library.
+      </p>
+
+      <p>
+        Fixed bug where + sign in file paths were replaced by spaces.  Thanks to Pranesh Deo (http://www.myspace.com/dil30)
+      </p>
+
+      <p class="header">Version 1.3.1 (5/16/2007)</p>
+
+      <p>
+        Fixed bug in GUI version that caused it to crash.  No changes to console version.
+      </p>
+
+      <p class="header">Version 1.3.0 (5/13/2007)</p>
+
+      <p>
+        Added support for playlists in the "M3U Extended" format (see: <a href="http://en.wikipedia.org/wiki/M3U">http://en.wikipedia.org/wiki/M3U</a>)
+      </p>
+
+      <p>
+        Added support for M3U8 file extension, which prompts some media players to treat playlist as Unicode (see: http://en.wikipedia.org/wiki/M3U)
+      </p>
+
+      <p>
+        The GUI client was updated to support M3U Extended option, plus cosmetic/UI cleanup.
+      </p>
+
+      <p>
+        Fixed problem with UNC paths having an extra leading slash removed.
+      </p>
+
+      <p>
+        Fixed prefix feature to handle UNC paths (\\server\share\directory).
+      </p>
+
+      <p>
+        The GUI client now includes an application icon for both the main window and the About window.
+      </p>
+
+      <p>
+        (Thanks to <a href="http://jeff.donnici.com">Jeff Donnici</a> for adding/fixing all of the changes)
+      </p>
+
+      <p>
+        Added .resx files to the source include.  Thanks to Brett Bendickson for reporting the issue.
+      </p>
+
+      <p class="header">Version 1.2.0 (2/28/2007)</p>
+
+      <p>
+        Playlist folders are now recognized and are by default excluded from the export.  Thanks to Rishi Dhupar reporting the issue.
+      </p>
+
+      <p>
+        Added support for WPL playlist exports.  This to Rishi Dhupar for providing implementation code.
+      </p>
+
+      <p class="header">Version 1.1.0 (2/12/2007)</p>
+
+      <p>
+        Added new feature to copy music files to an output directory.  This feature
+        was requested by <a href="http://www.downloadsquad.com/2007/01/11/exporting-itunes-playlists-to-non-ipods-readers-sound-off/">Jason Clarke</a>
+        and others.  Thanks to Jason and for helping define the requirements.
+      </p>
+
+      <p>
+        Modified output to exclude web trackes (tracks starting with http:)
+      </p>
+
+      <p class="header">Version 1.0.4 (01/24/2007)</p>
+      <p>
+        Modified playslist names to replace / or \ characters with -.
+        Thanks to Rishi Dhupar, Coco Esteves, and Aaron Butler for reprorting the issue.
+      </p>
+
+      <p class="header">Version 1.0.3 (12/02/2006)</p>
+      <p>
+        Modified Library Parser to include files even if the author is not specified.  Thanks to James Corr for reporting the issue.
+      </p>
+
+      <p class="header">Version 1.0.2 (03/30/2006)</p>
+      <p>
+        Modified XML parser to skip validation.  Validation required internet connectivity.  Thanks to Jeremy Bradshaw
+      </p>
+      <p>
+        Fixed default iTunes Library location to work in international versions.  Thanks to Jeremy Bradshaw
+      </p>
+      <p>
+        Updated build to include app.ico file in source distribution.
+      </p>
+      <p>
+        Added ability to exclude playlists using Console tool.
+      </p>
+
+      <p class="header">Version 1.0.1 (12/18/2004)</p>
+      <p>
+        Fixed handling of command line arguments in console version.  Previous
+        version failed when using a prefix such as: "-prefix=c:\My Dir\".
+      </p>
+      <p>
+        Added -dir argument to console version to allow output of playlists to specified directory.
+      </p>
+
+      <p class="header">Version 1.0 (04/11/2004)</p>
+      <p>
+        Tested the Console application using Mono 0.29 on Linux.
+      </p>
+      <p>
+        Fixed exclusion of AAC files.  Default is to exclude all AAC files,
+        and there is now an option to include unprotected and/or include protected
+        AAC files.
+      </p>
+        Fixed default Music Library location.  Improved resolution of default location.
+      <p>
+        Updated behavior of GUI application to be more user friendly.
+      </p>
+      <p>
+        Added improved help display in Console version.
+      </p>
+      <p>
+        Added version display to Console version.
+      </p>
+
+      <p class="header">Version 0.3 (02/01/2004)</p>
+      <p>
+        Added GUI version of iTunesExport.
+      </p>
+      <p>
+        Added ability to exclude AAC files from exported playlists.
+      </p>
+      <p>
+        Added ability to exclude the Library playlist (all songs).
+      </p>
+
+      <p class="header">Version 0.2 (01/26/2004)</p>
+      <p>
+        Changed the Library Parser to track whether each track is stored
+        in the iTunes Music Library folder or not.  The generated playlists
+        only apply the prefix if the track is from the music library.
+      </p>
+
+      <p class="header">Version 0.1 (12/27/2003)</p>
+      <p>
+        Initial Release
+      </p>
+
+    </div>

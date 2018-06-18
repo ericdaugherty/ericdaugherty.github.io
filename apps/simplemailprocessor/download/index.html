@@ -1,0 +1,71 @@
+---
+layout: default
+title: Eric Daugherty's Simple Mail Processor Download
+keywords: Eric Daugherty EricDaugherty.com Simple Mail Processor Email Download
+---
+
+    <div id="main">
+
+{% include simplemailprocessor-navbar.html %}
+      
+      <p>
+      Download this version to begin developing today.  This version is limited to 100 emails per execution.  See our <a href="/simplemailprocessor/pricing/">pricing page</a> for details on purchasing a full version.
+      </p>
+      
+      <p>
+      Instructions and examples can be found in the <a href="../documentation#GettingStarted">Getting Started</a> section of the <a href="../documentation">User's Guide</a>.
+      
+      <div class="subheader">Binary</div>
+      
+      <p>
+      Download <a href="simplemailprocessor-1.0.jar">simplemailprocessor.jar</a>
+      </p>
+      
+      <p>
+      The following dependencies need to be included in the class path:
+      <ul>
+      <li><a href="http://commons.apache.org/codec/">Apache Commons Codec</a> - <a href="http://commons.apache.org/codec/download_codec.cgi">Download</a>
+      <li><a href="http://www.slf4j.org/">Slf4j</a> - <a href="http://www.slf4j.org/download.html">Download</a>
+      </li>
+      </ul>
+      </p>
+      
+      <p>
+      <a href="http://www.slf4j.org/">Slf4j</a> is used for logging.  You will need to include slf4j-api-&lt;version&gt;.jar and one (and only one) of the following jars in your classpath:
+      <ul>
+      <li>slf4j-nop-&lt;version&gt;.jar</li>
+      <li>slf4j-simple-&lt;version&gt;.jar</li>
+      <li>slf4j-log4j12-&lt;version&gt;.jar</li>
+      <li>slf4j-jdk14-&lt;version&gt;.jar</li>
+      <li>slf4j-jcl-&lt;version&gt;.jar</li>
+      </ul>
+      See the <a href="http://www.slf4j.org/manual.html#binding">slf4j bindings documentation</a> for details.
+      </p>      
+      
+      <div class="subheader">Maven</div>
+      
+      <p>
+      The Development version is also avaialble from the Golden Innovations Maven Reository.  Add the following to the pom.xml file:
+      <pre>  &lt;repositories&gt;
+    &lt;repository&gt;
+      &lt;id&gt;goldeninnovations.com&lt;/id&gt;
+      &lt;url&gt;http://maven.goldeninnovations.com/&lt;/url&gt;
+    &lt;/repository&gt;
+  &lt;/repositories&gt;
+
+  &lt;dependencies&gt;
+    &lt;dependency&gt;
+      &lt;groupId&gt;com.goldeninnovations&lt;/groupId&gt;
+      &lt;artifactId&gt;simplemailprocessor&lt;/artifactId&gt;
+      &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;
+    &lt;/dependency&gt;
+    &lt;dependency&gt;
+      &lt;groupId&gt;org.slf4j&lt;/groupId&gt;
+      &lt;artifactId&gt;slf4j-nop&lt;/artifactId&gt;
+      &lt;version&gt;1.5.8&lt;/version&gt;
+    &lt;/dependency&gt;
+  &lt;/dependencies&gt;</pre>
+      The slf4j-nop dependency can be replaced with another slf4j implementation.
+      </p>
+  
+    </div>

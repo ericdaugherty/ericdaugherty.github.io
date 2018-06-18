@@ -1,0 +1,179 @@
+---
+layout: default
+title: Eric Daugherty's Java Email Server
+keywords: Eric Daugherty EricDaugherty.com Java mail email server SMTP POP3 POP
+---
+
+
+    <div id="main">
+
+      <p class="title">Java Email Server - Configuration</p>
+
+{% include jes-navbar.html %}
+
+      <p>
+        JES 2.x is now hosted <a href="http://javaemailserver.sourceforge.net/">here</a>.  
+        Refer to that site for its configuration information.
+      </p>
+
+      <a name="Configuration"></a>
+      <p class="header">Configuration</p>
+      </a>
+
+      <p>
+        The configuration for JES is managed using three configuration files.  These files,
+        <a href="#mail.conf">mail.conf</a>, <a href="#user.conf">user.conf</a>
+        and <a href="#log.conf">log.conf</a> should all be updated by loading them with
+        a text editor.  Each of these files contains comments that explain the available
+        properties and their impact on the server.  Each of these files is explained
+        in the following sections.
+      </p>
+
+      <p>
+        Additionally, several common issues are discussed at the end of this page.  These
+        include: <a href="#DNS+Server+Issues">DNS Server Issues</a>,
+        <a href="#Remote+Delivery+Issues">Remote Delivery Issues</a>, and
+        <a href="#Default+Mailbox">Default Mailbox</a>
+      </p>
+
+      <a name="mail.conf"></a>
+      <p class="header">mail.conf</p>
+
+      <p>
+        The mail.conf file contains the main settings for JES.  These settings include
+        the ports to use, the number of threads, and the global security settings.  By
+        default, JES will only relay email sent from the same computer that JES is running
+        on.  However, additional IP addresses can be added.  Also, POP Before SMTP can
+        be enabled, which allows users who have authenticated with the POP3 server to
+        relay SMTP messages for a period of time (10 minutes by default).
+      </p>
+
+      <p>
+        JES will check this file for updates and reload them while the server is running.
+        This allows changes to the server without having to restart it.  However, not all
+        settings can be changed dynamically.  The port numbers and execute threads can only
+        be changed while the server is stopped.
+      </p>
+
+      <a name="user.conf"></a>
+      <p class="header">user.conf</p>
+
+      <p>
+        The user.conf file contains the information for all the local users.  The
+        header contains information about how to add and update users.  The passwords
+        stored in this file are hashed, but if you wish to add a user or change a password,
+        you can edit and save the file using plain text passwords.  JES will detect the update,
+        load the file, hash the passwords, and resave the file.  This will insure that
+        plain text passwords are not stored in the file, but allows the file to be
+        edited using a text editor.
+      </p>
+
+      <p>
+        JES will check this file for updates and reload the user information while the
+        server is running.  This allows users to be added or updated without having to
+        restart JES.  The plain text passwords are hashed during this process.
+      </p>
+
+      <a name="log.conf"></a>
+      <p class="header">log.conf</p>
+
+      <p>
+        By default, JES uses <a xmlns:xhtml="http://www.w3.org/1999/xhtml" href="http://jakarta.apache.org/log4j">log4j</a> to perform all logging.
+        The log.conf file is loaded as a log4j.properties file, so you can modify this file
+        to match your preferred configuration.  Log4j will monitor this file for updates, and
+        reload it while the server is running, allowing you to change the log level to receive
+        more or less log information without restarting the server.
+      </p>
+
+      <p>
+        While log4j is used by default, it is not required.  You may remove the log4j.jar
+        from the lib directory to disable log4j.  If this occurs, JES will depend on
+        <a xmlns:xhtml="http://www.w3.org/1999/xhtml" href="http://jakarta.apache.org/commons/logging">Jakarta's commons-logging</a> library to
+        write out log files.  If log4j is disabled, log.conf contains a property that
+        you can set to determine the log level for the log messages.  Be default, the
+        messages are written to the console via System.err.
+      </p>
+
+      <a name="DNS+Server+Issues"></a>
+      <p class="header">DNS Server Issues</p>
+
+      <p>
+        JES uses <a href="http://www.dnsjava.org">DNSJava</a> to perform DNS lookups when
+        delivering email to remote servers.  Some users have reported issues with the
+        automatic detection of the DNS Server on non-English versions of Windows.
+      </p>
+
+      <p>
+        In order to avoid problems locating the IP address of your DNS server,
+        it is better to explicitly include the system property -Ddns.server=xxx.xxx.xxx.xxx
+        in the files mail.bat and ntservice.bat. This property should contain the IP address
+        of your name server, which can be obtained on Windows 2000/XP with this command
+        (from a DOS console): nslookup.  This overrides the automatic lookup mechanism used
+        by <a href="http://www.dnsjava.org">DNSJava</a>.
+      </p>
+
+      <p>
+        A simple DNS Lookup utility class has been included in the lib directory, and
+        a lookup.bat batch file has been included in the bin directory.  This utility
+        can be used to test DNS Server lookups without having to use run JES server.
+        To use this test file, execute the lookup.bat script with a DNS Server address
+        and a domain to lookup.  For example:
+      </p>
+
+      <pre class="code">
+c:\jes\bin\lookup.bat 192.168.0.1 hotmail.com
+Performs a DNS Lookup using against a DNS server for a domain.
+usage: lookup.bat (dns server address) (domain to lookup)
+Results:
+hotmail.com:
+hotmail.com.            424     IN      MX      5 mx4.hotmail.com.
+hotmail.com.            424     IN      MX      5 mx1.hotmail.com.
+hotmail.com.            424     IN      MX      5 mx2.hotmail.com.
+hotmail.com.            424     IN      MX      5 mx3.hotmail.com.
+      </pre>
+
+      <a name="Remote+Delivery+Issues"></a>
+      <p class="header">Remote Delivery Issues</p>
+
+      <p>
+        Some users have reported issues while attempting to deliver email to remote
+        servers.  These issues are generic setup issues and not specific to JES, but they
+        are covered here for your convenience.
+      </p>
+
+      <p>
+        Some servers require a valid address in the "From" field.  This is done to protect
+        against SPAM.  If an email is failed to be delivered, make sure the "From" address
+        is valid.
+      </p>
+
+      <p>
+        Some servers require that the originating SMTP server must be identified with
+        a valid domain.  This can be controlled with the "domains" property in the
+        mail.conf file.  If you don't use a valid domain name then you may experience
+        rejected emails from several SMTP servers.
+      </p>
+
+      <p>
+        It is highly recommended that you set the log level to "debug" in the log.conf
+        file when testing this software for the first time, this way you will obtain
+        a very detailed trace log, very useful to diagnose problems and bugs.
+      </p>
+
+      <a name="Default+Mailbox"></a>
+      <p class="header">Default Mailbox</p>
+
+      <p>
+        JES allows email to a local domain to be delivered to a default address.  However,
+        if the email itself does not contain the explicit 'to' address (such as SPAM or
+        mailing list email, etc.), it may be difficult to determine which address a message
+        was sent to.
+      </p>
+
+      <p>
+        JES provides an SMTP header for all locally delivered email to address this issue.  The
+        header: "X-DeliveredTo: &lt;address&gt;" is appended with the exact 'to' address
+        specified.
+      </p>
+
+    </div>

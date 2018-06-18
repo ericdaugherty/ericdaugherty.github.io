@@ -1,0 +1,251 @@
+---
+layout: default
+title: iTunes Export M3U Playist Exporter
+keywords: Eric Daugherty EricDaugherty.com iTunes Export Playlist M3U
+description: Eric Daugherty's iTunes Export M3U Playist Exporter
+---
+
+    <div id="main">
+
+      <p class="title">iTunes Export</p>
+
+{% include itunes-1x-navbar.html %}
+
+      <a name="Introduction" ></a>
+      <p class='header'>Introduction</p>
+
+      <p>
+        iTunes Export exports playlists defined in your iTunes Music Library
+        to standard .m3u, .wpl (Windows Media), .zpl (Zune), or .mpl (Centrafuse) playlists.
+        iTunes Export is open source and freely available for use.
+      </p>
+
+      <p>
+        iTunes Export provides a simple command line application that
+        can be used to generate playlists, a Graphical UI that provides a wizard
+        interface to exporting playlists, or a DLL that can be used by other
+        developers to add the ability to read iTunes Music Library XML files
+        to other applications.
+      </p>
+
+      <p>
+        Both versions, and the source code are available for download from
+        the <a href="#Download">Download</a> section.
+      </p>
+
+      <p>
+        International Support - iTunes Export is now available in multiple language.  English and French are available today.
+        If you are willing and able to translate other languages please let me know!
+      </p>
+
+      <p>
+        This application is built using .Net and only runs on Windows.  If you are on Mac OS X
+        try <a href="./scala/">iTunes Export Scala</a>.
+      </p>
+
+      <p>
+        Have a questions, please review the <a href="faq.html">FAQ</a>.  If it does not answer your question please
+        email me at <a href="mailto:eric@ericdaugherty.com">eric@ericdaugherty.com</a>
+      </p>
+
+      <a name="Download"></a>
+      <p class='header'>Download</p>
+
+      <p>
+        iTunes Export is available as a Console (command line) or GUI application that can
+        be used to generate m3u playlists, or as a DLL that can be used by developers
+        to create new applications that access the iTunes Music Library XML file.  The source
+        distribution contains the source for all binary distributions.
+      </p>
+
+      <p>
+        Version 1.6
+        <br>
+        UI Application - <a href="https://sourceforge.net/projects/itunesexport/files/iTunesExport/1.6/iTunesExport.UI-1.6.zip/download">iTunesExport.UI-1.6.zip</a>
+        <br>
+        Console Application - <a href="https://sourceforge.net/projects/itunesexport/files/iTunesExport/1.6/iTunesExport.Console-1.6.zip/download">iTunesExport.Console-1.6.zip</a>
+        <br>
+        Library Parser DLL - <a href="https://sourceforge.net/projects/itunesexport/files/iTunesExport/1.6/iTunesExport.LibraryParser-1.6.zip/download">iTunesExport.LibraryParser-1.6.zip</a>
+        <br>
+        Source - <a href="https://sourceforge.net/projects/itunesexport/files/iTunesExport/1.6/iTunesExport-1.6-src.zip/download">iTunesExport-1.6-src.zip</a>
+      </p>
+
+      <p>
+        iTunes Export is written using C# on the
+        <a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=0856EACB-4362-4B0D-8EDD-AAB15C5E04F5&displaylang=en">.NET runtime</a>.
+        It should work on all versions of Windows that support .NET 2.0 or later.
+        The iTunesExport Console (command line) application also works
+        on Linux using <a href="http://go-mono.org">Mono</a>.
+      </p>
+
+      <a name="Using iTunes Export"></a>
+      <p class='header'>Using iTunes Export</p>
+
+      <p class='subheader'>iTunes Export UI</p>
+      <p>
+        iTunes Export UI is a WinForms (Graphical) application that provides
+        a wizard based interface to exporting your iTunes playlists to m3u files.
+      </p>
+
+      <p>
+        To use iTunes Export UI, simply launch iTunesExportUI.exe and follow the instructions.
+      </p>
+
+      <p class="subheader">iTunes Export Command Line</p>
+      <p>
+        iTunes Export is a command line application.  To use it, copy
+        iTunesExport.exe to a directory and open a command window in that directory.
+        If iTunes Export is run without any parameters, it will attempt to locate
+        your iTunes Music Library and will write a .m3u playlist file for each
+        playlist defined in the iTunes Music Library.
+      </p>
+
+
+      <p>
+        The location of the iTunes Music Library can be overridden using a command
+        line parameter.  Example:
+      </p>
+
+      <pre class="code">
+iTunesExport.exe -library="C:\My Music\iTunes Music Library.xml"
+      </pre>
+
+      <p>
+        iTunes Export will use the absolute location of your music library.  iTunes Export
+        accepts a command line parameter that will override the default location.  Example:
+      </p>
+
+      <pre class="code">
+iTunesExport.exe -prefix=m:\
+      </pre>
+
+
+      <p>
+        iTunes Export will only apply the prefix to tracks stored in the directory
+        configured in iTunes as the iTunes Music Folder location.  Files stored in
+        a different directory will not have the prefix applied.
+      </p>
+
+      <p>
+        If the prefix path has spaces in it, it must be surrounded with quotation marks.  If the
+        last character is a \, you must use a \\ instead.
+      </p>
+
+      <pre class="code">
+iTunesExport.exe -prefix="c:\my directory\\"
+      </pre>
+
+      <p>
+        You can specify the output directory for the playlists with the -dir command line argument:
+      </p>
+
+
+      <pre class="code">
+iTunesExport.exe -dir="c:\my playlists"
+      </pre>
+
+      <p>
+        If you wish to exclude some playlists from the export, you can specify them using the -exclude
+        command line parameter.  This takes a single or list of playlists that will not be exported.
+      </p>
+
+      <pre class="code">
+iTunesExport.exe -exclude="Playlist 1,Playlist 2,Etc"
+      </pre>
+
+      <p>
+        If you wish to include only a subset of your playlists in the export, you can specify them using the -include
+        command line parameter.  This takes a single or list of playlists that will be exported.
+      </p>
+
+
+      <pre class="code">
+iTunesExport.exe -include="Playlist 1,Playlist 2,Etc"
+      </pre>
+
+      <p>
+        All AAC files (m4p, m4a) are excluded from the exported playlists since it is unlikely
+        that the external device will be able to play them.  To include
+        unprotected (m4a) and or copy protected AAC files (m4p) in your exported playlists,
+        specify the following argument(s):
+      </p>
+
+      <pre class="code">
+iTunesExport.exe -includeAAC
+      </pre>
+
+      <pre class="code">
+iTunesExport.exe -includeProtectedAAC
+      </pre>
+
+      <p>
+        The Library playlist, which corresponds to your entire iTunes Library is often
+        very large and not useful as a playlist.  iTunes Export will skip this playlist
+        unless you specify that it should be included. You can indicate that it should
+        be included with the following command argument:
+      </p>
+
+      <pre class="code">
+iTunesExport.exe -includeLibraryPlaylist
+      </pre>
+
+      <p>
+        You can choose to have iTunes Export copy your music files to an output directory.
+        iTunes Export will create a subdirectory for each playlist and copy the music files
+        into that subdirectory.  You may also have iTunes Export prefix the music files with an
+        index (001 - , 002 - , etc if you want to maintain the order of your playlist.
+      </p>
+
+      <pre class="code">
+iTunesExport.exe -copy
+
+iTunesExport.exe -copyWithIndex
+      </pre>
+
+      <p>
+        iTunes allows you to create folders to organize your playlists.  By default these folders are
+        excluded from the export (but the playlists in the folders are included).  If you want to export
+        the actual folders as a playlist you can use the following argument:
+      </p>
+
+      <pre class="code">
+-includeFolderPlaylists
+      </pre>
+
+      <p>
+        iTunes Export allows you to export playlists using a variety of formats.
+        By default, playlists are exported at M3U playlists, but you can use the following parameter
+        to change to EXT, WPL, ZPL, or MPL:
+      </p>
+
+      <pre class="code">
+-playlistType=WPL
+      </pre>
+
+      <p>
+        In some cases, media players don't treat the contents of M3U files (standard or extended)
+        as Unicode. This causes problems when those files contain international characters. For those
+        media players, changing the playlist file extension to M3U8 prompts the player to treat the
+        contents as Unicode. During testing, this seemed to be the case for playlist files that
+        contained special characters and were being run on a non-English version of Windows. If your
+        playlists contain any special characters () and you're running on an international version of
+        Windows, you may wish to use the -useIntlExtension parameter.
+      </p>
+
+      <pre class="code">
+iTunesExport.exe -useIntlExtension
+      </pre>
+
+      <a name="Projects Built on iTunes Export"></a>
+      <p class="header">Projects Built on iTunes Export</p>
+
+      <p>
+        iTunes Export provides a DLL that allows other developers to make use of the iTunes Export functionality
+        in their applications.  The following applications are know to utilize iTunes Export:
+        <ul>
+          <li><a href="http://www.plasticwater.com/PlasticPlaylists/">PlasticPlaylists</a> utilizes code from this project to generate an HTML export of your iTunes Playlists.</li>
+        </ul>
+      </p>
+
+    </div>
+

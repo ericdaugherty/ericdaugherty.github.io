@@ -1,0 +1,95 @@
+---
+layout: default
+title: SOHT (Socket over HTTP Tunneling)
+keywords: Eric Daugherty EricDaugherty.com Firewall Tunneling Socket HTTP SOCKS
+description: Eric Daugherty's SOHT (Socket over HTTP Tunneling)
+ad: 6421203503
+---
+    <div id="main">
+
+      <p class="title">SOHT Socket over HTTP Tunneling</p>
+
+{% include soht-navbar.html %}
+
+      <a name="Introduction" >
+      <p class="header">Introduction</h3>
+      </a>
+
+      <p>Current Version: 0.6.x (Individual components versioned separately)</p>
+
+      <p>
+          Welcome to the SOHT project.  The goal of this project is to provide
+          and easy to use tool that enables all types of socket communication
+          through an HTTP Proxy server.  This tool is useful for users who are
+          behind a restrictive firewall and wish to access external servers
+          that use protocols other than HTTP.  Possible uses are:
+      </p>
+
+      <p>
+          <ul>
+              <li>Web Browsing (Bypass logging, access restricted sites)</li>
+              <li>POP3/SMTP/IMAP Email clients</li>
+              <li>Telnet/SSH clients</li>
+          </ul>
+      </p>
+
+      <p>
+          This tool consists of two separate components.  A server, which must be deployed
+          on a Java Servlet container (A .NET server is also planned), and a client, which
+          is run on the local machine and connects to the server via HTTP.  There are Java
+          and .NET versions of the client, so the client can be run on nearly any platform.
+      </p>
+
+      <p>
+          A SOCKS 4 and 5 Proxy Server has been integrated into the most recent version of
+          the <a href="javaclient.html">Java Client</a>.  This provides an very easy
+          way to bypass any local web proxy restrictions and logging.
+      </p>
+
+      <p>
+          If you would like to be able to SSH from anywhere using just your web browser,
+          you should check out my <a href="http://www.ericdaugherty.com/dev/sshwebproxy/">SSHWebProxy</a> project.
+          This project provides a pure html
+          SSH client that can be used from any web browser without installing any client software.
+          It is limited to SSH and is not as flexible as SOHT, but it may be a good solution
+          if you just want occasional SSH access.
+      </p>
+
+      <a name="GettingStarted">
+      <h3>Getting Started</h3>
+      </a>
+
+
+      <p>
+          The documentation is broken down by component.  You will need at least one client
+          and one server.
+      </p>
+
+      <h4>Servers</h4>
+      <p>
+          <a href="javaserver.html">Java Server</a>
+      </p>
+
+      <h4>Clients</h4>
+      <p>
+          <a href="javaclient.html">Java Client</a>
+          <br/>
+          <a href="dotnetclient.html">.NET Client</a>
+      </p>
+
+      <p>
+          If you want to get started quickly, you can just download the files
+          using the links below.  Each binary distribution contains a README file provides
+          instructions on installing the component.  The source distributions can be downloaded
+          from the specific component's documentation page.
+      </p>
+
+      <p>
+          <a href="http://prdownloads.sourceforge.net/telnetoverhttp/soht-java-server-0.6.zip?download">Java Server 0.6</a>
+          <br/>
+          <a href="http://prdownloads.sourceforge.net/telnetoverhttp/soht-java-client-0.6.2.zip?download">Java Client 0.6.2</a>
+          <br/>
+          <a href="http://prdownloads.sourceforge.net/telnetoverhttp/soht-dotnet-client-0.4.zip?download">.NET Client 0.4</a>
+      </p>
+
+    </div>

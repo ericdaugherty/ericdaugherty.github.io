@@ -1,0 +1,99 @@
+---
+layout: default
+title: SOHT (Socket over HTTP Tunneling)
+---
+    <div id="main">
+
+      <p class="title">SOHT Socket over HTTP Tunneling</p>
+
+{% include soht-navbar.html %}
+
+
+      <p class="header">Change Log</p>
+
+      <p class="header">Version 0.6.2 (11/19/2008)</p>
+
+      <p>
+          (Java Client only) Applied patch to enable HTTPS connections and ignore certificate warnings.  Thanks to <a href="http://www.post1.net/lowem/entry/http_tunnelling">lowem</a> for providing the patch.
+      </p>
+
+      <p class="header">Version 0.6.1 (3/26/2007)</p>
+
+      <p>
+          (Java Client only) Fixed bug that prohibited connections to high range ports (over 32767).  Thanks to Danilo for debugging the issue and providing the fix.
+      </p>
+
+      <p class="header">Version 0.6 (09/14/2004)</p>
+
+      <p>
+          Added Internationalization (i18n) to the web application admin pages.  Currently suports English and French.  Thanks to Mathieu Lecarme.
+      </p>
+
+      <p>
+          Added a configuration parameter 'Block Size' to allow administrators to configure the maximum size of each respose to a client READ command (in kilobytes).
+      </p>
+
+      <p>
+          Fixed the implementation of the stateless network interaction.  Improves performance.  Thanks to <a href="mailto:ptt@tgbsoftware.com">Paul Thordarson</a>.
+      </p>
+
+      <p class="header">Version 0.5 (06/29/2004)</p>
+
+      <p>
+          Fixed the closing HTML tag for the login page.  Caused compile error in Tomcat 5.  Added SOCKS (4 and 5) support to the client to enable seamless browsing using
+          the SOHT Java Client.  Thanks to SOHT's newest developer Craig Setera.
+      </p>
+
+      <p class="header">Version 0.4.2 (02/24/2004)</p>
+
+      <p>
+          Added the ability to specify a username and password for the proxy server.
+          Thanks to <a href="mailto:avm@umail.ru">Andrei Moisseev aka AVM</a>.
+      </p>
+
+      <p class="header">Version 0.4.1 (01/24/2004)</p>
+
+      <p>
+          Fixed a bug in the configuration parsing that caused the
+          proxy settings to be ignored.
+          Thanks to <a href="mailto:alberto@ecredi.com.br">Alberto Pires de Oliveira Neto</a>.
+      </p>
+
+      <p class="header">Version 0.4 (11/26/2003)</p>
+
+      <p>
+          Implemented the readwrite command.  Allows for stateless connections between the client and server.
+      </p>
+
+      <p class="header">Version 0.3 (09/16/2003)</p>
+
+      <p>
+          Implemented an improved protocol implementation.  All printable bytes are now written as a single byte, and non
+          printable bytes are written using their hex code.
+      </p>
+
+      <p class="header">Version 0.2 (09/09/2003)</p>
+
+      <p>
+          Initial Release of .NET Client.
+      </p>
+
+      <p>
+          Added user administration and user security check.
+      </p>
+
+      <p>
+          Added user security check.
+      </p>
+
+      <p>
+          Added the ability to configure an HTTP Proxy server to the Java Client.
+      </p>
+
+      <p class="header">Version 0.1 (08/22/2003)</p>
+
+      <p>
+          Initial Release
+      </p>
+
+    </div>

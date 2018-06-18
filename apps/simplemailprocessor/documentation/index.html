@@ -1,0 +1,181 @@
+---
+layout: default
+title: Eric Daugherty's Simple Mail Processor Documentation
+keywords: Eric Daugherty EricDaugherty.com Simple Mail Processor Email Documentation
+description: Simple Mail Processor is a Java library that allows developers to quickly and easily add the ability to process incoming emails to an application.  Simple Mail Processor is an SMTP server that handles the low level details allowing you to focus on your business functinonality.
+---
+
+    <div id="main">
+
+{% include simplemailprocessor-navbar.html %}
+  
+      <ul>
+        <li><a href="#GettingStarted">Getting Started</a></li>
+        <li><a href="#Overview">Overview</a></li>
+        <li><a href="#MessageFilters">Message Filters</a></li>
+        <li><a href="#MessageProcessors">Message Processors</a></li>
+        <li><a href="#EmailMessage">EmailMessage</a></li>
+        <li><a href="#Spooling">Spooling</a></li>
+        </ul>
+    
+  
+      <a name="GettingStarted"></a>
+      <div class="header">Getting Started</div>
+      <p>
+      Simple Mail Processor provides a very easy path to get started while also providing options to add significant complexity.
+      </p>
+      <p>
+      The first step is to download Simple Mail Processor and its depenencies.  This can be done by downloading the jar files and adding them to your classpath, or by using Maven to download and manage your dependencies.
+      The Download page provides links to the dependencies and instructions on how to configure your Maven pom.xml file.
+      </p>
+      <p>
+      Once Simple Mail Processor and its dependencies are in your classpath, you can get started with a simple version that will output all incoming emails to the Console via System.out.  The following code is all that is required for this functionality:
+      <pre>
+import com.goldeninnovations.smp.SMPServer;
+import com.goldeninnovations.smp.messageprocessor.ConsoleMessageProcessor;;
+
+public class SimpleServer
+{
+    public static void main(String[] args) throws Exception
+    {
+        SMPServer server = new SMPServer(new ConsoleMessageProcessor());
+        server.startServer();
+    }
+}</pre>
+This code will configure <a href="/apps/simplemailprocessor/api/com/goldeninnovations/smp/SMPServer.html">SMPServer</a> to use a <a href="/apps/simplemailprocessor/api/com/goldeninnovations/smp/messageprocessor/ConsoleMessageProcessor.html">ConsoleMessageProcessor</a>, which will write out all incomign messages to the console.  By default <a href="/apps/simplemailprocessor/api/com/goldeninnovations/smp/SMPServer.html">SMPServer</a> listens on port 25 (the default SMTP port).  You may wish to use a different port in development.  Simpley add the line:
+<pre>server.setPort(9999);</pre> before server.startServer() to change the default port.  You can now compile and run the applications.  To test it, send an email to your local machine on the specified port.  SMPServer will accept the message and print it out.
+</p>
+<p>
+Apache's <a href="http://commons.apache.org/email/index.html">Commons Email</a> can be useful when testing Simple Mail Processor.  The following code can be used to test the default Simple Message Processor example:
+<pre>import org.apache.commons.mail.*;
+
+public class SimpleClient
+{
+    public static void main(String[] args) throws Exception
+    {  
+        SimpleEmail email = new SimpleEmail();
+
+        email.setHostName("localhost");
+        email.setSmtpPort(9999);
+
+        email.addTo("john.smith@example.com", "John Doe");
+        email.setFrom("from@example.com", "Me");
+        email.setSubject("Test message");
+        email.setMsg("This is a simple test from commons-email");
+        email.send();
+    }
+}</pre>
+
+      <a name="Overview"></a>
+      <div class="header">Overview</div>
+      <p>
+      The <a href="#GettingStarted">Getting Started</a> section provides a quick example of how to run Simple Message Processor.  However, the power from Simple Message Processor comes from the ability use and extend the pre-defined implementations.  This section will provide an outline of the major components of Simple Message Processor and how to use them.
+      </p>
+     
+      <p>The <a href="/apps/simplemailprocessor/api/com/goldeninnovations/smp/SMPServer.html">SMPServer</a> class provides the primary interface between your application and the Simple Message Processor.  <a href="/apps/simplemailprocessor/api/com/goldeninnovations/smp/SMPServer.html">SMPServer</a> provides methods to allow you to customize the way messages are filtered, spooled, and processed.  The following diagram provides an overview of the components in SMPServer:
+      </p>
+      <p>
+      <img src="images/SMPOverview.png"/>
+      </p>
+      <p>
+      The <a href="/apps/simplemailprocessor/api/com/goldeninnovations/smp/SMPServer.html">SMPServer</a> listens for incoming messages.  Before a message is accepted, <a href="/apps/simplemailprocessor/api/com/goldeninnovations/smp/SMPServer.html">SMPServer</a> asks the <a href="/apps/simplemailprocessor/api/com/goldeninnovations/smp/MessageFilter.html">MessageFilter</a> whether or not to accept the message.  If the message is rejected, the remote SMTP sender is notified that the user is invalid.  If the message is accepted, it is spooled for delivery.
+      </p>
+      <p>
+      Once a message is spooled, it can be processed by a <a href="/apps/simplemailprocessor/api/com/goldeninnovations/smp/MessageProcessor.html">MessageProcessor</a>.  The <a href="/apps/simplemailprocessor/api/com/goldeninnovations/smp/MessageProcessor.html">MessageProcessor</a> implementation is passed a POJO representation of the email message that provides simplified access to the header fields, as well as processing for multi-part messages.
+      </p>
+      <p>
+      Simple Message Processor provides predefined implementations of each of these interfaces.  The predefined solutions can be used, or can be extended or replaced by custom implementations.  In most cases, a custom implementation of <a href="/apps/simplemailprocessor/api/com/goldeninnovations/smp/MessageProcessor.html">MessageProcessor</a> will be used to provide the business logic to process a message.
+      </p>
+      <p>
+      The spooling step of the process was mentioned in this section.  For more details on message spooling and <a href="/apps/simplemailprocessor/api/com/goldeninnovations/smp/SMPServer.html">SMPServer</a> threading, please refer to the <a href="$#Spooling">Spooling</a> section.
+
+      <a name="MessageFilters"></a>
+      <div class="header">Message Filters</div>
+      
+      <p>
+      The <a href="/apps/simplemailprocessor/api/com/goldeninnovations/smp/MessageFilter.html">MessageFilter</a> interface provides a single method to implement:
+      <pre>boolean acceptMessage(EmailAddress recipient, InetAddress senderAddress, EmailAddress sender);</pre>
+      This method is called while a remote SMTP sender is connected to the SMPServer.  If the method returns true, the email will be accepted.  If not, the email will be rejected with an 'Invalid User' message.
+      </p>
+      <p>
+      The senderAddress and sender parameters are provided to allow implementaions to create more robust acceptance logic, but in most cases the method will simply evaluate the recipeient parameter to determine if the message should be accepted.
+      </p>
+      <div class="subheader">DefaultMessageFilter</div>
+      <p>
+      The <a href="/apps/simplemailprocessor/api/com/goldeninnovations/smp/messagefilter/DefaultMessageFilter.html">DefaultMessageFilter</a> implementation is used by SMPServer if not other implementation is specified.  This implementation accepts all valid email addresses.
+      </p>
+      
+      <div class="subheader">DomainMessageFilter</div>
+      <p>
+      The <a href="/apps/simplemailprocessor/api/com/goldeninnovations/smp/messagefilter/DomainMessageFilter.html">DomainMessageFilter</a> implementation allows incoming emails to be filtered by domain name.  Multiple domain names can be specified.
+      </p>
+      
+      <div class="subheader">MessageFilterChain</div>
+      <p>
+      The <a href="/apps/simplemailprocessor/api/com/goldeninnovations/smp/messagefilter/MessageFilterChain.html">MessageFilterChain</a> implementation can be used to chain multiple <a href="/apps/simplemailprocessor/api/com/goldeninnovations/smp/MessageFilter.html">MessageFilter</a> implementations together.  This implementation simply executes each <a href="/apps/simplemailprocessor/api/com/goldeninnovations/smp/MessageFilter.html">MessageFilter</a> in its chain and return true only if they all accept the message.  This is useful when combining the criteria of multiple <a href="/apps/simplemailprocessor/api/com/goldeninnovations/smp/MessageFilter.html">MessageFilter</a> implementations.
+      </p>
+      
+      <a name="MessageProcessors"></a>
+      <div class="header">Message Processors</div>
+      <p>
+      The <a href="/apps/simplemailprocessor/api/com/goldeninnovations/smp/MessageProcessor.html">MessageProcessor</a> interface provides a single method to implement:
+      <pre>void processMessage(EmailMessage emailMessage);</pre>
+      This method is called when an <a href="/apps/simplemailprocessor/api/com/goldeninnovations/smp/EmailMessage.html">EmailMessage</a> is ready to be processed.  This method is called after the message has been spooled on a seperate thread from the IO processing thread.  See the <a href="#Spooling">Spooling</a> section for more information on threading and message spooling.
+      </p>
+      <p>
+      The <a href="/apps/simplemailprocessor/api/com/goldeninnovations/smp/MessageProcessor.html">MessageProcessor</a> implementation is usually where the primary business logic for your application will be interfaced.  This method should perform whatever functinoality you wish on the incoming message.
+      </p>
+      
+      <div class="subheader">MessageProcessorChain</div>
+      <p>
+      The <a href="/apps/simplemailprocessor/api/com/goldeninnovations/smp/messageprocessor/MessageProcessorChain.html">MessageProcessorChain</a> implementation can be used to chain multiple <a href="/apps/simplemailprocessor/api/com/goldeninnovations/smp/MessageProcessor.html">MessageProcessor</a>  implementations together.  This implementation simply executes each <a href="/apps/simplemailprocessor/api/com/goldeninnovations/smp/MessageProcessor.html">MessageProcessor</a> in its chain.  This can be useful when combining saving or logging incoming messages with the processing logic.
+      </p>
+            
+      <div class="subheader">FileMessageProcessor</div>
+      <p>
+      The <a href="/apps/simplemailprocessor/api/com/goldeninnovations/smp/messageprocessor/FileMessageProcessor.html">FileMessageProcessor</a> implementation outputs incoming email messages to a text file.  The ouput directory is specified in the constructor, and the filenames are based on a timestamp and counter.  The file nameing logic can be overriden by extending the FileMessageProcessor class and overriding the <pre>public void processMessage(EmailMessage message)</pre> method.
+      </p>    
+      
+      <div class="subheader">Slf4jMessageProcessor</div>
+      <p>
+      The <a href="/apps/simplemailprocessor/api/com/goldeninnovations/smp/messageprocessor/Slf4jMessageProcessor.html">ConsoleMessageProcessor</a> implementation outputs incoming email messages to the slf4j logging framework with the Logger name: com.goldeninnovations.smp.messages at level INFO.  This is useful for debugging and can be useful to capture a secondary log of incoming messages. 
+      </p>
+      
+      <div class="subheader">ConsoleMessageProcessor</div>
+      <p>
+      The <a href="/apps/simplemailprocessor/api/com/goldeninnovations/smp/messageprocessor/ConsoleMessageProcessor.html">ConsoleMessageProcessor</a> implementation is meant for testing and debugging only.  It simply outputs the message to the console using System.out.
+      </p>
+      
+      <div class="subheader">NoOpMessageProcessor</div>
+      <p>
+      The <a href="/apps/simplemailprocessor/api/com/goldeninnovations/smp/messageprocessor/NoOpMessageProcessor.html">ConsoleMessageProcessor</a> implementation is meant for performance testing only.  This implementation simply disregards incoming emails.
+      </p>
+      
+      <a name="EmailMessage"></a>
+      <div class="header">EmailMessage</div>
+      <p>
+      The <a href="/apps/simplemailprocessor/api/com/goldeninnovations/smp/EmailMessage.html">EmailMessage</a> class provides convienence methods to interact with the received email message.  This class provides access to the message headers, as well as processing for multi-part messages.  The <a href="/apps/simplemailprocessor/api/com/goldeninnovations/smp/MessagePart.html">MessagePart</a> class provides similar convience methods for each <a href="/apps/simplemailprocessor/api/com/goldeninnovations/smp/MessagePart.html">MessagePart</a>.
+      </p>
+      <p>
+      Attachments are received as MessageParts, and the <a href="/apps/simplemailprocessor/api/com/goldeninnovations/smp/MessagePart.html">MessagePart</a> class provides convienence methods for writing decoded attachements to an OuputStream.
+      </p>
+      
+      <a name="Spooling"></a>
+      <div class="header">Spooling</div>
+      <p>
+      The SMPServer creates multiple threads to handle the various aspects of IO and message processing.  SMPServer utilizes a single thread and NIO to processes incoming email messages.  In addition to pure IO, this thread also calls the MessageFilter and MessageSpool iterfaces.  Therefore, it is important that the implementations of those interafaces are fast.
+      </p>
+      <p>
+      A second thread reads messages from the spool and delivers them to the MessageProcessor.  The default implementation performs all MessageDeliery calls on a single thread.  To achieve greter throuput, use the <a href="/apps/simplemailprocessor/api/com/goldeninnovations/smp/messageprocessor/MultiThreadedMessageProcessor.html">MultiThreadedMessageProcessor</a> MessageProcessor implementation.  This will create a new thread for each MessageProcessor invocation.
+      </p>
+      <p>
+      The spooling method itself can also be overriden.  Simple Message Processor currently ships with a single in-memory implemntation although additional file and database implementations are planned for future releases.
+      </p>
+      
+      <div class="subheader">MemoryMessageSpool</div>
+      <p>
+      The <a href="/apps/simplemailprocessor/api/com/goldeninnovations/smp/messagespool/MemoryMessageSpool.html">MemoryMessageSpool</a> implementation provides an in-memory queue for incoming messages.  No persistence or transactionality is supported.
+      </p>
+
+
+  </div>

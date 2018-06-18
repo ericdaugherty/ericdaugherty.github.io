@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schedule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ericdaugherty.com/trainschedule/trainschedule.xsd">
+	<route name="North Central Service">
+		<inbound>
+			<days>M-F</days>
+			<stops>
+				<stop name="ANTIOCH"/>
+				<stop name="LAKE VILLA"/>
+				<stop name="ROUND LAKE BEACH"/>
+				<stop name="PRAIRIE CROSSING/LIBERTYVILLE"/>
+				<stop name="MUNDELEIN"/>
+				<stop name="VERNON HILLS"/>
+				<stop name="PRAIRIE VIEW"/>
+				<stop name="BUFFALO GROVE"/>
+				<stop name="WHEELING"/>
+				<stop name="PROSPECT HEIGHTS"/>
+				<stop name="O'HARE TRANSFER"/>
+				<stop name="RIVER GROVE"/>
+				<stop name="WESTERN AVE"/>
+				<stop name="CHICAGO UNION"/>
+			</stops>
+			<trains>
+				<train name="100">
+					<stop name="ANTIOCH">
+						<time>5:27</time>
+					</stop>
+					<stop name="LAKE VILLA">
+						<time>5:33</time>
+					</stop>
+					<stop name="ROUND LAKE BEACH">
+						<time>5:37</time>
+					</stop>
+					<stop name="PRAIRIE CROSSING/LIBERTYVILLE">
+						<time>5:43</time>
+					</stop>
+					<stop name="MUNDELEIN">
+						<time>5:49</time>
+					</stop>
+					<stop name="VERNON HILLS">
+						<time>5:55</time>
+					</stop>
+					<stop name="PRAIRIE VIEW">
+						<time>5:58</time>
+					</stop>
+					<stop name="BUFFALO GROVE">
+						<time>6:02</time>
+					</stop>
+					<stop name="WHEELING">
+						<time>6:07</time>
+					</stop>
+					<stop name="PROSPECT HEIGHTS">
+						<time>6:11</time>
+					</stop>
+					<stop name="O'HARE TRANSFER">
+						<time>6:22</time>
+					</stop>
+					<stop name="RIVER GROVE">
+						<time>6:32</time>
+					</stop>
+					<stop name="WESTERN AVE">
+						<time>6:43</time>
+					</stop>
+					<stop name="CHICAGO UNION">
+						<time>6:54</time>
+					</stop>
+				</train>
+				<train name="102">
+					<stop name="ANTIOCH">
+						<time>5:59</time>
+					</stop>
+					<stop name="LAKE VILLA">
+						<time>6:05</time>
+					</stop>
+					<stop name="ROUND LAKE BEACH">
+						<time>6:09</time>
+					</stop>
+					<stop name="PRAIRIE CROSSING/LIBERTYVILLE">
+						<time>6:15</time>
+					</stop>
+					<stop name="MUNDELEIN">
+						<time>6:21</time>
+					</stop>
+					<stop name="VERNON HILLS">
+						<time>6:27</time>
+					</stop>
+					<stop name="PRAIRIE VIEW">
+						<time>6:30</time>
+					</stop>
+					<stop name="BUFFALO GROVE">
+						<time>6:35</time>
+					</stop>
+					<stop name="WHEELING">
+						<time>6:40</time>
+					</stop>
+					<stop name="PROSPECT HEIGHTS">
+						<time>6:44</time>
+					</stop>
+					<stop name="O'HARE TRANSFER">
+						<time>6:55</time>
+					</stop>
+					<stop name="RIVER GROVE">
+						<time>7:05</time>
+					</stop>
+					<stop name="WESTERN AVE">
+						<time>7:17</time>
+					</stop>
+					<stop name="CHICAGO UNION">
+						<time>7:28</time>
+					</stop>
+				</train>
+				<train name="104">
+					<stop name="ANTIOCH">
+						<time>6:33</time>
+					</stop>
+					<stop name="LAKE VILLA">
+						<time>6:39</time>
+					</stop>
+					<stop name="ROUND LAKE BEACH">
+						<time>6:43</time>
+					</stop>
+					<stop name="PRAIRIE CROSSING/LIBERTYVILLE">
+						<time>6:49</time>
+					</stop>
+					<stop name="MUNDELEIN">
+						<time>6:55</time>
+					</stop>
+					<stop name="VERNON HILLS">
+						<time>7:01</time>
+					</stop>
+					<stop name="PRAIRIE VIEW">
+						<time>7:04</time>
+					</stop>
+					<stop name="BUFFALO GROVE">
+						<time>7:09</time>
+					</stop>
+					<stop name="WHEELING">
+						<time>7:14</time>
+					</stop>
+					<stop name="PROSPECT HEIGHTS">
+						<time>7:18</time>
+					</stop>
+					<stop name="O'HARE TRANSFER">
+						<time>7:29</time>
+					</stop>
+					<stop name="RIVER GROVE">
+						<time>7:40</time>
+					</stop>
+					<stop name="WESTERN AVE">
+						<time>7:52</time>
+					</stop>
+					<stop name="CHICAGO UNION">
+						<time>8:05</time>
+					</stop>
+				</train>
+				<train name="106">
+					<stop name="ANTIOCH">
+						<time>7:02</time>
+					</stop>
+					<stop name="LAKE VILLA">
+						<time>7:08</time>
+					</stop>
+					<stop name="ROUND LAKE BEACH">
+						<time>7:12</time>
+					</stop>
+					<stop name="PRAIRIE CROSSING/LIBERTYVILLE">
+						<time>7:18</time>
+					</stop>
+					<stop name="MUNDELEIN">
+						<time>7:24</time>
+					</stop>
+					<stop name="VERNON HILLS">
+						<time>7:30</time>
+					</stop>
+					<stop name="PRAIRIE VIEW">
+						<time>7:33</time>
+					</stop>
+					<stop name="BUFFALO GROVE">
+						<time>7:38</time>
+					</stop>
+					<stop name="WHEELING">
+						<time>7:43</time>
+					</stop>
+					<stop name="PROSPECT HEIGHTS">
+						<time>7:47</time>
+					</stop>
+					<stop name="O'HARE TRANSFER">
+						<time>7:58</time>
+					</stop>
+					<stop name="RIVER GROVE">
+						<time>8:09</time>
+					</stop>
+					<stop name="WESTERN AVE">
+						<time>8:21</time>
+					</stop>
+					<stop name="CHICAGO UNION">
+						<time>8:33</time>
+					</stop>
+				</train>
+				<train name="112">
+					<stop name="ANTIOCH">
+						<time>15:29</time>
+					</stop>
+					<stop name="LAKE VILLA">
+						<time>15:35</time>
+					</stop>
+					<stop name="ROUND LAKE BEACH">
+						<time>15:39</time>
+					</stop>
+					<stop name="PRAIRIE CROSSING/LIBERTYVILLE">
+						<time>15:45</time>
+					</stop>
+					<stop name="MUNDELEIN">
+						<time>15:51</time>
+					</stop>
+					<stop name="VERNON HILLS">
+						<time>15:57</time>
+					</stop>
+					<stop name="PRAIRIE VIEW">
+						<time>16:00</time>
+					</stop>
+					<stop name="BUFFALO GROVE">
+						<time>16:04</time>
+					</stop>
+					<stop name="WHEELING">
+						<time>16:09</time>
+					</stop>
+					<stop name="PROSPECT HEIGHTS">
+						<time>16:13</time>
+					</stop>
+					<stop name="O'HARE TRANSFER">
+						<time>16:24</time>
+					</stop>
+					<stop name="RIVER GROVE">
+						<time>16:33</time>
+					</stop>
+					<stop name="WESTERN AVE">
+						<time>16:49</time>
+					</stop>
+					<stop name="CHICAGO UNION">
+						<time>17:00</time>
+					</stop>
+				</train>
+			</trains>
+		</inbound>
+		<outbound>
+			<days>M-F</days>
+			<stops>
+				<stop name="CHICAGO UNION"/>
+				<stop name="WESTERN AVE"/>
+				<stop name="RIVER GROVE"/>
+				<stop name="O'HARE TRANSFER"/>
+				<stop name="PROSPECT HEIGHTS"/>
+				<stop name="WHEELING"/>
+				<stop name="BUFFALO GROVE"/>
+				<stop name="PRAIRIE VIEW"/>
+				<stop name="VERNON HILLS"/>
+				<stop name="MUNDELEIN"/>
+				<stop name="PRAIRIE CROSSING/LIBERTYVILLE"/>
+				<stop name="ROUND LAKE BEACH"/>				
+				<stop name="LAKE VILLA"/>
+				<stop name="ANTIOCH"/>				
+			</stops>
+			<trains>
+				<train name="105">
+					<stop name="CHICAGO UNION">
+						<time>13:25</time>
+					</stop>
+					<stop name="WESTERN AVE">
+						<time>13:34</time>
+					</stop>
+					<stop name="RIVER GROVE">
+						<time>13:46</time>
+					</stop>
+					<stop name="O'HARE TRANSFER">
+						<time>13:56</time>
+					</stop>
+					<stop name="PROSPECT HEIGHTS">
+						<time>14:06</time>
+					</stop>
+					<stop name="WHEELING">
+						<time>14:11</time>
+					</stop>
+					<stop name="BUFFALO GROVE">
+						<time>14:16</time>
+					</stop>
+					<stop name="PRAIRIE VIEW">
+						<time>14:20</time>
+					</stop>
+					<stop name="VERNON HILLS">
+						<time>14:23</time>
+					</stop>
+					<stop name="MUNDELEIN">
+						<time>14:29</time>
+					</stop>
+					<stop name="PRAIRIE CROSSING/LIBERTYVILLE">
+						<time>14:35</time>
+					</stop>
+					<stop name="ROUND LAKE BEACH">
+						<time>14:41</time>
+					</stop>
+					<stop name="LAKE VILLA">
+						<time>14:45</time>
+					</stop>
+					<stop name="ANTIOCH">
+						<time>14:54</time>
+					</stop>					
+				</train>
+				<train name="107">
+					<stop name="CHICAGO UNION">
+						<time>16:25</time>
+					</stop>
+					<stop name="WESTERN AVE">
+						<time>16:35</time>
+					</stop>
+					<stop name="RIVER GROVE">
+						<time>16:48</time>
+					</stop>
+					<stop name="O'HARE TRANSFER">
+						<time>16:59</time>
+					</stop>
+					<stop name="PROSPECT HEIGHTS">
+						<time>17:09</time>
+					</stop>
+					<stop name="WHEELING">
+						<time>17:14</time>
+					</stop>
+					<stop name="BUFFALO GROVE">
+						<time>17:18</time>
+					</stop>
+					<stop name="PRAIRIE VIEW">
+						<time>17:22</time>
+					</stop>
+					<stop name="VERNON HILLS">
+						<time>17:25</time>
+					</stop>
+					<stop name="MUNDELEIN">
+						<time>17:31</time>
+					</stop>
+					<stop name="PRAIRIE CROSSING/LIBERTYVILLE">
+						<time>17:37</time>
+					</stop>
+					<stop name="ROUND LAKE BEACH">
+						<time>17:43</time>
+					</stop>
+					<stop name="LAKE VILLA">
+						<time>17:47</time>
+					</stop>
+					<stop name="ANTIOCH">
+						<time>17:55</time>
+					</stop>					
+				</train>
+				<train name="109">
+					<stop name="CHICAGO UNION">
+						<time>17:00</time>
+					</stop>
+					<stop name="WESTERN AVE">
+						<time>17:10</time>
+					</stop>
+					<stop name="RIVER GROVE">
+						<time>17:23</time>
+					</stop>
+					<stop name="O'HARE TRANSFER">
+						<time>17:34</time>
+					</stop>
+					<stop name="PROSPECT HEIGHTS">
+						<time>17:44</time>
+					</stop>
+					<stop name="WHEELING">
+						<time>17:49</time>
+					</stop>
+					<stop name="BUFFALO GROVE">
+						<time>17:53</time>
+					</stop>
+					<stop name="PRAIRIE VIEW">
+						<time>17:57</time>
+					</stop>
+					<stop name="VERNON HILLS">
+						<time>18:00</time>
+					</stop>
+					<stop name="MUNDELEIN">
+						<time>18:06</time>
+					</stop>
+					<stop name="PRAIRIE CROSSING/LIBERTYVILLE">
+						<time>18:12</time>
+					</stop>
+					<stop name="ROUND LAKE BEACH">
+						<time>18:18</time>
+					</stop>
+					<stop name="LAKE VILLA">
+						<time>18:22</time>
+					</stop>
+					<stop name="ANTIOCH">
+						<time>18:30</time>
+					</stop>					
+				</train>
+				<train name="111">
+					<stop name="CHICAGO UNION">
+						<time>17:45</time>
+					</stop>
+					<stop name="WESTERN AVE">
+						<time>17:55</time>
+					</stop>
+					<stop name="RIVER GROVE">
+						<time>18:07</time>
+					</stop>
+					<stop name="O'HARE TRANSFER">
+						<time>18:17</time>
+					</stop>
+					<stop name="PROSPECT HEIGHTS">
+						<time>18:27</time>
+					</stop>
+					<stop name="WHEELING">
+						<time>18:32</time>
+					</stop>
+					<stop name="BUFFALO GROVE">
+						<time>18:37</time>
+					</stop>
+					<stop name="PRAIRIE VIEW">
+						<time>18:41</time>
+					</stop>
+					<stop name="VERNON HILLS">
+						<time>18:44</time>
+					</stop>
+					<stop name="MUNDELEIN">
+						<time>18:50</time>
+					</stop>
+					<stop name="PRAIRIE CROSSING/LIBERTYVILLE">
+						<time>18:56</time>
+					</stop>
+					<stop name="ROUND LAKE BEACH">
+						<time>19:02</time>
+					</stop>
+					<stop name="LAKE VILLA">
+						<time>19:06</time>
+					</stop>
+					<stop name="ANTIOCH">
+						<time>19:14</time>
+					</stop>					
+				</train>
+				<train name="113">
+					<stop name="CHICAGO UNION">
+						<time>18:17</time>
+					</stop>
+					<stop name="WESTERN AVE">
+						<time>18:27</time>
+					</stop>
+					<stop name="RIVER GROVE">
+						<time>18:39</time>
+					</stop>
+					<stop name="O'HARE TRANSFER">
+						<time>18:48</time>
+					</stop>
+					<stop name="PROSPECT HEIGHTS">
+						<time>18:58</time>
+					</stop>
+					<stop name="WHEELING">
+						<time>19:03</time>
+					</stop>
+					<stop name="BUFFALO GROVE">
+						<time>19:07</time>
+					</stop>
+					<stop name="PRAIRIE VIEW">
+						<time>19:11</time>
+					</stop>
+					<stop name="VERNON HILLS">
+						<time>19:14</time>
+					</stop>
+					<stop name="MUNDELEIN">
+						<time>19:20</time>
+					</stop>
+					<stop name="PRAIRIE CROSSING/LIBERTYVILLE">
+						<time>19:26</time>
+					</stop>
+					<stop name="ROUND LAKE BEACH">
+						<time>19:32</time>
+					</stop>
+					<stop name="LAKE VILLA">
+						<time>19:36</time>
+					</stop>
+					<stop name="ANTIOCH">
+						<time>19:44</time>
+					</stop>					
+				</train>				
+			</trains>
+		</outbound>
+	</route>
+</schedule>

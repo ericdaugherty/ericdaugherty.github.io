@@ -1,0 +1,167 @@
+---
+layout: default
+title: Eric Daugherty's Palm OS Java Train Schedule
+---
+
+    <div id="main">
+
+      <p class="title">Palm OS Java Train Server</p>
+
+      <p>
+        [<a href="#Documentation">Documentation</a>] [<a href="#Download">Download</a>]
+        [<a href="#Known Bugs">Known Bugs</a>] [<a href="#History">History</a>]
+      </p>
+
+      <p>
+        Note: This project is not current and does not run properly on current Palm hardware.
+        This page is for historical purposes only.
+      </p>
+
+      <p class="header">Introduction</p>
+
+      <p>
+        Java Train Schedule is a simple Java application written for the
+        Palm OS platform.&nbsp; It allows the users an easy way to view commuter train
+        schedules.&nbsp; Although this application was written for the <a href="http://www.metrarail.com">Chicago
+        Metra</a> train system, there is no reason that data from other systems could
+        not be loaded for this application.
+      </p>
+
+      <p>
+        Java Train Schedule is completely free.&nbsp; I wrote it as an introduction
+        the Sun Microsystems' J2ME CLDC SDK, and the <a href="http://www.trantor.de/kawt/index.html">kAWT</a>
+         toolkit.
+       </p>
+
+      <p>
+        There are two separate versions of the TrainSchedule application.&nbsp; The
+        initial version was written using the kAWT toolkit.&nbsp; Once I completed this,
+        I ported the GUI to use the KVM GUI classes (kJava).&nbsp; While the kAWT
+        version has much more sophisticated GUI, the kJava version performs much
+        better.&nbsp; Both versions are included in the binary distribution.
+      </p>
+
+      <p>
+        In order to successfully port the application to the kJava classes, I found
+        the ListBox widget written by Stepane Schmitz invaluable.&nbsp; You can find
+        more information about this at his <a href="http://users.skynet.be/bk233174/java/java-listbox.html">website</a>.
+      </p>
+
+      <p>
+        If you are interested in Java development for the Palm and would like to see
+        the source code for this application, you can email me at <a href="mailto:java@ericdaugherty.com">java@ericdaugherty.com</a>.
+      </p>
+
+      <p>
+        Due to the constraints of the Java KVM, the limited power of the Palm
+        hardware, and my limited interest, the performance of the TrainSchedule
+        application is extremely slow.&nbsp; I would only recommend this application for
+        the fastest Palm hardware, and the very patient!&nbsp; I have found that the
+        kJava version is much more useable from a performance standpoint.&nbsp;
+      </p>
+
+
+
+      <p class="header"><a name="Download"></a>Download</p>
+
+      <p>To download the binaries for the current version:</p>
+
+      <p>Version 1.0 - <a href="trainschedule1_0.zip">TrainSchedule1_0.zip</a>&nbsp;</p>
+
+      <p>
+        Currently only supports <a href="http://www.metrarail.com"> Chicago Metra's</a>
+        <a href="http://www.metrarail.com/Sched/bn/bn.html"> Burlington Northern Santa Fe</a>
+        and <a href="http://www.metrarail.com/Sched/cnw_nw/cnw_nw.html">Union
+        Pacific Northwest</a> Lines, weekday schedules only.&nbsp; Please note, I do
+        not guarantee the accuracy of this information, use it at your own risk.&nbsp;
+        Although all the lines are listed in the application, searches performed on
+        any lines besides the two listed above will fail.
+      </p>
+
+
+      <p>
+        You will also need the <a href="http://www.trantor.de/kawt/xKVM/DownloadxKVM.html">xKVM</a>,
+        which includes Sun's Java KVM and the kAWT class libraries to execute the kAWT
+        version.&nbsp; If you just wish to run the kJava version, you can download and
+        install KJava.prc and KjavaUtil.prc from <a href="../kvm.zip">here</a>.
+      </p>
+
+      <p class="header"><a name="Documentation"></a>Documentation</p>
+
+      <p class="sub-header">kAWT Version</p>
+
+      <p>
+        Train Schedule is an easy to use application to access basic schedule
+        information for commuter trains.&nbsp; he application consists of two main
+        screens.&nbsp; The first screen prompts the user to input their search
+        criteria.&nbsp; The second screen displays the results of the search.
+      </p>
+
+      <p>
+        <img border="0" src="mainscreen.gif" width="168" height="167">&nbsp;
+        <img border="0" src="resultsscreen.gif" width="168" height="167">
+      </p>
+
+      <p>
+        Train Schedule determines all possible trains between your start and
+        destination, and then filters out any trains that are undesirable (for example,
+        trains that depart first but arrive after a later train).
+      </p>
+
+      <p>
+        Train Schedule also allows the user to define a preferred Line, Start and
+        Destination.&nbsp; To save your preferences, select the appropriate values on
+        the main screen, and select Save Prefs.&nbsp; Once you have done this, you can revert
+        to these values at any time using the Load Prefs button.&nbsp; Also, each time
+        the application loads, it will initially display the preferred values.
+      </p>
+
+      <p>
+        The Time of Day is set to the current hour when the application is
+        launched.&nbsp; This field is not governed by the Load/Set Prefs feature.
+      </p>
+
+      <p class="sub-header">kJava Version</p>
+
+      <p>
+        Train Schedule is an easy to use application to access basic schedule
+        information for commuter trains.&nbsp; he application consists of several data
+        collection screens, and a results screen.&nbsp; The first screen prompts the user to input
+        the line they are searching.&nbsp; After you make the selection, press the 'Next
+        &gt;' button to proceed to the next screen.&nbsp; Once all the data is entered,
+        the Results Screen will be displayed.
+      </p>
+
+      <p>
+        <img border="0" src="kJavaLineSelectScreen.gif" width="168" height="167">&nbsp;
+        <img border="0" src="kJavaTimeSelectScreen.gif" width="168" height="167">&nbsp;
+        <img border="0" src="kJavaResultsScreen.gif" width="168" height="167">
+      </p>
+
+      <p>
+        Train Schedule determines all possible trains between your start and
+        destination, and then filters out any trains that are undesirable (for example,
+        trains that depart first but arrive after a later train).&nbsp;&nbsp;
+      </p>
+
+      <p>
+        Train Schedule also allows the user to define a preferred Line, Start and
+        Destination.&nbsp; To save your preferences, select the appropriate values and
+        perform a search.&nbsp; On
+        the results screen, select Save Prefs.&nbsp; Once you have done this, you can revert
+        to these values at any time using the Load Prefs button.&nbsp;&nbsp;
+      </p>
+
+      <p class="header"><a name="History"></a>History</p>
+
+      <p>1.0 Final (2/2/2001) - Initial Full Release</p>
+      <ul>
+        <li>Replaced usage of the 3rd Party Date class with java.util.Calendar</li>
+        <li>Fixed Bug: Duration is incorrect for trains that leave before midnight but arrive the next day.&nbsp;</li>
+        <li>Fixed Bug: Searches with a time of 12 AM are interpreted as Noon.</li>
+        <li>Added kJava version to distribution.</li>
+      </ul>
+
+      <p>1.0 Beta (1/29/2001) - Initial Public Version</p>
+
+    </div>

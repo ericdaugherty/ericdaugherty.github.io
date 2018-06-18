@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+<head>
+
+  <title>EricDaugherty.com - iTunes Export Scala M3U Playist Exporter</title>
+
+  <meta name="keywords" content="Eric Daugherty EricDaugherty.com iTunes Export Playlist M3U Scala Java" />
+  <meta name="description" content="Eric Daugherty's iTunes Export Scala M3U Playist Exporter" />
+
+<?php include '../../../head.php' ?>
+
+<?php $ad = 'ad-itunes.php'; ?>
+
+</head>
+<body>
+
+  <div id="wrap">
+
+<?php include '../../../header.php'; ?>
+
+    <div id="main">
+
+      <p class="title">iTunes Export Scala</p>
+
+<?php include 'itunes-menu.php' ?>
+
+      <a name="Introduction" ></a>
+      <p class='header'>Introduction</p>
+
+      <p style="color:Red;">
+        iTunes Export Scala has now been rolled into the main <a href="../">iTunes Export Project</a>.  This page is no longer being updated!</p>
+
+      <p>
+        iTunes Export Scala is a command line tool that
+        exports playlists defined in your iTunes Music Library
+        to standard .m3u playlists.
+        iTunes Export Scala is open source and freely available for use.
+      </p>
+
+      <p>
+        iTunes Export Scala is a port of the original <a href="../">iTunes Export</a> program written in .Net.
+        This version was created to allow Mac OS X users to export their iTunes playlists (the original
+        version only runs on Windows).  If you are a Windows user the <a href="../">original version</a>
+        is recommended as it is more complete.
+
+      <p>
+        The program and source code is available for download from
+        the <a href="#Download">Download</a> section.  This project is hosted by Google Code and you can
+        find the issue tracker, Wiki, and SVN repository at the <a href="http://code.google.com/p/itunesexport-scala/">Google Code Project Home</a>.
+      </p>
+
+      <p>
+        Have a questions, please review the <a href="faq.html">FAQ</a>.  If it does not answer your question please
+        email me at <a href="mailto:eric@ericdaugherty.com">eric@ericdaugherty.com</a>
+      </p>
+
+      <a name="Download"></a>
+      <p class='header'>Download</p>
+
+      <p>
+        Version 0.2
+        <br>
+        Application - <a href="http://itunesexport-scala.googlecode.com/files/iTunesExportScala-0.2.zip">iTunesExportScala-0.2.zip</a>
+        <br>
+        Source - <a href="http://itunesexport-scala.googlecode.com/files/iTunesExportScala-src-0.2.zip">iTunesExportScala-src-0.2.zip</a>
+      </p>
+
+      <p>
+        iTunes Export is written using Scala and compiled to Java Byte Code.  It should run on the Java JRE 1.5 or later.
+      </p>
+
+      <a name="Using iTunes Export"></a>
+      <p class='header'>Using iTunes Export Scala</p>
+
+      <p>
+        iTunes Export is a command line application.  To use it, extract the application zip file
+        to a directory and open a command window in that directory.
+        If iTunes Export is run without any parameters, it will attempt to locate
+        your iTunes Music Library and will write a .m3u playlist file for each
+        playlist defined in the iTunes Music Library.
+      </p>
+
+      <pre class="code">
+java -jar itunesexport.jar
+      </pre>
+
+      <p>
+        The location of the iTunes Music Library can be overridden using a command
+        line parameter.  Example:
+      </p>
+
+      <pre class="code">
+java -jar itunesexport.jar "C:\My Music\iTunes Music Library.xml"
+      </pre>
+
+    </div>
+
+<?php include '../../../sidebar.php'; ?>
+
+<?php include '/home/content/e/d/a/edaugherty/html/wrap-end.php'; ?>
+
+  </div>
+
+<?php include '/home/content/e/d/a/edaugherty/html/footer.php'; ?>
+
+
+</body>
+
+</html>

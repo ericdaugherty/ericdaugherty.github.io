@@ -1,0 +1,121 @@
+---
+layout: default
+title: Eric Daugherty's Java Email Server
+keywords: Eric Daugherty EricDaugherty.com Java mail email server SMTP POP3 POP
+description: Java Email Server is an open source Java SMTP and POP3 e-mail server.
+ad: 5212883964
+---
+
+    <div id="main">
+
+      <p class="title">Java Email Server</p>
+
+{% include jes-navbar.html %}
+
+      <a name="Introduction" ></a>
+
+      <p class="header">Introduction</p>
+
+      <p>
+        Java Mail Server is a Java SMTP and POP3 e-mail server. This
+        project was inspired by and based on the <a href="http://crsemail.sourceforge.net/">CRSMail</a>
+        project written by Calvin Smith.  This project exists for everyone who is
+        interested in running their own email server quickly and easily.
+      </p>
+
+      <p class="header">Current Version</p>
+
+      <p>
+        The current version of Java Email Server is now hosted at
+        <a href="http://javaemailserver.sourceforge.net/">at SourceForge</a>.  Please
+        refer to that page for all release information and documentation regarding the current version.
+      </p>
+
+      <p>For more information on the change, read <a href="http://blog.ericdaugherty.com/2011/03/java-email-server-gets-new-home.html">this blog post</a>.
+
+      <p class="header">1.x Version</p>
+
+      <p>
+        This page continues to host the 1.x development branch, which is in Maintenance Mode.
+
+      <p>
+        The goal of JES is to provide an easy to use and reliable
+        email server that can be quickly and easily setup.  JES attempts
+        to provide a powerful server using the minimal number of configuration
+        settings and project size.
+      </p>
+
+      <p>
+        Using JES as a testing tool?  There is now an <a href="http://jesplug-in.sourceforge.net/">Eclipse Plug-In for JES</a>.  It allows you to start, stop, and configure JES from Eclipse.
+      </p>
+
+      <p>
+        If you are ready to start using JES, please see the Download and Install
+        sections below for instructions on downloading and configuration JES.  The binary release,
+        and the source code are available for download from
+        the <a href="#Download">Download</a> section.
+      </p>
+
+      <p>
+        Version 1.x is licensed under the <a href="license.html">GNU General Public License</a>.
+      </p>
+
+      <p>
+        You can email me at <a href="mailto:eric@ericdaugherty.com">eric@ericdaugherty.com</a> for 1.x related questions.
+      </p>
+
+      <p>
+        Interested in this history of JES?  Check out these blog posts:
+        <a href="http://blog.ericdaugherty.com/2008/01/java-email-server-history.html">History</a>,
+        <a href="http://blog.ericdaugherty.com/2008/01/java-email-server-20-branch.html">Version 2.0 Branch</a>, and
+        <a href="http://blog.ericdaugherty.com/2008/01/java-email-server-status-and-future.html">Status and Future</a>, and
+        <a href="http://blog.ericdaugherty.com/2011/03/java-email-server-gets-new-home.html">Java Email Server Gets a New Home</a>.
+      </p>
+
+      <a name="Download"></a>
+      <p class="header">Download</p>
+
+      <p>
+        JDK 1.4 is supported by Version 1.6.1 and older, and JDK 1.3 is supported by JES 1.4 and older.
+      </p>
+
+      <p>
+        Version 1.6.1
+      </p>
+
+      <p>
+        Server - <a href="http://prdownloads.sourceforge.net/javaemailserver/jes-1.6.1.zip?download">jes-1.6.1.zip</a>
+        <br/>
+        Source Code and JavaDocs - <a href="http://prdownloads.sourceforge.net/javaemailserver/jes-1.6.1-src.zip?download">jes-1.6.1-src.zip</a>
+      </p>
+
+      <a name="Install"></a>
+      <p class="header">Install</p>
+
+      <p>
+        To install and run this mail server, complete the following steps:
+      </p>
+
+      <p>
+        Install a Java JDK or JRE version 1.4 or greater (<a xmlns:xhtml="http://www.w3.org/1999/xhtml" href="http://java.sun.com">java.sun.com</a>).
+        <br/>
+        Expand the distribution archive into the desired directory.
+        <br/>
+        Modify the included script files for your local file system (if necessary).
+        <br/>
+        Edit the mail.conf, user.conf and log.conf files.  See the <a href="configuration.html">Configuration</a> page for details.
+        <br/>
+        Run the mail server script file.
+      </p>
+
+      <p>
+        JES can be installed as a Windows NT service.  A batch file is included in
+        the bin directory of this distribution.  To install JES as a service, open
+        the batch file and edit the properties to match your local system.  You can
+        then install and uninstall the service using the -install and -uninstall
+        command line parameters.  Once the system is installed, it will be started
+        by default the next time the computer is restarted.  To start the service
+        the first time, you can type 'net start JavaEmailServer'.
+      </p>
+
+    </div>

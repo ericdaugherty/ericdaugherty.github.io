@@ -1,0 +1,148 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Daugherty Java Library</title>
+</head>
+
+<body>
+
+<h1 align="center">Daugherty Java Library</h1>
+<p align="center">Written by: <a href="http://www.ericdaugherty.com">Eric Daugherty</a></p>
+<p align="center">[<a href="http://www.ericdaugherty.com/java">Other Java Development Projects</a>]</p><hr>
+[<a href="#Download">Download</a>]
+[<a href="#Documentation">Documentation</a>]
+[<a href="#Known Bugs">Known Bugs</a>]
+[<a href="#History">History</a>]
+
+<h2>Introduction</h2>
+
+<p>The Daugherty Java Library (DaughertyLib) is a collection of Java Classes designed
+to provide implementations of commonly required functionality.  DaughertyLib has been
+divided into two seperate distributions: DaughertyLibEE, and DaughertyLibSE.</p>
+
+<p>
+DaughertLibSE (Daugherty Library, J2SE Edition) contains common code and libraries
+that only require <a href="http://java.sun.com/j2se/">Java 2 Standard Edition</a>
+version 1.3 (or later).
+</p>
+
+<p>
+DaughertLibEE (Daughery Library, J2EE Edition), contains the entire DaughertyLibSE
+distribution plus additional classes that depend on the <a href="http://java.sun.com/j2ee/">
+Java 2 Enterprise Edition (J2EE)</a> version 1.3 (or later).
+</p>
+
+<p>
+DaughertySELib and DaughertyEELib maintain binary compatablity, as long as both editions
+are the same version number.  For example, an client application using DaughertyLibSE 2.0 should
+be able to handle a SystemException thrown from an application server using DaughertyLibEE 2.0.
+However, it may fail if the client version is 2.0, and the server is 3.0.
+<p>
+
+<p>DaughertyLib is covered by the <a href="http://opensource.org/licenses/bsd-license.html">BSD
+License</a>. A copy of the license is included in the distribution.
+Both the source and compiled classes may be used in open source or closed source
+projects. Please refer to the <a href="license.html">license</a> for
+specifics.</p>
+
+<p align="left">If you are interested in discussing or contributing to this
+library, you may contact me at <a href="mailto:java@ericdaugherty.com">java@ericdaugherty.com</a></p>
+
+<h2><a name="Download"></a>Download</h2>
+
+<h3>DaughertyLibSE</h3>
+
+<p>
+DaughertyLibSE requires the
+<a href="http://jakarta.apache.org/commons/logging.html">Apache-Commons Logging</a>
+package.  This package allows users to use any Logging package they choose.  You MUST
+download this package to use DaughertyLibSE.
+
+<p>
+Version 2.0
+</p>
+<p>
+<a href="daughertylibse20.zip">DaughertyLibSE20.zip</a> (source, binaries, and documentation)
+</p>
+<p>
+<a href="daughertylibse20.jar">DaughertyLibSE20.jar</a> (binaries)
+</p>
+
+<h3>DaughertyLibEE</h3>
+
+<p>
+Version 2.0
+</p>
+
+<p>
+DaughertyLibEE provides several features that require the use of other libraries.
+<ul>
+  <li>All requirements specified for DaughertyLibSE
+  <li><a href="http://jakarta.apache.org/struts">Struts</a> is required to use/compile the struts package.
+  <li>A JAXP SAX Parser implementation.  This is required for the XmlFileSource in the configuration package.
+      Testing was done using <a href="http://xml.apache.org/xerces2-j/index.html">Xerces2</a>.
+</ul>
+
+<p>
+<a href="daughertylibee20.zip">DaughertyLibEE20.zip</a> (source, binaries, and documentation)
+</p>
+<p>
+<a href="daughertylibee20.jar">DaughertyLibEE20.jar</a> (binaries)
+</p>
+
+<h2><a name="Documentation"></a>Documentation</h2>
+
+<p>Documentation for this library is included in the distribution. You can
+view the current JavaDoc documents online here:</p>
+
+<p>
+<a href="sedocs/index.html">DaughertyLibSE Docs</a>
+</p>
+<p>
+<a href="eedocs/index.html">DaughertyLibEE Docs</a>
+</p>
+
+<h2><a name="Known Bugs"></a>Known Bugs</h2>
+Please submit any bugs you find to <a href="mailto:java@ericdaugherty.com">java@ericdaugherty.com</a>.
+
+<h2><a name="History"></a>History</h2>
+
+<ul>
+  <li>2.0 (9/20/2002)
+  <ul>
+    <li>Split DaughertyLib into two seperate distributions.
+    <li>New Features (SE):
+      <ul>
+        <li>Added Message Format functionality to Error package</li>
+        <li>Updated Error Package documentation</li>
+        <li>Updated all classes to use <a href="http://jakarta.apache.org/commons/logging.html">Logging</a> package from <a href="http://jakarta.apache.org/commons">apache-commons</a>.</li>
+        <li>Added configuration package</li>
+      </ul>
+    </li>
+    <li>New Features (EE):
+      <ul>
+        <li>Removed EnvEntryConfigurationService and replaced it with WebConfigurationService and EjbConfigurationService</li>
+      </ul>
+    </li>
+    <li>Bug Fixes (SE):
+      <ul>
+        <li>Resolved incompatability with JDK 1.4 due to java.lang.Throwable API change.
+            (getStackTrace() method now named getStackTraceString() to avoid conflict)</li>
+      </ul>
+    </li>
+  </ul>
+  </li>
+  <li>1.1 Final (10/12/2001) - Added Bean Package</li>
+  <li>1.0 Final (6/20/2001) - Initial Full Release</li>
+</ul>
+
+<p>
+  <a href="http://validator.w3.org/check/referer"><img border="0"
+      src="http://www.w3.org/Icons/valid-html401"
+      alt="Valid HTML 4.01!" height="31" width="88"></a>
+</p>
+</body>
+
+</html>

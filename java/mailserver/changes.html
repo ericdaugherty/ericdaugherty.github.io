@@ -1,0 +1,291 @@
+---
+layout: default
+title: Eric Daugherty's Java Email Server
+keywords: Eric Daugherty EricDaugherty.com Java mail email server SMTP POP3 POP
+---
+
+    <div id="main">
+
+      <p class="title">Java Email Server - Change Log</p>
+
+{% include jes-navbar.html %}
+
+    <p>
+        JES 2.x is now hosted <a href="http://javaemailserver.sourceforge.net/">here</a>.  
+      Refer to that site for its release notes.
+    </p>
+
+    <p class="header">Version 1.6.1 (02/02/2008)</p>
+
+    <p>
+      Updated mail.conf to remove extra trailing semicolin from "smtpdelivery.threshold=10" Thanks to Siegfried Goeschl
+      (siegfried.goeschl@it20one.at).
+    </p>
+
+    <p>
+      Updated mail.sh to accept a configuration directory as a command line parameter.  Thanks to Siegfried Goeschl
+      (siegfried.goeschl@it20one.at).
+    </p>
+
+    <p>
+      Updated bulid.xml to build with JDK version 1.4 (minimum needed for codebase).  Thanks to Siegfried Goeschl
+      (siegfried.goeschl@it20one.at).
+    </p>
+
+    <p>
+      Fixed error in SMTPRemoteSender introduced in release 1.5.  Server would fail to look up MX entries when
+      not using a default SMTP server.  Thanks to Philipp Hagemeister for tracking this issue down.
+    </p>
+
+    <p class="header">Version 1.6 (11/18/2007)</p>
+
+    <p>
+      Server adds FROM address if message is received without one (unknown@example.com).  Server would
+      accept the messages but throw errors when it tried to deliver them: "Unable to parse the address from the stored file."
+      Thanks to Matthew Lohbihler of Serotonin Software (<a href="http://serotoninsoftware.com">serotoninsoftware.com</a>) for providing this fix.
+    </p>
+
+    <p>
+      Added socket timeout to SMTP processor sockets.  This may address issues with threads getting hung in socket.read calls.
+      Thanks to Matthew Lohbihler of Serotonin Software (<a href="http://serotoninsoftware.com">serotoninsoftware.com</a>) for providing this fix.
+    </p>
+
+
+    <p class="header">Version 1.5 (08/05/2007)</p>
+
+    <p>
+      Added the ability to use a default SMTP server that requires authentication.  This
+      can be useful if your ISP prohibits outbound connections on port 25 and forces you
+      to authenticate with their default SMTP server.  Thanks to Matthew Lohbihler of
+      Serotonin Software (<a href="http://serotoninsoftware.com">serotoninsoftware.com</a>) for adding this feature.
+    </p>
+
+    <p class="header">Version 1.4 (07/14/2004)</p>
+
+    <p>
+      Added the option to limit the maximum size for incoming messages.  The
+      configuration parameter is in megabytes (2^10) and defaults to 5.
+    </p>
+
+    <p>
+      Added the ability to specify a port number for the outgoing SMPT servers.
+      Thanks to Philippe Reverdy <a href="http://preverdy.free.fr/preverdy/utilities.html">http://preverdy.free.fr/preverdy/utilities.html</a>
+    </p>
+
+    <p>
+      Added new configuration option to allow relaying based on 'from' email
+      address.  This can be used to easily allow relaying for users
+      based their address or an entire domain.  However, this can be risky
+      and should be used with cation as there is no protection from others
+      'spoofing' the from address to send spam.
+      Thanks to Philippe Reverdy <a href="http://preverdy.free.fr/preverdy/utilities.html">http://preverdy.free.fr/preverdy/utilities.html</a>
+    </p>
+
+    <p class="header">Version 1.3.4 (02/12/2004)</p>
+
+    <p>
+      Added a maximum delivery attempts configuration property before a message fails.
+      Message re-delivery attempt intervals are exponentially increased, up to a maximum
+      interval of 17 hours (1024 minutes).
+      Thanks to <a href="mailto:ootletemp-jes@yahoo.com">Al Lieb</a>.
+      Thanks also to Andrei Makalski.
+    </p>
+
+    <p>
+      Miscellaneous code cleanup:
+      Cleaned up SMTPSender try/catch block.
+      Added logic to handle null result of DNS Lookup.
+      Fixed issue with MX entry sorting.
+      Thanks to <a href="mailto:ootletemp-jes@yahoo.com">Al Lieb</a>.
+    </p>
+
+    <p class="header">Version 1.3.3 (11/24/2003)</p>
+
+    <p>
+      Addes a new header "X-DeliveredTo: admin@mydomain.com" to locally delivered email.
+      This allows users who use multiple local addresses that are delivered to a single
+      mail box to track which user the message was addressed to.
+      Thanks to Shmuel Siegel.
+    </p>
+
+    <p>
+      Fixed error with delivery address resolution. SourceForge Bug #848417
+      The resolution of the local address was also incorrect and has been fixed.
+      Thanks to Shmuel Siegel.
+    </p>
+
+    <p>
+      Fixed handling of blank listenAddress.  Previous version default to the localhost loopback,
+      while the new version uses the simpler ServerSocket constructor.
+      Thanks to Shmuel Siegel.
+    </p>
+
+    <p class="header">Version 1.3.2 (11/18/2003)</p>
+
+    <p>
+      Added test DNS lookup utility and additional site documentation.
+      Thanks to <a href="mailto:mcordova@megasoft.com.ve">Martin Cordova</a>.
+    </p>
+
+    <p>
+        Added ability to bind JES to a single IP address.
+    </p>
+
+    <p>
+      Resolved an issue with the loading of forward addresses from the
+      user.conf file.
+    </p>
+
+    <p>
+      Forward Addresses are now resolved when the message is received.
+      Previously, message delivery to forwarded addresses could be
+      unpredictable of one of the multiple forward addresses failed.
+    </p>
+
+    <p>
+      Added better logging to SMTPSender class
+    </p>
+
+    <p class="header">Version 1.3.1 (10/16/2003)</p>
+
+    <p>
+      The login scheme was broken when the username was saved
+      in the configuration file in uppercase.  This is now fixed.
+    </p>
+
+    <p>
+      Fixed issue that caused a configuration error when the
+      default smtp server property was set.
+    </p>
+
+    <p class="header">Version 1.3 (10/16/2003)</p>
+
+    <p>
+      Utilize Jakarta commons-logging to remove required dependency
+      of Log4j.  Default Logger just writes to the console and also
+      can write to a file.  Log4j is still used by default.  Log4j
+      configuration can now be controlled using log.conf, and updated
+      while the server is running.
+      Support for NT Service!  A batch file has been included in the bin
+      directory to install JES as a NT Service.
+      Thanks to <a href="mailto:ptt@tgbsoftware.com">Paul Thordarson</a>
+    </p>
+
+    <p>
+      Reworked configuration.  Configuration is now split into three
+      files: mail.conf, user.conf, log.conf.  mail.conf and user.conf
+      files will be reloaded automatically after a change while the server
+      is running.  The user.conf file can be edited with plaintext passwords,
+      and they will be hashed and resaved by the server automatically.  This removes
+      the need for the GUI configuration tool, which is now gone.
+      Added support for multiple SMTP Relay rules.  Can now enable POP Before SMTP
+      and IP based relaying individually or together.  IP Based relaying now also
+      supports wildcards.  These settings can be changed without restarting the server.
+    </p>
+
+    <p>
+      The SMTP Server would accept the data command even if the
+      client had not specified any valid recipients.  This has been fixed.
+    </p>
+
+    <p class="header">Version 1.2.4 (09/02/2003)</p>
+
+    <p>
+      Added entry: Delivery.smtprelaytype=NONE to the default configuration
+      file.  This addresses bug: 768385.
+      Thanks to mariusz_grey.
+    </p>
+
+    <p>
+      Upgraded DNSJava library to 1.3.3.
+      Enhanced DNS lookups to order MX Entries.
+    </p>
+
+    <p>
+      Added Socket Timeout for SMTP Delivery.  This addresses bug: 783119.
+    </p>
+
+    <p class="header">Version 1.2.3 (07/01/2003)</p>
+
+    <p>
+      Added client IP address based SMTP Relaying.  Users can now
+      configured a list of IP addresses that are allowed to relay
+      mail. Thanks to Scott Schrecken
+    </p>
+
+    <p>
+      Fixed JavaDoc tags and included JavaDoc comments in release.
+    </p>
+
+    <p>
+      Updated UNIX/Linux shell scripts.
+    </p>
+
+    <p class="header">Version 1.2.2 (2/7/2003)</p>
+
+    <p>
+      Resolved Linux compatability issue.  Incorrect line termination
+      was being used by the println method.
+      Thanks to B0NFiRE (<a href="http://www.fdns.net">www.fdns.net</a>).
+    </p>
+
+    <p class="header">Version 1.2.1 (12/30/2002)</p>
+
+    <p>
+      Integrated newest release of DaughertyLib (2.0) to enable JDK 1.4 Support.
+      Improved implementation of the shutdown() method.
+      Thanks to <a href="mailto:siegfried.goeschl@it20one.at">Siegfried Goeschl</a>.
+    </p>
+
+    <p>
+      Added runtime hook to call the shutdown method when the VM is shutdown
+      (CRTL-C from the command line).
+      Thanks to <a href="mailto:siegfried.goeschl@it20one.at">Siegfried Goeschl</a>.
+    </p>
+
+    <p class="header">Version 1.2 (5/20/2002)</p>
+
+    <p>
+      Resolved NullPointerException in DNSService that occured when no MX Entries
+      were found.
+    </p>
+
+    <p>
+      Now allow empty MAIL FROM: command.
+    </p>
+
+    <p>
+      Resolved case sensitivity in email addresses.
+    </p>
+
+    <p>
+      Added hook to shutdown server gracefully. Static shutdown() method added
+      to Mail class.   However, this feature is not currently exposed. Users may
+      wrap the Mail class to provide their own shutdown triggers.
+    </p>
+
+    <p class="header">Version 1.1 (10/29/2001)</p>
+
+    <p>
+      Fixed Config Tool.  Default User Combo Box did not refresh when a new user is added.
+    </p>
+
+    <p>
+      Fixed SMTP Sender.  Was unable to handle servers with multi-line responses.
+    </p>
+
+    <p>
+      Fixed POP Server. did not respond to RSET command.
+    </p>
+
+    <p>
+      Added implementation of optional UIDL and TOP commands in the POP server.
+    </p>
+
+    <p class="header">Version 1.0 (7/6/2001)</p>
+
+    <p>
+      Initial Release
+    </p>
+
+  </div>

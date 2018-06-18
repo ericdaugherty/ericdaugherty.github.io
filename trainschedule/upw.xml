@@ -1,0 +1,5080 @@
+<?xml version="1.0" encoding="Cp1252"?>
+
+<schedule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ericdaugherty.com/trainschedule/trainschedule.xsd">
+  <route name="Union Pacific West">
+    <inbound>
+      <days>M-F</days>
+      <stops>
+        <stop name="Geneva" />
+        <stop name="West Chicago" />
+        <stop name="Winfield" />
+        <stop name="Wheaton" />
+        <stop name="College Ave" />
+        <stop name="Glen Ellyn" />
+        <stop name="Lombard" />
+        <stop name="Villa Park" />
+        <stop name="Elmhurst" />
+        <stop name="Berkeley" />
+        <stop name="Bellwood" />
+        <stop name="Melrose Park" />
+        <stop name="Maywood" />
+        <stop name="River Forest" />
+        <stop name="Oak Park (Marion St)" />
+        <stop name="Kedzie" />
+        <stop name="Chicago (Madison St)" />
+      </stops>
+      <trains>
+        <train name="10">
+          <stop name="Geneva">
+            <time>5:00</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>5:08</time>
+          </stop>
+          <stop name="Winfield">
+            <time>5:12</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>5:16</time>
+          </stop>
+          <stop name="College Ave">
+            <time>5:19</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>5:22</time>
+          </stop>
+          <stop name="Lombard">
+            <time>5:26</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>5:30</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>5:34</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>5:37</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>5:40</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>5:43</time>
+          </stop>
+          <stop name="Maywood">
+            <time>5:45</time>
+          </stop>
+          <stop name="River Forest">
+            <time>5:47</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>5:51</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>5:59</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>6:10</time>
+          </stop>
+        </train>
+        <train name="12">
+          <stop name="Geneva">
+            <time>-----</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>5:30</time>
+          </stop>
+          <stop name="Winfield">
+            <time>5:34</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>5:38</time>
+          </stop>
+          <stop name="College Ave">
+            <time>5:41</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>5:44</time>
+          </stop>
+          <stop name="Lombard">
+            <time>5:48</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>5:52</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>5:56</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>5:59</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>6:02</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>6:05</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="River Forest">
+            <time>6:08</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>6:12</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>6:28</time>
+          </stop>
+        </train>
+        <train name="14">
+          <stop name="Geneva">
+            <time>5:41</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>5:50</time>
+          </stop>
+          <stop name="Winfield">
+            <time>5:54</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>5:59</time>
+          </stop>
+          <stop name="College Ave">
+            <time>6:02</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>6:05</time>
+          </stop>
+          <stop name="Lombard">
+            <time>6:09</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>6:13</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>6:17</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>-----</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>-----</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="River Forest">
+            <time>6:26</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>6:29</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>6:46</time>
+          </stop>
+        </train>
+        <train name="16">
+          <stop name="Geneva">
+            <time>-----</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>6:05</time>
+          </stop>
+          <stop name="Winfield">
+            <time>-----</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>6:13</time>
+          </stop>
+          <stop name="College Ave">
+            <time>-----</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>6:18</time>
+          </stop>
+          <stop name="Lombard">
+            <time>-----</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>6:28</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>6:31</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>6:34</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>6:37</time>
+          </stop>
+          <stop name="Maywood">
+            <time>6:39</time>
+          </stop>
+          <stop name="River Forest">
+            <time>6:42</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>6:46</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>6:53</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>7:04</time>
+          </stop>
+        </train>
+        <train name="18">
+          <stop name="Geneva">
+            <time>6:05</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>6:14</time>
+          </stop>
+          <stop name="Winfield">
+            <time>6:18</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>6:23</time>
+          </stop>
+          <stop name="College Ave">
+            <time>6:26</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>6:30</time>
+          </stop>
+          <stop name="Lombard">
+            <time>6:35</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>6:39</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>6:43</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>-----</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>-----</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="River Forest">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>6:55</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>7:12</time>
+          </stop>
+        </train>
+        <train name="20">
+          <stop name="Geneva">
+            <time>-----</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>6:25</time>
+          </stop>
+          <stop name="Winfield">
+            <time>6:29</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>6:34</time>
+          </stop>
+          <stop name="College Ave">
+            <time>6:37</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>6:41</time>
+          </stop>
+          <stop name="Lombard">
+            <time>6:46</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>6:50</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>6:54</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>6:57</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>7:00</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>7:04</time>
+          </stop>
+          <stop name="Maywood">
+            <time>7:06</time>
+          </stop>
+          <stop name="River Forest">
+            <time>7:08</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>7:12</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>7:20</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>7:31</time>
+          </stop>
+        </train>
+        <train name="22">
+          <stop name="Geneva">
+            <time>6:37</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>6:46</time>
+          </stop>
+          <stop name="Winfield">
+            <time>-----</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>6:53</time>
+          </stop>
+          <stop name="College Ave">
+            <time>-----</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>6:59</time>
+          </stop>
+          <stop name="Lombard">
+            <time>-----</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>-----</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>-----</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>-----</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="River Forest">
+            <time>7:16</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>-----</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>7:35</time>
+          </stop>
+        </train>
+        <train name="24">
+          <stop name="Geneva">
+            <time>-----</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>6:53</time>
+          </stop>
+          <stop name="Winfield">
+            <time>6:57</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>-----</time>
+          </stop>
+          <stop name="College Ave">
+            <time>7:03</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>-----</time>
+          </stop>
+          <stop name="Lombard">
+            <time>7:10</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>7:15</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>7:20</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>-----</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>-----</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="River Forest">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>7:31</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>7:49</time>
+          </stop>
+        </train>
+        <train name="26">
+          <stop name="Geneva">
+            <time>6:54</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>-----</time>
+          </stop>
+          <stop name="Winfield">
+            <time>-----</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>7:10</time>
+          </stop>
+          <stop name="College Ave">
+            <time>7:13</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>7:17</time>
+          </stop>
+          <stop name="Lombard">
+            <time>7:22</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>7:28</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>-----</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>-----</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="River Forest">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>-----</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>7:55</time>
+          </stop>
+        </train>
+        <train name="28">
+          <stop name="Geneva">
+            <time>-----</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>-----</time>
+          </stop>
+          <stop name="Winfield">
+            <time>-----</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>-----</time>
+          </stop>
+          <stop name="College Ave">
+            <time>-----</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>-----</time>
+          </stop>
+          <stop name="Lombard">
+            <time>-----</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>7:32</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>7:36</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>7:39</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>7:42</time>
+          </stop>
+          <stop name="Maywood">
+            <time>7:45</time>
+          </stop>
+          <stop name="River Forest">
+            <time>7:47</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>7:51</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>8:07</time>
+          </stop>
+        </train>
+        <train name="30">
+          <stop name="Geneva">
+            <time>-----</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>7:19</time>
+          </stop>
+          <stop name="Winfield">
+            <time>7:23</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>7:28</time>
+          </stop>
+          <stop name="College Ave">
+            <time>7:31</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>7:34</time>
+          </stop>
+          <stop name="Lombard">
+            <time>7:40</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>7:44</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>-----</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>-----</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>-----</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="River Forest">
+            <time>7:55</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>7:59</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>8:15</time>
+          </stop>
+        </train>
+        <train name="32">
+          <stop name="Geneva">
+            <time>7:25</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>7:34</time>
+          </stop>
+          <stop name="Winfield">
+            <time>-----</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>7:42</time>
+          </stop>
+          <stop name="College Ave">
+            <time>-----</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>7:47</time>
+          </stop>
+          <stop name="Lombard">
+            <time>-----</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>7:57</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>-----</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>-----</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="River Forest">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>-----</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>8:23</time>
+          </stop>
+        </train>
+        <train name="34">
+          <stop name="Geneva">
+            <time>-----</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>-----</time>
+          </stop>
+          <stop name="Winfield">
+            <time>-----</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>-----</time>
+          </stop>
+          <stop name="College Ave">
+            <time>-----</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>-----</time>
+          </stop>
+          <stop name="Lombard">
+            <time>-----</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>8:01</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>8:05</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>8:08</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>8:11</time>
+          </stop>
+          <stop name="Maywood">
+            <time>8:14</time>
+          </stop>
+          <stop name="River Forest">
+            <time>8:16</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>8:20</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>8:27</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>8:37</time>
+          </stop>
+        </train>
+        <train name="36">
+          <stop name="Geneva">
+            <time>7:40</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>7:49</time>
+          </stop>
+          <stop name="Winfield">
+            <time>7:53</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>7:58</time>
+          </stop>
+          <stop name="College Ave">
+            <time>8:01</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>8:05</time>
+          </stop>
+          <stop name="Lombard">
+            <time>8:10</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>8:14</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>8:18</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>-----</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>-----</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="River Forest">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>-----</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>8:44</time>
+          </stop>
+        </train>
+        <train name="38">
+          <stop name="Geneva">
+            <time>8:05</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>8:13</time>
+          </stop>
+          <stop name="Winfield">
+            <time>8:17</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>8:22</time>
+          </stop>
+          <stop name="College Ave">
+            <time>8:25</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>8:29</time>
+          </stop>
+          <stop name="Lombard">
+            <time>8:33</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>8:37</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>8:41</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>8:44</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>8:47</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>8:50</time>
+          </stop>
+          <stop name="Maywood">
+            <time>8:52</time>
+          </stop>
+          <stop name="River Forest">
+            <time>8:54</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>8:57</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>9:05</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>9:15</time>
+          </stop>
+        </train>
+        <train name="42">
+          <stop name="Geneva">
+            <time>9:05</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>9:13</time>
+          </stop>
+          <stop name="Winfield">
+            <time>9:17</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>9:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>9:24</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>9:27</time>
+          </stop>
+          <stop name="Lombard">
+            <time>9:31</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>9:35</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>9:39</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>9:42</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>9:45</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>9:48</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="River Forest">
+            <time>9:51</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>9:54</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>10:02</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>10:13</time>
+          </stop>
+        </train>
+        <train name="44">
+          <stop name="Geneva">
+            <time>10:05</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>10:13</time>
+          </stop>
+          <stop name="Winfield">
+            <time>10:17</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>10:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>10:24</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>10:27</time>
+          </stop>
+          <stop name="Lombard">
+            <time>10:31</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>10:35</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>10:39</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>10:42</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>10:45</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Maywood">
+            <time>10:49</time>
+          </stop>
+          <stop name="River Forest">
+            <time>10:51</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>10:54</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>11:02</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>11:13</time>
+          </stop>
+        </train>
+        <train name="48">
+          <stop name="Geneva">
+            <time>12:05</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>12:13</time>
+          </stop>
+          <stop name="Winfield">
+            <time>12:17</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>12:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>12:24</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>12:27</time>
+          </stop>
+          <stop name="Lombard">
+            <time>12:31</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>12:35</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>12:39</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>12:42</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>12:45</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>12:48</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="River Forest">
+            <time>12:51</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>12:54</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>13:12</time>
+          </stop>
+        </train>
+        <train name="50">
+          <stop name="Geneva">
+            <time>-----</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>13:13</time>
+          </stop>
+          <stop name="Winfield">
+            <time>13:17</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>13:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>13:24</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>13:27</time>
+          </stop>
+          <stop name="Lombard">
+            <time>13:31</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>13:35</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>13:39</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>13:42</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>13:45</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Maywood">
+            <time>13:49</time>
+          </stop>
+          <stop name="River Forest">
+            <time>13:51</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>13:54</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>14:02</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>14:12</time>
+          </stop>
+        </train>
+        <train name="52">
+          <stop name="Geneva">
+            <time>14:05</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>14:13</time>
+          </stop>
+          <stop name="Winfield">
+            <time>14:17</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>14:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>14:24</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>14:27</time>
+          </stop>
+          <stop name="Lombard">
+            <time>14:31</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>14:35</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>14:39</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>14:42</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>14:45</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>14:48</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="River Forest">
+            <time>14:51</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>14:54</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>15:12</time>
+          </stop>
+        </train>
+        <train name="54">
+          <stop name="Geneva">
+            <time>-----</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>15:13</time>
+          </stop>
+          <stop name="Winfield">
+            <time>15:17</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>15:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>15:24</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>15:27</time>
+          </stop>
+          <stop name="Lombard">
+            <time>15:31</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>15:35</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>15:39</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>15:42</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>15:45</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Maywood">
+            <time>15:49</time>
+          </stop>
+          <stop name="River Forest">
+            <time>15:51</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>15:54</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>16:02</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>16:12</time>
+          </stop>
+        </train>
+        <train name="56">
+          <stop name="Geneva">
+            <time>16:05</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>16:13</time>
+          </stop>
+          <stop name="Winfield">
+            <time>16:17</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>16:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>16:24</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>16:27</time>
+          </stop>
+          <stop name="Lombard">
+            <time>16:31</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>16:35</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>16:39</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>16:42</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>16:45</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>16:48</time>
+          </stop>
+          <stop name="Maywood">
+            <time>16:50</time>
+          </stop>
+          <stop name="River Forest">
+            <time>16:52</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>16:55</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>17:03</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>17:14</time>
+          </stop>
+        </train>
+        <train name="58">
+          <stop name="Geneva">
+            <time>17:05</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>17:13</time>
+          </stop>
+          <stop name="Winfield">
+            <time>17:17</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>17:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>17:24</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>17:27</time>
+          </stop>
+          <stop name="Lombard">
+            <time>17:31</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>17:35</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>17:39</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>17:42</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>17:45</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>17:49</time>
+          </stop>
+          <stop name="Maywood">
+            <time>17:51</time>
+          </stop>
+          <stop name="River Forest">
+            <time>17:53</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>17:57</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>18:05</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>18:15</time>
+          </stop>
+        </train>
+        <train name="60">
+          <stop name="Geneva">
+            <time>-----</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>-----</time>
+          </stop>
+          <stop name="Winfield">
+            <time>-----</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>-----</time>
+          </stop>
+          <stop name="College Ave">
+            <time>-----</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>-----</time>
+          </stop>
+          <stop name="Lombard">
+            <time>-----</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>18:26</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>-----</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>-----</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="River Forest">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>18:36</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>18:52</time>
+          </stop>
+        </train>
+        <train name="62">
+          <stop name="Geneva">
+            <time>18:05</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>18:13</time>
+          </stop>
+          <stop name="Winfield">
+            <time>18:17</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>18:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>18:24</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>18:27</time>
+          </stop>
+          <stop name="Lombard">
+            <time>18:31</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>18:35</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>18:39</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>-----</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>18:44</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>18:48</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="River Forest">
+            <time>18:51</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>18:55</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>19:13</time>
+          </stop>
+        </train>
+        <train name="64">
+          <stop name="Geneva">
+            <time>-----</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>19:13</time>
+          </stop>
+          <stop name="Winfield">
+            <time>19:17</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>19:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>19:24</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>19:27</time>
+          </stop>
+          <stop name="Lombard">
+            <time>19:31</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>19:35</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>19:39</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>19:42</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>-----</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Maywood">
+            <time>19:49</time>
+          </stop>
+          <stop name="River Forest">
+            <time>19:51</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>19:55</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>20:13</time>
+          </stop>
+        </train>
+        <train name="66">
+          <stop name="Geneva">
+            <time>20:05</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>20:13</time>
+          </stop>
+          <stop name="Winfield">
+            <time>20:17</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>20:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>20:24</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>20:27</time>
+          </stop>
+          <stop name="Lombard">
+            <time>20:31</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>20:35</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>20:39</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>-----</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>20:44</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>20:47</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="River Forest">
+            <time>20:50</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>20:53</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>21:11</time>
+          </stop>
+        </train>
+        <train name="68">
+          <stop name="Geneva">
+            <time>21:05</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>21:13</time>
+          </stop>
+          <stop name="Winfield">
+            <time>21:17</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>21:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>21:24</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>21:27</time>
+          </stop>
+          <stop name="Lombard">
+            <time>21:31</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>21:35</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>21:39</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>21:42</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>-----</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Maywood">
+            <time>21:48</time>
+          </stop>
+          <stop name="River Forest">
+            <time>21:50</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>21:53</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>22:11</time>
+          </stop>
+        </train>
+        <train name="70">
+          <stop name="Geneva">
+            <time>22:05</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>22:13</time>
+          </stop>
+          <stop name="Winfield">
+            <time>22:17</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>22:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>22:24</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>22:27</time>
+          </stop>
+          <stop name="Lombard">
+            <time>22:31</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>22:35</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>22:39</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>-----</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>22:44</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>22:47</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="River Forest">
+            <time>22:50</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>22:53</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>23:11</time>
+          </stop>
+        </train>
+      </trains>
+    </inbound>
+    <inbound>
+      <days>Sat</days>
+      <stops>
+        <stop name="Geneva" />
+        <stop name="West Chicago" />
+        <stop name="Winfield" />
+        <stop name="Wheaton" />
+        <stop name="College Ave" />
+        <stop name="Glen Ellyn" />
+        <stop name="Lombard" />
+        <stop name="Villa Park" />
+        <stop name="Elmhurst" />
+        <stop name="Berkeley" />
+        <stop name="Bellwood" />
+        <stop name="Melrose Park" />
+        <stop name="Maywood" />
+        <stop name="River Forest" />
+        <stop name="Oak Park (Marion St)" />
+        <stop name="Kedzie" />
+        <stop name="Chicago (Madison St)" />
+      </stops>
+      <trains>
+        <train name="500">
+          <stop name="Geneva">
+            <time>6:05</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>6:13</time>
+          </stop>
+          <stop name="Winfield">
+            <time>6:17</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>6:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>6:24</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>6:27</time>
+          </stop>
+          <stop name="Lombard">
+            <time>6:31</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>6:35</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>6:39</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>6:42</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>6:45</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>6:48</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="River Forest">
+            <time>6:51</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>6:54</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>7:10</time>
+          </stop>
+        </train>
+        <train name="502">
+          <stop name="Geneva">
+            <time>7:05</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>7:13</time>
+          </stop>
+          <stop name="Winfield">
+            <time>7:17</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>7:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>7:24</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>7:27</time>
+          </stop>
+          <stop name="Lombard">
+            <time>7:31</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>7:35</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>7:39</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>7:42</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>7:45</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Maywood">
+            <time>7:49</time>
+          </stop>
+          <stop name="River Forest">
+            <time>7:51</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>7:54</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>8:10</time>
+          </stop>
+        </train>
+        <train name="504">
+          <stop name="Geneva">
+            <time>8:05</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>8:13</time>
+          </stop>
+          <stop name="Winfield">
+            <time>8:17</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>8:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>8:24</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>8:27</time>
+          </stop>
+          <stop name="Lombard">
+            <time>8:31</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>8:35</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>8:39</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>8:42</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>8:45</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>8:48</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="River Forest">
+            <time>8:51</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>8:54</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>9:10</time>
+          </stop>
+        </train>
+        <train name="506">
+          <stop name="Geneva">
+            <time>10:05</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>10:13</time>
+          </stop>
+          <stop name="Winfield">
+            <time>10:17</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>10:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>10:24</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>10:27</time>
+          </stop>
+          <stop name="Lombard">
+            <time>10:31</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>10:35</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>10:39</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>10:42</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>10:45</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Maywood">
+            <time>10:49</time>
+          </stop>
+          <stop name="River Forest">
+            <time>10:51</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>10:54</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>11:10</time>
+          </stop>
+        </train>
+        <train name="48">
+          <stop name="Geneva">
+            <time>12:05</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>12:13</time>
+          </stop>
+          <stop name="Winfield">
+            <time>12:17</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>12:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>12:24</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>12:27</time>
+          </stop>
+          <stop name="Lombard">
+            <time>12:31</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>12:35</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>12:39</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>12:42</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>12:45</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>12:48</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="River Forest">
+            <time>12:51</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>12:54</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>13:10</time>
+          </stop>
+        </train>
+        <train name="508">
+          <stop name="Geneva">
+            <time>14:05</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>14:13</time>
+          </stop>
+          <stop name="Winfield">
+            <time>14:17</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>14:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>14:24</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>14:27</time>
+          </stop>
+          <stop name="Lombard">
+            <time>14:31</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>14:35</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>14:39</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>14:42</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>14:45</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Maywood">
+            <time>14:49</time>
+          </stop>
+          <stop name="River Forest">
+            <time>14:51</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>14:54</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>15:10</time>
+          </stop>
+        </train>
+        <train name="510">
+          <stop name="Geneva">
+            <time>16:05</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>16:13</time>
+          </stop>
+          <stop name="Winfield">
+            <time>16:17</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>16:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>16:24</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>16:27</time>
+          </stop>
+          <stop name="Lombard">
+            <time>16:31</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>16:35</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>16:39</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>16:42</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>16:45</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>16:48</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="River Forest">
+            <time>16:51</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>16:54</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>17:10</time>
+          </stop>
+        </train>
+        <train name="512">
+          <stop name="Geneva">
+            <time>18:05</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>18:13</time>
+          </stop>
+          <stop name="Winfield">
+            <time>18:17</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>18:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>18:24</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>18:27</time>
+          </stop>
+          <stop name="Lombard">
+            <time>18:31</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>18:35</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>18:39</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>18:42</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>18:45</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Maywood">
+            <time>18:49</time>
+          </stop>
+          <stop name="River Forest">
+            <time>18:51</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>18:54</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>19:10</time>
+          </stop>
+        </train>
+        <train name="514">
+          <stop name="Geneva">
+            <time>20:05</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>20:13</time>
+          </stop>
+          <stop name="Winfield">
+            <time>20:17</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>20:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>20:24</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>20:27</time>
+          </stop>
+          <stop name="Lombard">
+            <time>20:31</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>20:35</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>20:39</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>20:42</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>20:45</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>20:48</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="River Forest">
+            <time>20:51</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>20:54</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>21:10</time>
+          </stop>
+        </train>
+        <train name="516">
+          <stop name="Geneva">
+            <time>22:05</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>22:13</time>
+          </stop>
+          <stop name="Winfield">
+            <time>22:17</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>22:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>22:24</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>22:27</time>
+          </stop>
+          <stop name="Lombard">
+            <time>22:31</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>22:35</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>22:39</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>22:42</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>22:45</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Maywood">
+            <time>22:49</time>
+          </stop>
+          <stop name="River Forest">
+            <time>22:51</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>22:54</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>23:10</time>
+          </stop>
+        </train>
+      </trains>
+    </inbound>
+    <inbound>
+      <days>Sun</days>
+      <stops>
+        <stop name="Geneva" />
+        <stop name="West Chicago" />
+        <stop name="Winfield" />
+        <stop name="Wheaton" />
+        <stop name="College Ave" />
+        <stop name="Glen Ellyn" />
+        <stop name="Lombard" />
+        <stop name="Villa Park" />
+        <stop name="Elmhurst" />
+        <stop name="Berkeley" />
+        <stop name="Bellwood" />
+        <stop name="Melrose Park" />
+        <stop name="Maywood" />
+        <stop name="River Forest" />
+        <stop name="Oak Park (Marion St)" />
+        <stop name="Kedzie" />
+        <stop name="Chicago (Madison St)" />
+      </stops>
+      <trains>
+        <train name="518">
+          <stop name="Geneva">
+            <time>-----</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>7:13</time>
+          </stop>
+          <stop name="Winfield">
+            <time>7:17</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>7:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>7:24</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>7:27</time>
+          </stop>
+          <stop name="Lombard">
+            <time>7:31</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>7:35</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>7:39</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>7:42</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>7:45</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="River Forest">
+            <time>7:50</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>7:53</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>8:09</time>
+          </stop>
+        </train>
+        <train name="520">
+          <stop name="Geneva">
+            <time>9:05</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>9:13</time>
+          </stop>
+          <stop name="Winfield">
+            <time>9:17</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>9:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>9:24</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>9:27</time>
+          </stop>
+          <stop name="Lombard">
+            <time>9:31</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>9:35</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>9:39</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>9:42</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>9:45</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="River Forest">
+            <time>9:50</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>9:54</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>10:13</time>
+          </stop>
+        </train>
+        <train name="522">
+          <stop name="Geneva">
+            <time>-----</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>11:13</time>
+          </stop>
+          <stop name="Winfield">
+            <time>11:17</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>11:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>11:24</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>11:27</time>
+          </stop>
+          <stop name="Lombard">
+            <time>11:31</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>11:35</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>11:39</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>11:42</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>11:45</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="River Forest">
+            <time>11:50</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>11:53</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>12:09</time>
+          </stop>
+        </train>
+        <train name="524">
+          <stop name="Geneva">
+            <time>14:05</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>14:13</time>
+          </stop>
+          <stop name="Winfield">
+            <time>14:17</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>14:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>14:24</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>14:27</time>
+          </stop>
+          <stop name="Lombard">
+            <time>14:31</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>14:35</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>14:39</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>14:42</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>14:45</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="River Forest">
+            <time>14:50</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>14:53</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>15:09</time>
+          </stop>
+        </train>
+        <train name="526">
+          <stop name="Geneva">
+            <time>17:05</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>17:13</time>
+          </stop>
+          <stop name="Winfield">
+            <time>17:17</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>17:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>17:24</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>17:27</time>
+          </stop>
+          <stop name="Lombard">
+            <time>17:31</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>17:35</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>17:39</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>17:42</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>17:45</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="River Forest">
+            <time>17:50</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>17:53</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>18:09</time>
+          </stop>
+        </train>
+        <train name="528">
+          <stop name="Geneva">
+            <time>19:05</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>19:13</time>
+          </stop>
+          <stop name="Winfield">
+            <time>19:17</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>19:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>19:24</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>19:27</time>
+          </stop>
+          <stop name="Lombard">
+            <time>19:31</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>19:35</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>19:39</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>19:42</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>19:45</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="River Forest">
+            <time>19:50</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>19:53</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>20:09</time>
+          </stop>
+        </train>
+        <train name="530">
+          <stop name="Geneva">
+            <time>22:05</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>22:13</time>
+          </stop>
+          <stop name="Winfield">
+            <time>22:17</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>22:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>22:24</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>22:27</time>
+          </stop>
+          <stop name="Lombard">
+            <time>22:31</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>22:35</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>22:39</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>22:42</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>22:45</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="River Forest">
+            <time>22:50</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>22:53</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Chicago (Madison St)">
+            <time>23:09</time>
+          </stop>
+        </train>
+      </trains>
+    </inbound>
+    <outbound>
+      <days>M-F</days>
+      <stops>
+        <stop name="Chicago (Madison St)" />
+        <stop name="Kedzie" />
+        <stop name="Oak Park (Marion St)" />
+        <stop name="River Forest" />
+        <stop name="Maywood" />
+        <stop name="Melrose Park" />
+        <stop name="Bellwood" />
+        <stop name="Berkeley" />
+        <stop name="Elmhurst" />
+        <stop name="Villa Park" />
+        <stop name="Lombard" />
+        <stop name="Glen Ellyn" />
+        <stop name="College Ave" />
+        <stop name="Wheaton" />
+        <stop name="Winfield" />
+        <stop name="West Chicago" />
+        <stop name="Geneva" />
+      </stops>
+      <trains>
+        <train name="13">
+          <stop name="Chicago (Madison St)">
+            <time>6:20</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>6:29</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>6:36</time>
+          </stop>
+          <stop name="River Forest">
+            <time>6:38</time>
+          </stop>
+          <stop name="Maywood">
+            <time>6:40</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>6:42</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>6:45</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>6:48</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>6:51</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>6:55</time>
+          </stop>
+          <stop name="Lombard">
+            <time>6:59</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>7:03</time>
+          </stop>
+          <stop name="College Ave">
+            <time>7:06</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>7:09</time>
+          </stop>
+          <stop name="Winfield">
+            <time>7:13</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>7:17</time>
+          </stop>
+          <stop name="Geneva">
+            <time>7:30</time>
+          </stop>
+        </train>
+        <train name="15">
+          <stop name="Chicago (Madison St)">
+            <time>6:50</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>6:59</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>7:06</time>
+          </stop>
+          <stop name="River Forest">
+            <time>7:08</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>-----</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>-----</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>7:16</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>7:20</time>
+          </stop>
+          <stop name="Lombard">
+            <time>7:24</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>7:28</time>
+          </stop>
+          <stop name="College Ave">
+            <time>7:31</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>7:34</time>
+          </stop>
+          <stop name="Winfield">
+            <time>7:38</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>7:42</time>
+          </stop>
+          <stop name="Geneva">
+            <time>7:53</time>
+          </stop>
+        </train>
+        <train name="17">
+          <stop name="Chicago (Madison St)">
+            <time>6:57</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>-----</time>
+          </stop>
+          <stop name="River Forest">
+            <time>-----</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>-----</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>-----</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>7:22</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Lombard">
+            <time>-----</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>-----</time>
+          </stop>
+          <stop name="College Ave">
+            <time>-----</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>-----</time>
+          </stop>
+          <stop name="Winfield">
+            <time>-----</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>-----</time>
+          </stop>
+          <stop name="Geneva">
+            <time>-----</time>
+          </stop>
+        </train>
+        <train name="19">
+          <stop name="Chicago (Madison St)">
+            <time>7:15</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>7:24</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>7:32</time>
+          </stop>
+          <stop name="River Forest">
+            <time>7:35</time>
+          </stop>
+          <stop name="Maywood">
+            <time>7:38</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>7:40</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>7:43</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>7:46</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>7:50</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Lombard">
+            <time>-----</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>-----</time>
+          </stop>
+          <stop name="College Ave">
+            <time>-----</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>-----</time>
+          </stop>
+          <stop name="Winfield">
+            <time>-----</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>-----</time>
+          </stop>
+          <stop name="Geneva">
+            <time>-----</time>
+          </stop>
+        </train>
+        <train name="21">
+          <stop name="Chicago (Madison St)">
+            <time>7:40</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>7:55</time>
+          </stop>
+          <stop name="River Forest">
+            <time>7:57</time>
+          </stop>
+          <stop name="Maywood">
+            <time>7:59</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>8:01</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>8:04</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>8:07</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>8:10</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>8:14</time>
+          </stop>
+          <stop name="Lombard">
+            <time>8:18</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>8:22</time>
+          </stop>
+          <stop name="College Ave">
+            <time>8:25</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>8:28</time>
+          </stop>
+          <stop name="Winfield">
+            <time>8:32</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>8:36</time>
+          </stop>
+          <stop name="Geneva">
+            <time>8:47</time>
+          </stop>
+        </train>
+        <train name="25">
+          <stop name="Chicago (Madison St)">
+            <time>8:40</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>8:49</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>8:56</time>
+          </stop>
+          <stop name="River Forest">
+            <time>8:58</time>
+          </stop>
+          <stop name="Maywood">
+            <time>9:00</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>9:02</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>9:05</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>9:08</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>9:11</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>9:15</time>
+          </stop>
+          <stop name="Lombard">
+            <time>9:19</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>9:23</time>
+          </stop>
+          <stop name="College Ave">
+            <time>9:26</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>9:29</time>
+          </stop>
+          <stop name="Winfield">
+            <time>9:33</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>9:37</time>
+          </stop>
+          <stop name="Geneva">
+            <time>9:48</time>
+          </stop>
+        </train>
+        <train name="29">
+          <stop name="Chicago (Madison St)">
+            <time>10:40</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>10:55</time>
+          </stop>
+          <stop name="River Forest">
+            <time>10:57</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>11:00</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>11:03</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>11:06</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>11:09</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>11:13</time>
+          </stop>
+          <stop name="Lombard">
+            <time>11:17</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>11:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>11:24</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>11:27</time>
+          </stop>
+          <stop name="Winfield">
+            <time>11:31</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>11:35</time>
+          </stop>
+          <stop name="Geneva">
+            <time>11:46</time>
+          </stop>
+        </train>
+        <train name="31">
+          <stop name="Chicago (Madison St)">
+            <time>11:40</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>11:49</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>11:56</time>
+          </stop>
+          <stop name="River Forest">
+            <time>11:58</time>
+          </stop>
+          <stop name="Maywood">
+            <time>12:00</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>12:04</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>12:07</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>12:10</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>12:14</time>
+          </stop>
+          <stop name="Lombard">
+            <time>12:18</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>12:22</time>
+          </stop>
+          <stop name="College Ave">
+            <time>12:25</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>12:28</time>
+          </stop>
+          <stop name="Winfield">
+            <time>12:32</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>12:39</time>
+          </stop>
+          <stop name="Geneva">
+            <time>-----</time>
+          </stop>
+        </train>
+        <train name="33">
+          <stop name="Chicago (Madison St)">
+            <time>12:40</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>12:55</time>
+          </stop>
+          <stop name="River Forest">
+            <time>12:57</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>13:00</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>13:03</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>13:06</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>13:09</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>13:13</time>
+          </stop>
+          <stop name="Lombard">
+            <time>13:17</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>13:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>13:24</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>13:27</time>
+          </stop>
+          <stop name="Winfield">
+            <time>13:31</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>13:35</time>
+          </stop>
+          <stop name="Geneva">
+            <time>13:46</time>
+          </stop>
+        </train>
+        <train name="35">
+          <stop name="Chicago (Madison St)">
+            <time>13:40</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>13:49</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>13:56</time>
+          </stop>
+          <stop name="River Forest">
+            <time>13:58</time>
+          </stop>
+          <stop name="Maywood">
+            <time>14:00</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>14:04</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>14:07</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>14:10</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>14:14</time>
+          </stop>
+          <stop name="Lombard">
+            <time>14:18</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>14:22</time>
+          </stop>
+          <stop name="College Ave">
+            <time>14:25</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>14:28</time>
+          </stop>
+          <stop name="Winfield">
+            <time>14:32</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>14:39</time>
+          </stop>
+          <stop name="Geneva">
+            <time>-----</time>
+          </stop>
+        </train>
+        <train name="37">
+          <stop name="Chicago (Madison St)">
+            <time>14:40</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>14:55</time>
+          </stop>
+          <stop name="River Forest">
+            <time>14:58</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>15:03</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>15:06</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>15:09</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>15:12</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>15:16</time>
+          </stop>
+          <stop name="Lombard">
+            <time>15:21</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>15:25</time>
+          </stop>
+          <stop name="College Ave">
+            <time>15:29</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>15:32</time>
+          </stop>
+          <stop name="Winfield">
+            <time>15:36</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>15:41</time>
+          </stop>
+          <stop name="Geneva">
+            <time>15:52</time>
+          </stop>
+        </train>
+        <train name="39">
+          <stop name="Chicago (Madison St)">
+            <time>15:40</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>15:55</time>
+          </stop>
+          <stop name="River Forest">
+            <time>15:58</time>
+          </stop>
+          <stop name="Maywood">
+            <time>16:01</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>16:03</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>16:06</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>16:09</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>16:13</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>16:16</time>
+          </stop>
+          <stop name="Lombard">
+            <time>16:21</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>16:25</time>
+          </stop>
+          <stop name="College Ave">
+            <time>16:29</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>16:32</time>
+          </stop>
+          <stop name="Winfield">
+            <time>16:36</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>16:41</time>
+          </stop>
+          <stop name="Geneva">
+            <time>16:52</time>
+          </stop>
+        </train>
+        <train name="41">
+          <stop name="Chicago (Madison St)">
+            <time>16:14</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>-----</time>
+          </stop>
+          <stop name="River Forest">
+            <time>-----</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>-----</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>-----</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>16:38</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>16:42</time>
+          </stop>
+          <stop name="Lombard">
+            <time>16:47</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>16:52</time>
+          </stop>
+          <stop name="College Ave">
+            <time>16:56</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>17:00</time>
+          </stop>
+          <stop name="Winfield">
+            <time>17:04</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>17:09</time>
+          </stop>
+          <stop name="Geneva">
+            <time>17:21</time>
+          </stop>
+        </train>
+        <train name="43">
+          <stop name="Chicago (Madison St)">
+            <time>16:20</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>16:36</time>
+          </stop>
+          <stop name="River Forest">
+            <time>16:39</time>
+          </stop>
+          <stop name="Maywood">
+            <time>16:42</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>16:44</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>16:47</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>16:50</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>16:54</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Lombard">
+            <time>-----</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>-----</time>
+          </stop>
+          <stop name="College Ave">
+            <time>-----</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>-----</time>
+          </stop>
+          <stop name="Winfield">
+            <time>-----</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>-----</time>
+          </stop>
+          <stop name="Geneva">
+            <time>-----</time>
+          </stop>
+        </train>
+        <train name="45">
+          <stop name="Chicago (Madison St)">
+            <time>16:38</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>16:47</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>16:55</time>
+          </stop>
+          <stop name="River Forest">
+            <time>16:58</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>-----</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>-----</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>17:08</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>17:12</time>
+          </stop>
+          <stop name="Lombard">
+            <time>17:17</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>17:22</time>
+          </stop>
+          <stop name="College Ave">
+            <time>17:25</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>17:30</time>
+          </stop>
+          <stop name="Winfield">
+            <time>17:34</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>17:42</time>
+          </stop>
+          <stop name="Geneva">
+            <time>-----</time>
+          </stop>
+        </train>
+        <train name="47">
+          <stop name="Chicago (Madison St)">
+            <time>17:04</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>-----</time>
+          </stop>
+          <stop name="River Forest">
+            <time>-----</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>-----</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>-----</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>-----</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Lombard">
+            <time>-----</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>-----</time>
+          </stop>
+          <stop name="College Ave">
+            <time>-----</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>17:38</time>
+          </stop>
+          <stop name="Winfield">
+            <time>17:43</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>-----</time>
+          </stop>
+          <stop name="Geneva">
+            <time>17:58</time>
+          </stop>
+        </train>
+        <train name="49">
+          <stop name="Chicago (Madison St)">
+            <time>17:09</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>-----</time>
+          </stop>
+          <stop name="River Forest">
+            <time>-----</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>-----</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>-----</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>-----</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Lombard">
+            <time>17:38</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>17:43</time>
+          </stop>
+          <stop name="College Ave">
+            <time>17:47</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>-----</time>
+          </stop>
+          <stop name="Winfield">
+            <time>-----</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>17:59</time>
+          </stop>
+          <stop name="Geneva">
+            <time>-----</time>
+          </stop>
+        </train>
+        <train name="51">
+          <stop name="Chicago (Madison St)">
+            <time>17:13</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>17:29</time>
+          </stop>
+          <stop name="River Forest">
+            <time>-----</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>-----</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>-----</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>17:41</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>17:46</time>
+          </stop>
+          <stop name="Lombard">
+            <time>-----</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>17:53</time>
+          </stop>
+          <stop name="College Ave">
+            <time>-----</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>17:58</time>
+          </stop>
+          <stop name="Winfield">
+            <time>-----</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>18:08</time>
+          </stop>
+          <stop name="Geneva">
+            <time>-----</time>
+          </stop>
+        </train>
+        <train name="53">
+          <stop name="Chicago (Madison St)">
+            <time>17:17</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>17:26</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>17:33</time>
+          </stop>
+          <stop name="River Forest">
+            <time>17:36</time>
+          </stop>
+          <stop name="Maywood">
+            <time>17:38</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>17:40</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>17:44</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>17:47</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>17:51</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Lombard">
+            <time>-----</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>-----</time>
+          </stop>
+          <stop name="College Ave">
+            <time>18:02</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>-----</time>
+          </stop>
+          <stop name="Winfield">
+            <time>18:08</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>-----</time>
+          </stop>
+          <stop name="Geneva">
+            <time>18:23</time>
+          </stop>
+        </train>
+        <train name="55">
+          <stop name="Chicago (Madison St)">
+            <time>17:32</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>17:48</time>
+          </stop>
+          <stop name="River Forest">
+            <time>-----</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>-----</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>-----</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>17:58</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Lombard">
+            <time>-----</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>18:08</time>
+          </stop>
+          <stop name="College Ave">
+            <time>-----</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>18:14</time>
+          </stop>
+          <stop name="Winfield">
+            <time>-----</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>18:22</time>
+          </stop>
+          <stop name="Geneva">
+            <time>18:33</time>
+          </stop>
+        </train>
+        <train name="57">
+          <stop name="Chicago (Madison St)">
+            <time>17:40</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>-----</time>
+          </stop>
+          <stop name="River Forest">
+            <time>-----</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>-----</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>-----</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>18:04</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>18:08</time>
+          </stop>
+          <stop name="Lombard">
+            <time>18:12</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>18:18</time>
+          </stop>
+          <stop name="College Ave">
+            <time>18:21</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>18:25</time>
+          </stop>
+          <stop name="Winfield">
+            <time>18:30</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>18:36</time>
+          </stop>
+          <stop name="Geneva">
+            <time>-----</time>
+          </stop>
+        </train>
+        <train name="59">
+          <stop name="Chicago (Madison St)">
+            <time>17:44</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>17:53</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>18:01</time>
+          </stop>
+          <stop name="River Forest">
+            <time>18:04</time>
+          </stop>
+          <stop name="Maywood">
+            <time>18:07</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>18:09</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>18:12</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>18:15</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>18:19</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Lombard">
+            <time>-----</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>-----</time>
+          </stop>
+          <stop name="College Ave">
+            <time>-----</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>-----</time>
+          </stop>
+          <stop name="Winfield">
+            <time>-----</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>-----</time>
+          </stop>
+          <stop name="Geneva">
+            <time>-----</time>
+          </stop>
+        </train>
+        <train name="61">
+          <stop name="Chicago (Madison St)">
+            <time>18:10</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>18:26</time>
+          </stop>
+          <stop name="River Forest">
+            <time>-----</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>-----</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>-----</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>18:37</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>18:41</time>
+          </stop>
+          <stop name="Lombard">
+            <time>18:45</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>18:50</time>
+          </stop>
+          <stop name="College Ave">
+            <time>18:53</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>18:57</time>
+          </stop>
+          <stop name="Winfield">
+            <time>19:01</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>19:05</time>
+          </stop>
+          <stop name="Geneva">
+            <time>19:16</time>
+          </stop>
+        </train>
+        <train name="63">
+          <stop name="Chicago (Madison St)">
+            <time>18:40</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>18:55</time>
+          </stop>
+          <stop name="River Forest">
+            <time>18:57</time>
+          </stop>
+          <stop name="Maywood">
+            <time>19:00</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>19:02</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>19:05</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>19:08</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>19:11</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>19:15</time>
+          </stop>
+          <stop name="Lombard">
+            <time>19:19</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>19:23</time>
+          </stop>
+          <stop name="College Ave">
+            <time>19:26</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>19:29</time>
+          </stop>
+          <stop name="Winfield">
+            <time>19:33</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>19:37</time>
+          </stop>
+          <stop name="Geneva">
+            <time>19:48</time>
+          </stop>
+        </train>
+        <train name="65">
+          <stop name="Chicago (Madison St)">
+            <time>19:40</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>19:55</time>
+          </stop>
+          <stop name="River Forest">
+            <time>19:57</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>20:00</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>20:03</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>20:06</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>20:09</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>20:13</time>
+          </stop>
+          <stop name="Lombard">
+            <time>20:17</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>20:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>20:24</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>20:27</time>
+          </stop>
+          <stop name="Winfield">
+            <time>20:31</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>20:35</time>
+          </stop>
+          <stop name="Geneva">
+            <time>20:46</time>
+          </stop>
+        </train>
+        <train name="67">
+          <stop name="Chicago (Madison St)">
+            <time>20:40</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>20:55</time>
+          </stop>
+          <stop name="River Forest">
+            <time>20:57</time>
+          </stop>
+          <stop name="Maywood">
+            <time>20:59</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>21:03</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>21:06</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>21:09</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>21:13</time>
+          </stop>
+          <stop name="Lombard">
+            <time>21:17</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>21:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>21:24</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>21:27</time>
+          </stop>
+          <stop name="Winfield">
+            <time>21:31</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>21:35</time>
+          </stop>
+          <stop name="Geneva">
+            <time>21:46</time>
+          </stop>
+        </train>
+        <train name="69">
+          <stop name="Chicago (Madison St)">
+            <time>21:40</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>21:56</time>
+          </stop>
+          <stop name="River Forest">
+            <time>21:58</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>22:01</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>22:04</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>22:07</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>22:11</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>22:15</time>
+          </stop>
+          <stop name="Lombard">
+            <time>22:19</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>22:24</time>
+          </stop>
+          <stop name="College Ave">
+            <time>22:27</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>22:30</time>
+          </stop>
+          <stop name="Winfield">
+            <time>22:34</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>22:38</time>
+          </stop>
+          <stop name="Geneva">
+            <time>22:50</time>
+          </stop>
+        </train>
+        <train name="71">
+          <stop name="Chicago (Madison St)">
+            <time>22:40</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>22:55</time>
+          </stop>
+          <stop name="River Forest">
+            <time>22:57</time>
+          </stop>
+          <stop name="Maywood">
+            <time>22:59</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>23:03</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>23:06</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>23:09</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>23:13</time>
+          </stop>
+          <stop name="Lombard">
+            <time>23:17</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>23:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>23:24</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>23:27</time>
+          </stop>
+          <stop name="Winfield">
+            <time>23:31</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>23:35</time>
+          </stop>
+          <stop name="Geneva">
+            <time>23:46</time>
+          </stop>
+        </train>
+        <train name="73">
+          <stop name="Chicago (Madison St)">
+            <time>23:40</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>23:55</time>
+          </stop>
+          <stop name="River Forest">
+            <time>23:57</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>12:00</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>12:03</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>12:06</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>12:09</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>12:13</time>
+          </stop>
+          <stop name="Lombard">
+            <time>12:17</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>12:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>12:24</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>12:27</time>
+          </stop>
+          <stop name="Winfield">
+            <time>12:31</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>12:35</time>
+          </stop>
+          <stop name="Geneva">
+            <time>12:46</time>
+          </stop>
+        </train>
+        <train name="11*">
+          <stop name="Chicago (Madison St)">
+            <time>12:40</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>12:55</time>
+          </stop>
+          <stop name="River Forest">
+            <time>12:57</time>
+          </stop>
+          <stop name="Maywood">
+            <time>12:59</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>1:03</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>1:06</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>1:09</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>1:13</time>
+          </stop>
+          <stop name="Lombard">
+            <time>1:17</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>1:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>1:24</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>1:27</time>
+          </stop>
+          <stop name="Winfield">
+            <time>1:31</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>1:37</time>
+          </stop>
+          <stop name="Geneva">
+            <time>-----</time>
+          </stop>
+        </train>
+      </trains>
+    </outbound>
+    <outbound>
+      <days>Sat</days>
+      <stops>
+        <stop name="Chicago (Madison St)" />
+        <stop name="Kedzie" />
+        <stop name="Oak Park (Marion St)" />
+        <stop name="River Forest" />
+        <stop name="Maywood" />
+        <stop name="Melrose Park" />
+        <stop name="Bellwood" />
+        <stop name="Berkeley" />
+        <stop name="Elmhurst" />
+        <stop name="Villa Park" />
+        <stop name="Lombard" />
+        <stop name="Glen Ellyn" />
+        <stop name="College Ave" />
+        <stop name="Wheaton" />
+        <stop name="Winfield" />
+        <stop name="West Chicago" />
+        <stop name="Geneva" />
+      </stops>
+      <trains>
+        <train name="501">
+          <stop name="Chicago (Madison St)">
+            <time>8:40</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>8:55</time>
+          </stop>
+          <stop name="River Forest">
+            <time>8:57</time>
+          </stop>
+          <stop name="Maywood">
+            <time>8:59</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>9:03</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>9:06</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>9:09</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>9:13</time>
+          </stop>
+          <stop name="Lombard">
+            <time>9:17</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>9:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>9:24</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>9:27</time>
+          </stop>
+          <stop name="Winfield">
+            <time>9:31</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>9:35</time>
+          </stop>
+          <stop name="Geneva">
+            <time>9:46</time>
+          </stop>
+        </train>
+        <train name="29">
+          <stop name="Chicago (Madison St)">
+            <time>10:40</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>10:55</time>
+          </stop>
+          <stop name="River Forest">
+            <time>10:57</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>11:00</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>11:03</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>11:06</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>11:09</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>11:13</time>
+          </stop>
+          <stop name="Lombard">
+            <time>11:17</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>11:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>11:24</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>11:27</time>
+          </stop>
+          <stop name="Winfield">
+            <time>11:31</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>11:35</time>
+          </stop>
+          <stop name="Geneva">
+            <time>11:46</time>
+          </stop>
+        </train>
+        <train name="505">
+          <stop name="Chicago (Madison St)">
+            <time>12:40</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>12:55</time>
+          </stop>
+          <stop name="River Forest">
+            <time>12:57</time>
+          </stop>
+          <stop name="Maywood">
+            <time>12:59</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>13:03</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>13:06</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>13:09</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>13:13</time>
+          </stop>
+          <stop name="Lombard">
+            <time>13:17</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>13:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>13:24</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>13:27</time>
+          </stop>
+          <stop name="Winfield">
+            <time>13:31</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>13:35</time>
+          </stop>
+          <stop name="Geneva">
+            <time>13:46</time>
+          </stop>
+        </train>
+        <train name="507">
+          <stop name="Chicago (Madison St)">
+            <time>14:40</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>14:55</time>
+          </stop>
+          <stop name="River Forest">
+            <time>14:57</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>15:00</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>15:03</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>15:06</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>15:09</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>15:13</time>
+          </stop>
+          <stop name="Lombard">
+            <time>15:17</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>15:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>15:24</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>15:27</time>
+          </stop>
+          <stop name="Winfield">
+            <time>15:31</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>15:35</time>
+          </stop>
+          <stop name="Geneva">
+            <time>15:46</time>
+          </stop>
+        </train>
+        <train name="509">
+          <stop name="Chicago (Madison St)">
+            <time>16:40</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>16:55</time>
+          </stop>
+          <stop name="River Forest">
+            <time>16:57</time>
+          </stop>
+          <stop name="Maywood">
+            <time>16:59</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>17:03</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>17:06</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>17:09</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>17:13</time>
+          </stop>
+          <stop name="Lombard">
+            <time>17:17</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>17:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>17:24</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>17:27</time>
+          </stop>
+          <stop name="Winfield">
+            <time>17:31</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>17:35</time>
+          </stop>
+          <stop name="Geneva">
+            <time>17:46</time>
+          </stop>
+        </train>
+        <train name="511">
+          <stop name="Chicago (Madison St)">
+            <time>17:40</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>17:55</time>
+          </stop>
+          <stop name="River Forest">
+            <time>17:57</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>18:00</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>18:03</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>18:06</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>18:09</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>18:13</time>
+          </stop>
+          <stop name="Lombard">
+            <time>18:17</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>18:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>18:24</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>18:27</time>
+          </stop>
+          <stop name="Winfield">
+            <time>18:31</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>18:35</time>
+          </stop>
+          <stop name="Geneva">
+            <time>18:46</time>
+          </stop>
+        </train>
+        <train name="513">
+          <stop name="Chicago (Madison St)">
+            <time>18:40</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>18:55</time>
+          </stop>
+          <stop name="River Forest">
+            <time>18:57</time>
+          </stop>
+          <stop name="Maywood">
+            <time>18:59</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>19:03</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>19:06</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>19:09</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>19:13</time>
+          </stop>
+          <stop name="Lombard">
+            <time>19:17</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>19:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>19:24</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>19:27</time>
+          </stop>
+          <stop name="Winfield">
+            <time>19:31</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>19:35</time>
+          </stop>
+          <stop name="Geneva">
+            <time>19:46</time>
+          </stop>
+        </train>
+        <train name="515">
+          <stop name="Chicago (Madison St)">
+            <time>20:40</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>20:55</time>
+          </stop>
+          <stop name="River Forest">
+            <time>20:57</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>21:00</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>21:03</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>21:06</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>21:09</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>21:13</time>
+          </stop>
+          <stop name="Lombard">
+            <time>21:17</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>21:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>21:24</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>21:27</time>
+          </stop>
+          <stop name="Winfield">
+            <time>21:31</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>21:35</time>
+          </stop>
+          <stop name="Geneva">
+            <time>21:46</time>
+          </stop>
+        </train>
+        <train name="517">
+          <stop name="Chicago (Madison St)">
+            <time>22:40</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>22:55</time>
+          </stop>
+          <stop name="River Forest">
+            <time>22:57</time>
+          </stop>
+          <stop name="Maywood">
+            <time>22:59</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>23:03</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>23:06</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>23:09</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>23:13</time>
+          </stop>
+          <stop name="Lombard">
+            <time>23:17</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>23:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>23:24</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>23:27</time>
+          </stop>
+          <stop name="Winfield">
+            <time>23:31</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>23:35</time>
+          </stop>
+          <stop name="Geneva">
+            <time>23:46</time>
+          </stop>
+        </train>
+        <train name="519">
+          <stop name="Chicago (Madison St)">
+            <time>12:40</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>12:55</time>
+          </stop>
+          <stop name="River Forest">
+            <time>12:57</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>1:00</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>1:03</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>1:06</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>1:09</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>1:13</time>
+          </stop>
+          <stop name="Lombard">
+            <time>1:17</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>1:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>1:24</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>1:27</time>
+          </stop>
+          <stop name="Winfield">
+            <time>1:31</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>1:35</time>
+          </stop>
+          <stop name="Geneva">
+            <time>1:46</time>
+          </stop>
+        </train>
+      </trains>
+    </outbound>
+    <outbound>
+      <days>Sun</days>
+      <stops>
+        <stop name="Chicago (Madison St)" />
+        <stop name="Kedzie" />
+        <stop name="Oak Park (Marion St)" />
+        <stop name="River Forest" />
+        <stop name="Maywood" />
+        <stop name="Melrose Park" />
+        <stop name="Bellwood" />
+        <stop name="Berkeley" />
+        <stop name="Elmhurst" />
+        <stop name="Villa Park" />
+        <stop name="Lombard" />
+        <stop name="Glen Ellyn" />
+        <stop name="College Ave" />
+        <stop name="Wheaton" />
+        <stop name="Winfield" />
+        <stop name="West Chicago" />
+        <stop name="Geneva" />
+      </stops>
+      <trains>
+        <train name="521">
+          <stop name="Chicago (Madison St)">
+            <time>7:40</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>7:55</time>
+          </stop>
+          <stop name="River Forest">
+            <time>7:57</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>8:02</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>8:05</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>8:08</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>8:12</time>
+          </stop>
+          <stop name="Lombard">
+            <time>8:16</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>8:20</time>
+          </stop>
+          <stop name="College Ave">
+            <time>8:23</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>8:26</time>
+          </stop>
+          <stop name="Winfield">
+            <time>8:30</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>8:34</time>
+          </stop>
+          <stop name="Geneva">
+            <time>8:45</time>
+          </stop>
+        </train>
+        <train name="523">
+          <stop name="Chicago (Madison St)">
+            <time>9:40</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>9:55</time>
+          </stop>
+          <stop name="River Forest">
+            <time>9:57</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>10:02</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>10:05</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>10:08</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>10:12</time>
+          </stop>
+          <stop name="Lombard">
+            <time>10:16</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>10:20</time>
+          </stop>
+          <stop name="College Ave">
+            <time>10:23</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>10:26</time>
+          </stop>
+          <stop name="Winfield">
+            <time>10:30</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>10:36</time>
+          </stop>
+          <stop name="Geneva">
+            <time>-----</time>
+          </stop>
+        </train>
+        <train name="525">
+          <stop name="Chicago (Madison St)">
+            <time>12:40</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>12:55</time>
+          </stop>
+          <stop name="River Forest">
+            <time>12:57</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>13:02</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>13:05</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>13:08</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>13:12</time>
+          </stop>
+          <stop name="Lombard">
+            <time>13:16</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>13:20</time>
+          </stop>
+          <stop name="College Ave">
+            <time>13:23</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>13:26</time>
+          </stop>
+          <stop name="Winfield">
+            <time>13:30</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>13:34</time>
+          </stop>
+          <stop name="Geneva">
+            <time>13:45</time>
+          </stop>
+        </train>
+        <train name="527">
+          <stop name="Chicago (Madison St)">
+            <time>15:40</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>15:55</time>
+          </stop>
+          <stop name="River Forest">
+            <time>15:57</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>16:02</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>16:05</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>16:08</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>16:12</time>
+          </stop>
+          <stop name="Lombard">
+            <time>16:16</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>16:20</time>
+          </stop>
+          <stop name="College Ave">
+            <time>16:23</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>16:26</time>
+          </stop>
+          <stop name="Winfield">
+            <time>16:30</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>16:34</time>
+          </stop>
+          <stop name="Geneva">
+            <time>16:45</time>
+          </stop>
+        </train>
+        <train name="529">
+          <stop name="Chicago (Madison St)">
+            <time>17:40</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>17:55</time>
+          </stop>
+          <stop name="River Forest">
+            <time>17:57</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>18:02</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>18:05</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>18:08</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>18:12</time>
+          </stop>
+          <stop name="Lombard">
+            <time>18:16</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>18:20</time>
+          </stop>
+          <stop name="College Ave">
+            <time>18:23</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>18:26</time>
+          </stop>
+          <stop name="Winfield">
+            <time>18:30</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>18:34</time>
+          </stop>
+          <stop name="Geneva">
+            <time>18:45</time>
+          </stop>
+        </train>
+        <train name="531">
+          <stop name="Chicago (Madison St)">
+            <time>20:40</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>20:55</time>
+          </stop>
+          <stop name="River Forest">
+            <time>20:57</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>-----</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>21:02</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>21:05</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>21:08</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>21:12</time>
+          </stop>
+          <stop name="Lombard">
+            <time>21:16</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>21:20</time>
+          </stop>
+          <stop name="College Ave">
+            <time>21:23</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>21:26</time>
+          </stop>
+          <stop name="Winfield">
+            <time>21:30</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>21:34</time>
+          </stop>
+          <stop name="Geneva">
+            <time>21:45</time>
+          </stop>
+        </train>
+        <train name="73">
+          <stop name="Chicago (Madison St)">
+            <time>23:40</time>
+          </stop>
+          <stop name="Kedzie">
+            <time>-----</time>
+          </stop>
+          <stop name="Oak Park (Marion St)">
+            <time>23:55</time>
+          </stop>
+          <stop name="River Forest">
+            <time>23:57</time>
+          </stop>
+          <stop name="Maywood">
+            <time>-----</time>
+          </stop>
+          <stop name="Melrose Park">
+            <time>12:00</time>
+          </stop>
+          <stop name="Bellwood">
+            <time>12:03</time>
+          </stop>
+          <stop name="Berkeley">
+            <time>12:06</time>
+          </stop>
+          <stop name="Elmhurst">
+            <time>12:09</time>
+          </stop>
+          <stop name="Villa Park">
+            <time>12:13</time>
+          </stop>
+          <stop name="Lombard">
+            <time>12:17</time>
+          </stop>
+          <stop name="Glen Ellyn">
+            <time>12:21</time>
+          </stop>
+          <stop name="College Ave">
+            <time>12:24</time>
+          </stop>
+          <stop name="Wheaton">
+            <time>12:27</time>
+          </stop>
+          <stop name="Winfield">
+            <time>12:31</time>
+          </stop>
+          <stop name="West Chicago">
+            <time>12:35</time>
+          </stop>
+          <stop name="Geneva">
+            <time>12:46</time>
+          </stop>
+        </train>
+      </trains>
+    </outbound>
+  </route>
+</schedule>
+

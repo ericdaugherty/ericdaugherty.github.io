@@ -1,0 +1,252 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Todo List</title>
+<link type="text/css" href="skin/page.css" rel="stylesheet">
+<script src="skin/fontsize.js" language="javascript" type="text/javascript"></script><script src="skin/menu.js" language="javascript" type="text/javascript"></script>
+</head>
+<body onload="init()" text="#000000" bgcolor="#FFFFFF">
+<script type="text/javascript">ndeSetTextSize();</script>
+<!--================= start Banner ==================-->
+<table summary="header with logos" width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<!--================= start Ad ==================-->
+<td colspan="2" align="left" bgcolor="#FFFFFF"><script type="text/javascript">
+                  <!--
+                    google_ad_client = "pub-7598410382675064";
+                    google_ad_width = 728;
+                    google_ad_height = 90;
+                    google_ad_format = "728x90_as";
+                    google_ad_channel ="2367087842";
+                    google_color_border = "CFDCED";
+                    google_color_bg = "F7F7F7";
+                    google_color_link = "0000FF";
+                    google_color_url = "008000";
+                    google_color_text = "000000";
+                  // -->
+                </script><script src="http://pagead2.googlesyndication.com/pagead/show_ads.js" type="text/javascript"></script></td>
+<!--================= end Ad ==================-->
+<!--================= start Search ==================--><td valign="top" rowspan="2" bgcolor="#FFFFFF" align="right" class="search"></td>
+<!--================= end Search ==================--><td bgcolor="#FFFFFF" align="right"><img height="10" width="10" alt="" src="skin/images/spacer.gif" class="spacer"><span class="textheader">MyProject</span></td>
+</tr>
+<tr>
+<td valign="bottom" bgcolor="#FFFFFF" colspan="2">
+<!--================= start Tabs ==================-->
+<div class="tab">
+<table summary="tab bar" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td width="8"><img alt="" height="8" width="8" src="skin/images/spacer.gif"></td><td valign="bottom">
+<table summary="selected tab" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="22" class="top-left"></td><td height="22" valign="middle" bgcolor="#a5b6c6"><span class="tab"><b><a class="base-selected" href="index.html">Home</a></b></span></td><td height="22" class="top-right"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<!--================= end Tabs ==================-->
+</td><td bgcolor="#FFFFFF"><img alt="" width="1" height="1" src="skin/images/spacer.gif" class="spacer"></td>
+</tr>
+<tr>
+<td align="right" bgcolor="#a5b6c6" colspan="4"><img width="1" height="10" alt="" src="skin/images/spacer.gif"><span class="datenote"><script type="text/javascript" language="JavaScript"><!--
+                  document.write("Published: " + document.lastModified);
+                  //  --></script></span></td>
+</tr>
+</table>
+<!--================= end Banner ==================-->
+<!--================= start Menu, NavBar, Content ==================-->
+<table summary="page content" bgcolor="#ffffff" width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top">
+<table summary="menu" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<!--================= start left top NavBar ==================-->
+<td rowspan="3" valign="top">
+<table summary="blue line" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td bgcolor="#a5b6c6"><img width="10" height="1" alt="" src="skin/images/spacer.gif" class="spacer"></td>
+</tr>
+<tr>
+<td bgcolor="#CFDCED"><font color="#F7F7F7" size="4" face="Arial, Helvetica, Sans-serif">&nbsp;</font></td>
+</tr>
+<tr>
+<td bgcolor="#FFFFFF"><img width="10" height="1" alt="" src="skin/images/spacer.gif" class="spacer"></td>
+</tr>
+</table>
+</td>
+<!--================= end left top NavBar ==================--><td bgcolor="#a5b6c6"><img width="1" height="1" alt="" src="skin/images/spacer.gif" class="spacer"></td><td valign="bottom" bgcolor="#F7F7F7"><img width="10" height="10" alt="" src="skin/images/spacer.gif" class="spacer"></td><td nowrap="nowrap" valign="top" bgcolor="#F7F7F7">
+<!--================= start Menu items ==================-->
+<div class="menu">
+<div onclick="SwitchMenu('selected')" id="selectedTitle" class="menutitle">SSHWebProxy</div>
+<div id="selected" class="selectedmenuitemgroup">
+<div class="menuitem">
+<a href="index.html">Index</a>
+</div>
+<div class="menuitem">
+<a href="gettingstarted.html">Getting Started</a>
+</div>
+<div class="menuitem">
+<a href="developers.html">Developer Guide</a>
+</div>
+<div class="menuitem">
+<a href="changes.html">Changes</a>
+</div>
+<div class="menupage">
+<div class="menupagetitle">Todo</div>
+<div class="menupageitemgroup">
+<div class="menupageitem">
+<a href="#high">high</a>
+</div>
+<div class="menupageitem">
+<a href="#medium">medium</a>
+</div>
+<div class="menupageitem">
+<a href="#low">low</a>
+</div>
+</div>
+</div>
+<div class="menuitem">
+<a href="license.html">License</a>
+</div>
+<div class="menuitem">
+<a href="projectlinks.html">Other Projects</a>
+</div>
+</div>
+</div>
+<!--================= end Menu items ==================-->
+</td><td valign="bottom" bgcolor="#F7F7F7"><img width="10" height="10" alt="" src="skin/images/spacer.gif" class="spacer"></td><td bgcolor="#a5b6c6"><img width="1" height="1" alt="" src="skin/images/spacer.gif" class="spacer"></td>
+</tr>
+<tr>
+<td colspan="2" rowspan="2" class="bottom-left-thick"></td><td bgcolor="#a5b6c6"><img height="10" width="10" border="0" alt="" src="skin/images/spacer.gif" class="spacer"></td><td colspan="2" rowspan="2" class="bottom-right-thick"></td>
+</tr>
+<tr>
+<td height="1" bgcolor="#a5b6c6"><img width="1" height="1" alt="" src="skin/images/spacer.gif" class="spacer"></td>
+</tr>
+<tr>
+<td height="5"><img width="1" height="5" alt="" src="skin/images/spacer.gif" class="spacer"></td>
+</tr>
+</table>
+</td><td valign="top" width="100%">
+<table summary="content" width="100%" border="0" cellpadding="0" cellspacing="0">
+<!--================= start middle NavBar ==================-->
+<tr>
+<td colspan="3" bgcolor="#a5b6c6"><img width="10" height="1" alt="" src="skin/images/spacer.gif" class="spacer"></td>
+</tr>
+<tr>
+<td align="left" width="10" bgcolor="#CFDCED"><img width="10" height="1" alt="" src="skin/images/spacer.gif" class="spacer"></td><td bgcolor="#CFDCED" width="100%">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td align="left" width="50%" bgcolor="#CFDCED"><span class="trail">
+                      &nbsp;
+                      <script src="skin/breadcrumbs.js" language="JavaScript" type="text/javascript"></script></span><img width="10" height="8" alt="" src="skin/images/spacer.gif" class="spacer"></td><td align="right" width="50%" bgcolor="#CFDCED"><span class="trail">Font size:
+                        &nbsp;<input value="-a" class="smallerfont" title="Shrink text" onclick="ndeSetTextSize('decr'); return false;" type="button">
+                        &nbsp;<input value="+a" class="biggerfont" title="Enlarge text" onclick="ndeSetTextSize('incr'); return false;" type="button">
+                        &nbsp;<input value="Reset" class="resetfont" title="Reset text" onclick="ndeSetTextSize('reset'); return false;" type="button"></span><img width="10" height="8" alt="" src="skin/images/spacer.gif" class="spacer"></td>
+</tr>
+</table>
+</td><td width="10" bgcolor="#CFDCED"><font color="#F7F7F7" size="4" face="Arial, Helvetica, Sans-serif">&nbsp;</font><img width="10" height="1" alt="" src="skin/images/spacer.gif" class="spacer"></td>
+</tr>
+<tr>
+<td colspan="4" bgcolor="#a5b6c6"><img width="10" height="1" alt="" src="skin/images/spacer.gif" class="spacer"></td>
+</tr>
+<!--================= end middle NavBar ==================-->
+<!--================= start Content==================-->
+<tr>
+<td align="left" width="10"><img width="10" height="1" alt="" src="skin/images/spacer.gif" class="spacer"></td><td align="left" width="100%">
+<div class="content">
+<table class="title">
+<tr>
+<td valign="middle">
+<h1>Todo List</h1>
+</td>
+</tr>
+</table>
+
+
+
+<a name="N10008"></a><a xmlns:xhtml="http://www.w3.org/1999/xhtml" name="high"></a>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="10" width="9"></td><td>
+<h3>high</h3>
+</td><td></td>
+</tr>
+<tr>
+<td class="bottom-left-thick"></td><td bgcolor="#a5b6c6"></td><td class="bottom-right-thick"></td>
+</tr>
+</tbody>
+</table>
+<div class="section">
+<ul></ul>
+</div>
+
+
+<a name="N1000E"></a><a xmlns:xhtml="http://www.w3.org/1999/xhtml" name="medium"></a>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="10" width="9"></td><td>
+<h3>medium</h3>
+</td><td></td>
+</tr>
+<tr>
+<td class="bottom-left-thick"></td><td bgcolor="#a5b6c6"></td><td class="bottom-right-thick"></td>
+</tr>
+</tbody>
+</table>
+<div class="section">
+<ul>
+<li>
+<strong>[Shell]</strong>
+                Add an selectable automatic refresh feature to the shell display window.
+             &rarr; edaugherty</li>
+</ul>
+</div>
+
+
+<a name="N10018"></a><a xmlns:xhtml="http://www.w3.org/1999/xhtml" name="low"></a>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="10" width="9"></td><td>
+<h3>low</h3>
+</td><td></td>
+</tr>
+<tr>
+<td class="bottom-left-thick"></td><td bgcolor="#a5b6c6"></td><td class="bottom-right-thick"></td>
+</tr>
+</tbody>
+</table>
+<div class="section">
+<ul>
+<li>
+<strong>[Shell]</strong>
+                Allow the buffer size to be configured by the user.
+             &rarr; edaugherty</li>
+<li>
+<strong>[UI]</strong>
+                Clean up HTML and add markup to improve the look of
+                the application.
+             &rarr; edaugherty</li>
+<li>
+<strong>[Core]</strong>
+                Add support for simple Telnet connections.
+             &rarr; edaugherty</li>
+</ul>
+
+    </div>
+
+<?php include '/home/content/e/d/a/edaugherty/html/sidebar.php'; ?>
+
+<?php include '/home/content/e/d/a/edaugherty/html/wrap-end.php'; ?>
+
+  </div>
+
+<?php include '/home/content/e/d/a/edaugherty/html/footer.php'; ?>
+
+</body>
+
+</html>

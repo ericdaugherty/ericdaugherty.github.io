@@ -1,0 +1,67 @@
+---
+layout: default
+title: C# Email Server (CSES) - Developer Guide
+keywords: Eric Daugherty EricDaugherty.com C# Email Mail Server Open Source
+description: Eric Daugherty's C# Email Server
+---
+
+    <div id="main">
+
+      <p class="title">C# Email Server (CSES) - Developer Guide</p>
+
+{% include cses-navbar.html %}
+
+      <p class="header">SMTP Server</p>
+
+      <p>
+
+      <p>
+        The SMTP Server component (ces.smtp.server.dll) provides the ability
+        for programs to implement a SMTP Server and process the incoming email
+        in custom code.  To use this component your code needs to do the following:
+      </p>
+
+      <ul>
+
+        <li>Implement the EricDaugherty.CES.SmtpServer.IMessageSpool interface</li>
+
+        <li>(Optional) Implement the EricDaugherty.CES.SmtpServer.IRecipientFilter interface</li>
+
+        <li>Create an instance of EricDaugherty.CES.SmtpServer.SMTPProcessor and start it as a thread./li>
+
+      </ul>
+
+      <p>
+        Refer to the documentation included with the distribution for details on method
+        usage parameter information.
+      </p>
+
+      <p>
+        The SMTP Server component can be downloaded from the
+        <a xmlns:xhtml="http://www.w3.org/1999/xhtml" href="gettingstarted.html">Getting Started</a> page.
+      </p>
+
+      <p class="header">SourceForge</p>
+
+      <p>
+        This project is hosted by <a href="http://www.sourceforge.com">SourceForge</a>.  All downloads
+        (available from the <a xmlns:xhtml="http://www.w3.org/1999/xhtml" href="gettingstarted.html">Getting Started</a> page)
+        are hosted by SourceForge, as well as the source control.  You can browse the
+        <a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/cses">CVS Repository online</a>.  You can also browse the
+        <a href="http://www.sourceforge.com/projects/cses">SourceForge Project Homepage</a> for CSES.
+      </p>
+
+      <p class="header">Build</p>
+
+      <p>
+        The source distribution and CVS both contain an <a href="http://nant.sourceforge.net/index.html">NAnt</a>
+        build script.  This build script should work without any modifications once NAnt is installed on your machine.  All
+        required libraries are included in the source distribution.
+      </p>
+
+      <p>
+        The source distribution can be found from the
+        <a href="../">Getting Started</a> page
+      </p>
+
+    </div>

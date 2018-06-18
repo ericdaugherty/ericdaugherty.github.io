@@ -1,0 +1,14 @@
+# Site settings
+title: Eric Daugherty
+email: eric@ericdaugherty.com
+description: Eric Daugherty's personal website, including blog and software projects.
+keywords: eric daugherty software consulting
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://www.ericdaugherty.com" # the base hostname & protocol for your site
+twitter_username: eric_daugherty
+github_username:  ericdaugherty
+timezone: America/Denver
+
+# Build settings
+exclude: [ sync.sh, test.sh ]
+markdown: kramdown

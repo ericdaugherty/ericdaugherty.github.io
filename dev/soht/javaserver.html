@@ -1,0 +1,110 @@
+---
+layout: default
+title: SOHT (Socket over HTTP Tunneling)
+---
+    <div id="main">
+
+      <p class="title">SOHT Socket over HTTP Tunneling</p>
+
+{% include soht-navbar.html %}
+
+      <a name="Java Server" >
+      <p class="header">Java Server</p>
+      </a>
+
+      <p>
+          The Java Server can be downloaded as a binary distribution or
+          a source distribution.
+      </p>
+
+      <p>
+          <a href="http://prdownloads.sourceforge.net/telnetoverhttp/soht-java-server-0.6.zip?download">Java Server 0.6</a>
+          <br/>
+          <a href="http://prdownloads.sourceforge.net/telnetoverhttp/soht-java-server-0.6-src.zip?download">Java Server Source 0.6</a>
+      </p>
+
+      <p>
+          This distribution contains a .WAR file that may be deployed in any
+          J2EE compliant Servlet container.  If you wish to use all the default
+          values, you can simply deploy the WAR and begin using it.
+      </p>
+
+      <p>
+          The server requires a properties file to function properly.  Be default,
+          the server will copy the properties file (soht.properties) to the default
+          directory, and will update it with any configuration changes made using
+          the Administration User Interface.  The default directory is the directory
+          that the application server was started from.  This may not be the directory
+          the script was run from, as several application server start scripts change
+          the directory before starting the server.
+      </p>
+
+      <p>
+          To specify a properties file location other than the default directory, add
+          a command line parameter to the start script of the application server.  The
+          command line parameter should be:
+      </p>
+
+      <pre class="code">
+-Dsoht.properties=&lt;file location&gt;
+      </pre>
+
+      <p>
+          If you specify a location for the properties file, you must make sure that a
+          file exists at that location.  If not, the server will not start.  A sample
+          properties file is included with this distribution.
+      </p>
+
+      <p>
+          The properties are loaded and saved automatically by the application, so any
+          formatting and comments in the properties file will be lost.
+      </p>
+
+      <p>
+          By default, the SOHT server writes log messages to the server
+          container's console.  If you wish to change the logging configuration,
+          you need to edit the properties file.
+      </p>
+
+      <p>
+          The Server's admin pages have been internationalized (i18n).  Currently only
+          English and French are supported.  If you are interested in providing an additional
+          language, please contact me.
+      </p>
+
+      <p>
+          Once the server is deployed, it will be accessible by clients.  Please refer
+          to the documentation for the individual clients on their usage.
+      </p>
+
+      <p>
+          The Sever provides a web interface to modify configuration parameters.  No
+          changes should be made directly to the file while the server is running.
+          Any changes made may be lost because the administration tool overwrites this
+          file when configuration values are changes using the user interface.  The user
+          interface should be accessible at "http://&lt;yourhost&gt;:&lt;yourport&gt;/soht"
+          by default.
+      </p>
+
+      <p>
+          The administration web interface requires a password to access.  The default value
+          of this password is 'soht'.  The password should be changes immediately upon deployment.
+      </p>
+
+      <p>
+          The main configuration that should occur is to require logins for connections to the
+          server.  If this feature is not enabled, anyone with a SOHT client will be able to connect
+          to your server and proxy their connections!
+      </p>
+
+      <p>
+          The administration  web interface allows you to define users and change their passwords.  Also
+          users can change their own passwords via the administration login page.
+      </p>
+
+      <p>
+          Some users have reported that they had to set the property "TOMCAT4_SECURITY" to "no" in order to
+          get SOHT working on Tomcat 4.  This does not seem to be a problem in Tomcat 5.
+      </p>
+
+    </div>

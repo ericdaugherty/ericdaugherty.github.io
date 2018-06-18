@@ -1,0 +1,115 @@
+---
+layout: default
+title: Eric Daugherty's XML Train Schedule
+---
+
+    <div id="main">
+
+      <p class="title">XML Train Schedule Server</p>
+
+      <p>This project is not actively being maintained and schedules and applications may be outdated.
+      The <a href="http://code.google.com/transit/spec/transit_feed_specification.html">Google Transit Feed Specification (GTFS) project
+      now accomplishes the original goals of this project.
+      </p>
+
+      <p class="header">Introduction</p>
+
+      <p>
+        The Train Schedule project is currently a simple project to define and convert
+        train schedules into a common XML format.  This format enables the information
+        to be used more easily by many other applications.
+      </p>
+
+      <p>
+         If you are looking for a ready to use schedule for the <a href="http://trainsched.sourceforge.net"> TrainSched</a>
+         palm application, they can be downloaded <a href="#Stylesheets">here</a>
+      </p>
+
+      <p>
+        Currently, this project consists of an <a href="#Schema"> XML Schema</a> definition, a Java program to parse the
+        <a href="http://www.metrarail.com">Chicago Metra</a> Train Schedules into <a href="#Schedules">XML</a>, and an
+        <a href="#Stylesheets">XSL Stylesheet</a> used to generate a database for the
+        <a href="http://trainsched.sourceforge.net">TrainSched</a> palm application.
+      </p>
+
+      <p>
+        The current goal of this project is to collect as many Schedules as possible in
+        XML that conforms to the schema, and to find as many uses for them as possible.
+      </p>
+
+      <p>
+        Please <a href="mailto:eric@ericdaugherty.com">email</a> me if you are willing to help
+        with this goal, or would like to see a specific schedule or application supported.
+      </p>
+
+      <h3><a name="Schedules">Schedules</a></h3>
+
+      <p>
+        Currently, only the <a href="http://www.metrarail.com">Chicago Metra</a> Train Schedules
+        are available.  However, additional
+        schedules can and will be added once a need is identifies and the appropriate conversion
+        tool is written.
+      </p>
+
+      <p>
+        Chicago Metra
+
+        <ul>
+          <li><a href="bnsf.xml">Burlington Northern Sante Fe (BNSF)</a></li>
+          <li><a href="mdn.xml">Milwaukee District North</a></li>
+          <li><a href="ncs.xml">North Central Service</a></li>
+          <li><a href="upw.xml">Union Pacific West</a></li>
+          <li><a href="upnw.xml">Union Pacific Northwest</a></li>
+        </ul>
+      </p>
+
+      <h3><a name="Schema">Schema</a></h3>
+
+      <p>
+        This schema defines the standard format that all the XML schedules must conform to.
+        By defining a standard schema, we create a common data format that can be used by
+        many different applications.  This enables great reuse and is important in allowing
+        this effort to scale.
+
+        The XML Schema can be viewed or downloaded  <a href="trainschedule.xsd">here</a>
+      </p>
+
+      <h3><a name="Stylesheets">Stylesheets</a></h3>
+
+      <p>
+        Once a standard data format is defined, XSL Stylesheets can be created to
+        convert the data into usable formats.
+      </p>
+
+      <p>
+        Currently, the only converstion available is an XSL Stylesheet that converts
+        the schedule into a csv file that can be used
+        to generate a database for the <a href="http://trainsched.sourceforge.net">TrainSched</a>
+        Palm application.  This application allows users to quickly view the available trains
+        between two given stops on a given day.
+      </p>
+
+      <p>
+        The Stylesheet used to perform the conversion can be found <a href="trainsched.xsl">here</a>
+      </p>
+
+      <p>
+        After the XML schedule is processed by the Stylesheet, the resulting file is almost ready
+        to be converted by the trainsched tool.  The only additional change is that the index values
+        in the resulting file must be edited (the stylesheet inserts ? marks).
+      </p>
+
+      <p>
+        Databases have been created for the <a href="http://www.metrarail.com">Chicago Metra</a>
+        trains and can be downloaded here:
+
+        <ul>
+          <li><a href="bnsf.pdb">Burlington Northern Sante Fe (BNSF)</a></li>
+          <li><a href="mdn.pdb">Milwaukee District North</a></li>
+          <li><a href="ncs.pdb">North Central Service</a></li>
+          <li><a href="upw.pdb">Union Pacific West</a></li>
+          <li><a href="upnw.pdb">Union Pacific Northwest</a></li>
+        </ul>
+      </p>
+
+    </div>

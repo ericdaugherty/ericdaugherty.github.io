@@ -1,0 +1,59 @@
+---
+layout: default
+title: iTunes Export M3U Playist Exporter
+---
+
+    <div id="main">
+
+      <p class="title">iTunes Export</p>
+
+{% include itunes-navbar.html %}
+
+      <p class="header">Frequently Asked Questions (FAQ)</p>
+
+      <p class="header">My exported playlist is missing songs.</p>
+
+      <p>
+        There are several possible causes to this:
+        <ul>
+          <li>Some of your songs are 'unchecked' in iTunes.  Be default iTunes Export ignores files that are unchecked.  This setting can be overriden in both the GUI and Console versions.</li>
+          <li>Some of your songs have are not MP3 Files.  Be default iTunes Export only includes MP3 files.  You can override this setting to include unprotected AAC or ALL files.</li>
+        </ul>
+      </p>  
+
+      <p class="header">Why do I get an 'OutOfMemoryError' when I run the Console version?</p>
+
+      <p>Large iTunes Music Libraries can cause the application to run out of memory.  Try adding 
+         the parameter -mx1024m to increase the heap size.  This parameter must come before the -jar parameter.</p>
+       
+      <p class="header">Why did you switch from the .Net version to Flex and Scala?</p>
+
+      <p>The .Net version did not support Mac OS X.  I wanted to expand the reach of iTunes Export 
+         to Mac users.  The .Net version can still be found <a href="1.x/">here</a>.
+
+      <p class="header">There are three extra characters at the begining of the file.</p>
+
+      <p>
+        iTunesExport supports Unicode characters and therefore uses UTF-8 encoding.  These characters (EF BB BF) are the Byte Order Markers
+        that indcate the file type.  You can <a href="http://en.wikipedia.org/wiki/Byte-order_mark">read more here</a>.
+      </p>
+
+      <p>
+        The GUI version supports the inclusion or exclusion of these bytes.  The Command Line version does not.
+      </p>
+      
+      <p class="header">TVersity doesn't work with my exported playlist</p>
+      
+      <p>TVersity reportedly has problems using mapped drives in playlists</p>
+      
+      <p>Playlists will not appear in TVersity unless there is at least one valid song.  
+      If all the paths are invalid, the playlist will not appear at all.</p>
+      
+      <p class="header">Playlists generated on Mac OS X with Foreign (Non-Latin) characters can't be read by the player</p>
+
+      <p>OSX uses a slightly differnet UTF-8 encoding which may cause problems with other software.  On Mac OSX playlists may need to be 'post processed' using the following command:</p>
+      
+      <pre>iconv -f UTF8-MAC -t UTF8 "playlist.m3u" > "playlist_utf8.m3u"</pre>
+      
+    </div>
+
