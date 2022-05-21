@@ -32,8 +32,8 @@ ad: 3680571130
     <li>Graphical User Interface - An easy to use version.
     <li>Command Line Version - Supports automated processes and scripting.
   </ul>
-  Both versions are supported in Windows and Mac OS X. The user interface
-  version requires Adobe AIR and the command line version requires Java.
+  Both versions are supported in Windows and macOS. The user interface
+  version requires Adobe AIR.
   </p>
 
   <p>
@@ -42,27 +42,26 @@ ad: 3680571130
   </p>
 
   <p>
-    International Support - iTunes Export is now available in multiple language. English and French are available today.
+    International Support - iTunes Export GUI is now available in multiple language. English and French are available
+    today.
     If you are willing and able to translate other languages please let me know!
   </p>
 
   <p>
     The 1.x branch of iTunes Export was written using the .Net Framework. This version
     only worked on Windows, and was deprecated in favor of the new 2.0 branch built using
-    Adobe AIR and Java (Scala) for the GUI and Console versions receptively. If you need to use
+    Adobe AIR and Go for the GUI and Console versions respectively. If you need to use
     this older branch for some reason it is available <a href="1.x/">here</a>.
+    <br />
+    There is also a previous version of the console version written using Java (Scala) avalable
+    <a href="https://github.com/ericdaugherty/itunesexport-scala">at Github</a>. However, this is unsupported
+    and does not work on the newest versions of Java (>= v18).
   </p>
 
   <p>
-    Have a questions, please review the <a href="faq.html">FAQ</a>. If it does not answer your question please
+    If you have a questions, please review the <a href="faq.html">FAQ</a>. If it does not answer your question please
     email me at <a href="mailto:eric@ericdaugherty.com">eric@ericdaugherty.com</a>
   </p>
-
-  <p>
-    If you like iTunes Export and would like to make a donation, you can do so <a
-      href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=10004035">here</a>.
-  </p>
-
 
   <a name="Download"></a>
   <p class='header'>Download</p>
@@ -75,14 +74,23 @@ ad: 3680571130
     This application requires the <a href="https://airsdk.harman.com/runtime">Adobe&#174;&nbsp;AIR&#8482; runtime</a>.
   </p>
   <br />
-  Console Application - Version 2.2.3<br />
-  <a
-    href="https://github.com/ericdaugherty/itunesexport-scala/releases/download/v2.2.3/iTunesExportScala-2.2.3.zip">Download</a><br />
-  <br />
-
-  Application Source<br />
-  <!--        <a href="">Download Flex Source</a><br/>-->
-  <a href="https://github.com/ericdaugherty/itunesexport-scala">GitHub Source Repository</a>
+  Console Application - Version 1.0.0<br />
+  <ul>
+    <li><a
+        href="https://github.com/ericdaugherty/itunesexport-go/releases/download/v1.0.0/itunesexport-v1.0.0-darwin-amd64.tar.gz">macOS
+        x86 (amd64)</a></li>
+    <li><a
+        href="https://github.com/ericdaugherty/itunesexport-go/releases/download/v1.0.0/itunesexport-v1.0.0-darwin-arm64.tar.gz">macOS
+        M1 (arm64)</a></li>
+    <li><a
+        href="https://github.com/ericdaugherty/itunesexport-go/releases/download/v1.0.0/itunesexport-v1.0.0-windows-amd64.zip">Windows
+        x86</a></li>
+  </ul>
+  On macOS you may get an error that the application is unsigned. If so, you can right-click the applicaiton and
+  select 'Open in Terminal', and then select 'Open' when prompted. It will now work from the terminal/console.
+  </p>
+  <p>
+    Application Source at <a href="https://github.com/ericdaugherty/itunesexport-go">GitHub</a>
   </p>
 
   <a name="Using iTunes Export"></a>
@@ -100,12 +108,11 @@ ad: 3680571130
 
   <p class="subheader">iTunes Export Command Line</p>
   <p>
-    iTunes Export is a command line application that uses the Java Runtime
-    Environment (JRE) to execute. To use it, extract the downloaded zip file to a directory,
-    open a command window and execute the following command:
+    iTunes Export is a command line application. To use it, download the correct version above
+    and use as following:
 
   <pre class="code">
-java -jar itunesexport.jar
+itunesexport
       </pre>
 
   <p>
@@ -122,7 +129,7 @@ java -jar itunesexport.jar
   </p>
 
   <pre class="code">
-java -jar itunesexport.jar -library="C:\My Music\iTunes Music Library.xml"
+itunesexport -library="C:\My Music\iTunes Music Library.xml"
       </pre>
 
   <p>
@@ -131,7 +138,7 @@ java -jar itunesexport.jar -library="C:\My Music\iTunes Music Library.xml"
   </p>
 
   <pre class="code">
-java -jar itunesexport.jar -outputDir="c:\My Output Directory"
+itunesexport -outputDir="c:\My Output Directory"
       </pre>
 
   <p>
@@ -141,7 +148,7 @@ java -jar itunesexport.jar -outputDir="c:\My Output Directory"
   </p>
 
   <pre class="code">
-java -jar itunesexport.jar -playlistType=WPL
+itunesexport -type=WPL
       </pre>
 
   <p>
@@ -149,90 +156,23 @@ java -jar itunesexport.jar -playlistType=WPL
     accepts a command line parameter that will override this default. Example:
   </p>
 
-  <pre class="code">
-java -jar itunesexport.jar -musicPath="c:\My Music Directory"
-      </pre>
-
-  <p>
-    iTunes Export will only apply the prefix to tracks stored in the directory
-    configured in iTunes as the iTunes Music Folder location. Files stored in
-    a different directory will not have the prefix applied.
-  </p>
-
-  <p>
-    If you only wish to override a portion of the music path you can specifi the musicPathOld
-    parameter. iTunes Export will replace this path with the musicPath parameter instead of
-    replacing the default music path.
-  </p>
-
-  <pre class="code">
-java -jar itunesexport.jar -musicPathOld="c:\My Old Path"
-      </pre>
-
   <p>
     By default, iTunes Export will exclude the 'built in' playlists, such as Music and Movies. If you want to include
-    these, you can use the includeBuiltInPlaylists option.
+    these, you can use the includeAllWithBuiltin option.
   </p>
 
   <pre class="code">
-java -jar itunexexport.jar -includeBuiltInPlaylists
-      </pre>
-
-  <p>
-    If you wish to exclude some playlists from the export, you can specify them using the -excludePlaylist
-    command line parameter. This takes a single or list of playlists that will not be exported.
-  </p>
-
-  <pre class="code">
-java -jar itunesexport.jar -excludePlaylist="Playlist 1,Playlist 2,Etc"
+itunesexport -includeAllWithBuiltin
       </pre>
 
   <p>
     If you wish to include only a subset of your playlists in the export, you can specify them using the
-    -includePlaylist
-    command line parameter. This takes a single or list of playlists that will be exported.
+    include option. This takes a single or list of playlists that will be exported.
   </p>
 
 
   <pre class="code">
-java -jar itunesexport.jar -includePlaylist="Playlist 1,Playlist 2,Etc"
-      </pre>
-
-  <p>
-    By default only MP3 files are included in the export. This can be overriden with the -fileTypes
-    paremeter. The values are: ALL, MP3, MP3M4A. MP3M4A includes both MP3 and M4A files.
-  </p>
-
-  <pre class="code">
-java -jar itunesexport.jar -fileTypes=ALL
-      </pre>
-
-  <p>
-    When exporting M3U playlists you can specify the -useM3U8Ext parameter to use the m3u8 extension
-    instead of the default m3u.
-  </p>
-
-  <p>
-    In some cases, media players don't treat the contents of M3U files (standard or extended)
-    as Unicode. This causes problems when those files contain international characters. For those
-    media players, changing the playlist file extension to M3U8 prompts the player to treat the
-    contents as Unicode. During testing, this seemed to be the case for playlist files that
-    contained special characters and were being run on a non-English version of Windows. If your
-    playlists contain any special characters () and you're running on an international version of
-    Windows, you may wish to use the -useM3U8Ext parameter.
-  </p>
-
-  <pre class="code">
-java -jar itunesexport.jar -useM3U8Ext
-      </pre>
-
-  <p>
-    iTunes allows you to uncheck (deselect) songs. Be default iTunes Export ignores these songs.
-    You can override this default with the -includeDisabled parameter.
-  </p>
-
-  <pre class="code">
-java -jar itunesexport.jar -includeDisabled
+itunesexport include playlist1 playlist2
       </pre>
 
   <p>
@@ -243,7 +183,7 @@ java -jar itunesexport.jar -includeDisabled
   </p>
 
   <pre class="code">
-java -jar itunesexport.jar -copy=FLAT
+itunesexport -copy=FLAT
       </pre>
 
 </div>
