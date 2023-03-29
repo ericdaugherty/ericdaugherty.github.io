@@ -74,19 +74,19 @@ ad: 3680571130
     This application requires the <a href="https://airsdk.harman.com/runtime">Adobe&#174;&nbsp;AIR&#8482; runtime</a>.
   </p>
   <br />
-  Console Application - Version 1.3.1<br />
+  Console Application - Version 1.4.0<br />
   <ul>
     <li><a
-        href="https://github.com/ericdaugherty/itunesexport-go/releases/download/v1.3.1/itunesexport-v1.3.1-darwin-amd64.tar.gz">macOS
+        href="https://github.com/ericdaugherty/itunesexport-go/releases/download/v1.4.0/itunesexport-v1.4.0-darwin-amd64.tar.gz">macOS
         x86 (amd64)</a></li>
     <li><a
-        href="https://github.com/ericdaugherty/itunesexport-go/releases/download/v1.3.1/itunesexport-v1.3.1-darwin-arm64.tar.gz">macOS
+        href="https://github.com/ericdaugherty/itunesexport-go/releases/download/v1.4.0/itunesexport-v1.4.0-darwin-arm64.tar.gz">macOS
         M1 (arm64)</a></li>
     <li><a
-        href="https://github.com/ericdaugherty/itunesexport-go/releases/download/v1.3.1/itunesexport-v1.3.1-windows-amd64.zip">Windows
+        href="https://github.com/ericdaugherty/itunesexport-go/releases/download/v1.4.0/itunesexport-v1.4.0-windows-amd64.zip">Windows
         x86</a></li>
     <li><a
-        href="https://github.com/ericdaugherty/itunesexport-go/releases/download/v1.3.1/itunesexport-v1.3.1-linux-amd64.tar.gz">Windows
+        href="https://github.com/ericdaugherty/itunesexport-go/releases/download/v1.4.0/itunesexport-v1.4.0-linux-amd64.tar.gz">Windows
         Linux
         x86</a></li>
   </ul>
@@ -116,58 +116,15 @@ ad: 3680571130
     and use as following:
 
   <pre class="code">
-itunesexport
+itunesexport -includeAll
       </pre>
 
   <p>
-    If iTunes Export is run without any parameters, it will attempt to locate
+    If iTunes Export is run with the -includeAll parameter it will attempt to locate
     your iTunes Music Library and will write a .m3u playlist file for each
-    playlist defined in the iTunes Music Library. You can specify the -? or -h
+    playlist defined in the iTunes Music Library. You can specify the -h
     parameters for a list of allowed parameters.
   </p>
-
-
-  <p>
-    The location of the iTunes Music Library can be overridden using a command
-    line parameter. Example:
-  </p>
-
-  <pre class="code">
-itunesexport -library="C:\My Music\iTunes Music Library.xml"
-      </pre>
-
-  <p>
-    iTunes Export will write the playlists to the current directory unless an
-    output directory is specified. Example:
-  </p>
-
-  <pre class="code">
-itunesexport -outputDir="c:\My Output Directory"
-      </pre>
-
-  <p>
-    iTunes Export allows you to export playlists using a variety of formats.
-    By default, playlists are exported at M3U playlists, but you can use the following parameter
-    to change to EXT, WPL, ZPL, or MPL:
-  </p>
-
-  <pre class="code">
-itunesexport -type=WPL
-      </pre>
-
-  <p>
-    iTunes Export will use the absolute location of your music files in the playlist. iTunes Export
-    accepts a command line parameter that will override this default. Example:
-  </p>
-
-  <p>
-    By default, iTunes Export will exclude the 'built in' playlists, such as Music and Movies. If you want to include
-    these, you can use the includeAllWithBuiltin option.
-  </p>
-
-  <pre class="code">
-itunesexport -includeAllWithBuiltin
-      </pre>
 
   <p>
     If you wish to include only a subset of your playlists in the export, you can specify them using the
@@ -177,7 +134,75 @@ itunesexport -includeAllWithBuiltin
 
   <pre class="code">
 itunesexport include playlist1 playlist2
+  </pre>
+
+
+  <p>
+    If you wish to exclude only a subset of your playlists in the export, you can specify them using the
+    -includeAll opton with the exclude option. This will export all playlists EXCEPT playlist1 and playlist2
+  </p>
+
+
+  <pre class="code">
+itunesexport -includeAll exclude playlist1 playlist2
+  </pre>
+
+  <p>
+    If you wish to include all but a subset of your playlists in the export, you can specify them using the
+    -includeAll option with the exclude option. The following example will include all playlists EXCEPT
+    playlist1 and playlist2
+  </p>
+
+
+  <pre class="code">
+itunesexport -includeAll exclude playlist1 playlist2
+  </pre>
+
+  <p>
+    The location of the iTunes Music Library can be overridden using a command
+    line parameter. Example:
+  </p>
+
+  <pre class="code">
+itunesexport -includeAll -library "C:\My Music\iTunes Music Library.xml"
       </pre>
+
+  <p>
+    iTunes Export will write the playlists to the current directory unless an
+    output directory is specified. Example:
+  </p>
+
+  <pre class="code">
+itunesexport -includeAll -output "c:\My Output Directory"
+      </pre>
+
+  <p>
+    iTunes Export allows you to export playlists using a variety of formats.
+    By default, playlists are exported at M3U playlists, but you can use the following parameter
+    to change to EXT, WPL, ZPL, or MPL:
+  </p>
+
+  <pre class="code">
+itunesexport -includeAll -type WPL
+  </pre>
+
+  <p>
+    iTunes Export will use the absolute location of your music files in the playlist. iTunes Export
+    accepts a command line parameter that will override this default. Example:
+  </p>
+
+  <pre class="code">
+    itunesexport -includeAll -musicPath "z:\music"
+  </pre>
+
+  <p>
+    By default, iTunes Export will exclude the 'built in' playlists, such as Music and Movies. If you want to include
+    these, you can use the includeAllWithBuiltin option.
+  </p>
+
+  <pre class="code">
+itunesexport -includeAllWithBuiltin
+  </pre>
 
   <p>
     You can choose to have iTunes Export copy your music files to an output directory.
@@ -187,7 +212,7 @@ itunesexport include playlist1 playlist2
   </p>
 
   <pre class="code">
-itunesexport -copy=FLAT
-      </pre>
+itunesexport -copy FLAT
+  </pre>
 
 </div>
