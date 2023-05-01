@@ -74,24 +74,28 @@ ad: 3680571130
     This application requires the <a href="https://airsdk.harman.com/runtime">Adobe&#174;&nbsp;AIR&#8482; runtime</a>.
   </p>
   <br />
-  Console Application - Version 1.4.0<br />
+  Console Application - Version 1.5.0<br />
   <ul>
     <li><a
-        href="https://github.com/ericdaugherty/itunesexport-go/releases/download/v1.4.0/itunesexport-v1.4.0-darwin-amd64.tar.gz">macOS
+        href="https://github.com/ericdaugherty/itunesexport-go/releases/download/v1.5.0/itunesexport-v1.5.0-darwin-amd64.tar.gz">macOS
         x86 (amd64)</a></li>
     <li><a
-        href="https://github.com/ericdaugherty/itunesexport-go/releases/download/v1.4.0/itunesexport-v1.4.0-darwin-arm64.tar.gz">macOS
+        href="https://github.com/ericdaugherty/itunesexport-go/releases/download/v1.5.0/itunesexport-v1.5.0-darwin-arm64.tar.gz">macOS
         M1 (arm64)</a></li>
     <li><a
-        href="https://github.com/ericdaugherty/itunesexport-go/releases/download/v1.4.0/itunesexport-v1.4.0-windows-amd64.zip">Windows
+        href="https://github.com/ericdaugherty/itunesexport-go/releases/download/v1.5.0/itunesexport-v1.5.0-windows-amd64.zip">Windows
         x86</a></li>
     <li><a
-        href="https://github.com/ericdaugherty/itunesexport-go/releases/download/v1.4.0/itunesexport-v1.4.0-linux-amd64.tar.gz">Windows
+        href="https://github.com/ericdaugherty/itunesexport-go/releases/download/v1.5.0/itunesexport-v1.5.0-linux-amd64.tar.gz">Windows
         Linux
         x86</a></li>
   </ul>
   On macOS you may get an error that the application is unsigned. If so, you can right-click the applicaiton and
   select 'Open in Terminal', and then select 'Open' when prompted. It will now work from the terminal/console.
+  </p>
+  <p>
+    Apple Music may not write out a library xml file. You can export your curent library
+    in Apple Music by selecting File > Library > Export Library.
   </p>
   <p>
     Application Source at <a href="https://github.com/ericdaugherty/itunesexport-go">GitHub</a>
@@ -214,5 +218,16 @@ itunesexport -includeAllWithBuiltin
   <pre class="code">
 itunesexport -copy FLAT
   </pre>
+
+  <p>
+    By default iTunes Export will copy all playlists ignoring any folder structure. To preserve
+    the older structure use -includeFolders
+  </p>
+
+  <pre class="code">
+itunesexport -includeFolders
+  </pre>
+
+
 
 </div>
