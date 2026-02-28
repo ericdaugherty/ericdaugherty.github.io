@@ -13,10 +13,11 @@
 	},
 
 	// Map Claude Code auth and chat history into the container
+	"initializeCommand": "mkdir -p .claude-home",
 	"mounts": [
 		"source=${localWorkspaceFolder}/.claude-home,target=${containerWorkspaceFolder}/.claude-home,type=bind"
 	],
-	"postCreateCommand": "mkdir -p .claude-home && ln -sf ${containerWorkspaceFolder}/.claude-home /home/vscode/.claude",
+	"postCreateCommand": "ln -sf ${containerWorkspaceFolder}/.claude-home /home/vscode/.claude",
 
 	"customizations": {
 		"vscode": {
