@@ -1,17 +1,37 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/jekyll
+// For format details, see https://aka.ms/devcontainer.json.
 {
 	"name": "Jekyll",
-	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/jekyll:2-bullseye"
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
-	// Uncomment the next line to run commands after the container is created.
-	// "postCreateCommand": "jekyll --version"
-	// Configure tool-specific properties.
-	// "customizations": {},
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
+	"image": "mcr.microsoft.com/devcontainers/jekyll:2-bullseye",
+
+	"features": {
+		"ghcr.io/devcontainers/features/common-utils:2": {
+			"installZsh": true,
+			"installOhMyZsh": true,
+			"configureZshAsDefaultShell": true
+		},
+		"ghcr.io/devcontainers/features/github-cli:1": {}
+	},
+
+	// Map Claude Code auth and chat history into the container
+	"mounts": [
+		"source=${localWorkspaceFolder}/.claude-home,target=${containerWorkspaceFolder}/.claude-home,type=bind"
+	],
+	"postCreateCommand": "mkdir -p .claude-home && ln -sf ${containerWorkspaceFolder}/.claude-home /home/vscode/.claude",
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"anthropic.claude-code",
+				"eamodio.gitlens",
+				"shopify.ruby-lsp"
+			],
+			"settings": {
+				"github.copilot.enable": {
+					"*": false
+				},
+				"github.copilot.advanced": {},
+				"extensions.ignoreRecommendations": true
+			}
+		}
+	}
 }
