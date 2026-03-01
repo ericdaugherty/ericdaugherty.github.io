@@ -1,32 +1,17 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-
   {% include head.html %}
-
 </head>
 
 <body>
 
-  <div id="wrap">
+  {% include header.html %}
 
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
-
-    {% comment %}
-    {% include sidebar.html %}
-    {% endcomment %}
-
-    {% include wrap-end.html %}
-
-  </div>
+  <main class="page-content">
+    {{ content }}
+  </main>
 
   {% include footer.html %}
 

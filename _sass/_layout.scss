@@ -1,237 +1,239 @@
 /**
- * Site header
+ * Red Rocks Banner Strip
  */
-.site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
+.site-banner {
+    width: 100%;
+    max-height: 196px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
 
-    // Positioning context for the mobile navigation icon
-    position: relative;
-}
-
-.site-title {
-    font-size: 26px;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
-
-    &,
-    &:visited {
-        color: $grey-color-dark;
+    img {
+        display: block;
+        width: 900px;
+        height: 280px;
+        max-width: none;
+        opacity: 0.85;
     }
 }
 
+/**
+ * Site Navigation
+ */
 .site-nav {
-    float: right;
-    line-height: 56px;
+    border-bottom: 1px solid $border-color;
+    padding: 1rem 2rem;
 
-    .menu-icon {
-        display: none;
+    .nav-wrapper {
+        max-width: $content-width;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    .page-link {
+    .site-title {
+        font-size: 1.15rem;
+        font-weight: 600;
         color: $text-color;
-        line-height: $base-line-height;
+        text-decoration: none;
+        letter-spacing: -0.01em;
 
-        // Gaps between nav items, but not on the first one
-        &:not(:first-child) {
-            margin-left: 20px;
+        &:hover {
+            color: $accent-color;
+            text-decoration: none;
+        }
+
+        &:visited {
+            color: $text-color;
         }
     }
 
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: 30px;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
+    .nav-links {
+        display: flex;
+        gap: 1.75rem;
+        align-items: center;
+    }
 
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
+    .nav-links a {
+        color: $text-secondary;
+        font-size: 0.9rem;
+        text-decoration: none;
+        transition: color 0.15s ease;
 
-            >svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
+        &:hover {
+            color: $accent-color;
         }
 
-        .trigger {
-            clear: both;
-            display: none;
+        &:visited {
+            color: $text-secondary;
+        }
+    }
+
+    @include media-query($on-mobile) {
+        padding: 0.75rem 1.25rem;
+
+        .nav-wrapper {
+            flex-direction: column;
+            gap: 0.5rem;
         }
 
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
+        .nav-links {
+            gap: 1.25rem;
         }
     }
 }
-
-
 
 /**
- * Site footer
- */
-.site-footer {
-    border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
-}
-
-.footer-heading {
-    font-size: 18px;
-    margin-bottom: calc($spacing-unit / 2);
-}
-
-.contact-list,
-.social-media-list {
-    list-style: none;
-    margin-left: 0;
-}
-
-.footer-col-wrapper {
-    font-size: 15px;
-    color: $grey-color;
-    margin-left: calc(-1 * $spacing-unit / 2);
-    @extend %clearfix;
-}
-
-.footer-col {
-    float: left;
-    margin-bottom: calc($spacing-unit / 2);
-    padding-left: calc($spacing-unit / 2);
-}
-
-.footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width: calc(35% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width: calc(20% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width: calc(45% - (#{$spacing-unit} / 2));
-}
-
-@include media-query($on-laptop) {
-
-    .footer-col-1,
-    .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width: calc(50% - (#{$spacing-unit} / 2));
-    }
-
-    .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width: calc(100% - (#{$spacing-unit} / 2));
-    }
-}
-
-@include media-query($on-palm) {
-    .footer-col {
-        float: none;
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width: calc(100% - (#{$spacing-unit} / 2));
-    }
-}
-
-
-
-/**
- * Page content
+ * Main Content Area
  */
 .page-content {
-    padding: $spacing-unit 0;
-}
+    max-width: $content-width;
+    margin: 0 auto;
+    padding: $spacing-unit * 2 2rem;
 
-.page-heading {
-    font-size: 20px;
-}
-
-.post-list {
-    margin-left: 0;
-    list-style: none;
-
-    >li {
-        margin-bottom: $spacing-unit;
+    @include media-query($on-tablet) {
+        padding: $spacing-unit * 1.5 2rem;
     }
+
+    @include media-query($on-mobile) {
+        padding: $spacing-unit 1.25rem;
+    }
+}
+
+/**
+ * Page & Post Headers
+ */
+.post-header {
+    margin-bottom: $spacing-unit * 1.5;
+}
+
+.post-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: $text-color;
+    line-height: $heading-line-height;
+    letter-spacing: -0.01em;
 }
 
 .post-meta {
     font-size: $small-font-size;
-    color: $grey-color;
-}
-
-.post-link {
-    display: block;
-    font-size: 24px;
-}
-
-
-
-/**
- * Posts
- */
-.post-header {
-    margin-bottom: $spacing-unit;
-}
-
-.post-title {
-    font-size: 42px;
-    letter-spacing: -1px;
-    line-height: 1;
-
-    @include media-query($on-laptop) {
-        font-size: 36px;
-    }
+    color: $text-secondary;
+    margin-top: 0.5rem;
 }
 
 .post-content {
+    margin-bottom: $spacing-unit * 2;
+}
+
+/**
+ * Project Sub-Navigation (for apps/dev sections)
+ */
+.project-nav {
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    margin-bottom: $spacing-unit * 1.5;
+    background-color: #fafafa;
+
+    .project-nav-title {
+        font-weight: 600;
+        font-size: 0.95rem;
+        margin-bottom: 0.5rem;
+        color: $text-color;
+    }
+
+    a {
+        font-size: 0.9rem;
+        color: $text-secondary;
+        margin-right: 0.25rem;
+
+        &:hover {
+            color: $accent-color;
+        }
+    }
+}
+
+/**
+ * Section Titles
+ */
+.section-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: $text-color;
     margin-bottom: $spacing-unit;
+}
 
-    h2 {
-        font-size: 32px;
+.section-header {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: $text-color;
+    margin-top: $spacing-unit * 1.25;
+    margin-bottom: $spacing-unit * 0.5;
 
-        @include media-query($on-laptop) {
-            font-size: 28px;
+    a {
+        color: $text-color;
+
+        &:hover {
+            color: $accent-color;
         }
     }
+}
 
-    h3 {
-        font-size: 26px;
+/**
+ * Site Footer
+ */
+.site-footer {
+    border-top: 1px solid $border-color;
+    padding: $spacing-unit * 1.5 2rem;
+    text-align: center;
+    color: $text-secondary;
+    font-size: $small-font-size;
+    margin-top: $spacing-unit * 2;
 
-        @include media-query($on-laptop) {
-            font-size: 22px;
-        }
+    @include media-query($on-mobile) {
+        padding: $spacing-unit 1.25rem;
     }
+}
 
-    h4 {
-        font-size: 20px;
+/**
+ * Legacy class compatibility
+ * Maps old class names from content pages to new styles
+ * so existing pages render correctly without markup changes.
+ */
+#main, .main {
+    float: none;
+    width: auto;
+    padding: 0;
+    min-height: auto;
+}
 
-        @include media-query($on-laptop) {
-            font-size: 18px;
-        }
-    }
+#wrap {
+    width: auto;
+    max-width: none;
+    margin: 0;
+    border: none;
+    background: transparent;
+}
+
+.title {
+    @extend .section-title;
+}
+
+.header {
+    @extend .section-header;
+}
+
+.subheader {
+    font-size: 1rem;
+    font-weight: 600;
+    color: $text-color;
+}
+
+.navbar {
+    @extend .project-nav;
+}
+
+.sectionnav {
+    @extend .project-nav;
 }

@@ -1,11 +1,10 @@
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-
   <meta name="keywords" content="{% if page.keywords %}{{page.keywords}}{% else %}{{ site.keywords }}{% endif %}" />
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-  <link rel="stylesheet" type="text/css" href="/css/global.css" />
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 
   <!-- Syntax Highlighter Files -->
   <link rel="stylesheet" type="text/css" href="/syntax/sh.css" />
@@ -15,14 +14,14 @@
     SyntaxHighlighter.config.clipboardSwf = '/syntax/clipboard.swf';
     SyntaxHighlighter.config.stripBrs = true;
     SyntaxHighlighter.all();
- </script>
+  </script>
 
- <!-- Google tag (gtag.js) -->
- <script async src="https://www.googletagmanager.com/gtag/js?id=G-M36W71786Z"></script>
- <script>
-   window.dataLayer = window.dataLayer || [];
-   function gtag(){dataLayer.push(arguments);}
-   gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M36W71786Z"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-   gtag('config', 'G-M36W71786Z');
- </script>
+    gtag('config', 'G-M36W71786Z');
+  </script>
