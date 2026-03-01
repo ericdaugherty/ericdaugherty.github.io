@@ -19,6 +19,7 @@
       "Bash(ls *)",
       "Bash(mkdir *)",
       "Bash(curl *)",
+      "Bash(jekyll build *)",
       "WebFetch",
       "WebSearch"
     ],
