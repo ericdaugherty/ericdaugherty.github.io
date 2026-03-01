@@ -10,5 +10,5 @@ github_username:  ericdaugherty
 timezone: America/Denver
 
 # Build settings
-exclude: [ sync.sh, test.sh, .claude-home ]
+exclude: [ test.sh, .claude-home ]
 markdown: kramdown

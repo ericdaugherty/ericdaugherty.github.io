@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tsc *)",
+      "Bash(ts-node *)",
+      "Bash(npx eslint *)",
+      "Bash(npx prettier *)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(node *)",
+      "Bash(npx *)",
+      "Bash(psql *)",
+      "Bash(bash db.sh*)",
+      "Bash(git status*)",
+      "Bash(git log *)",
+      "Bash(git diff *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(ls *)",
+      "Bash(mkdir *)",
+      "Bash(curl *)",
+      "WebFetch",
+      "WebSearch"
+    ],
+    "deny": [
+      "Bash(git push *)",
+      "Bash(git reset --hard *)",
+      "Bash(rm -rf /*)",
+      "Bash(sudo *)"
+    ]
+  }
+}
