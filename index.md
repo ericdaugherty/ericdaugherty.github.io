@@ -3,14 +3,9 @@ layout: default
 title: Eric Daugherty
 ---
 
-# Welcome
+I'm a software engineer and fractional CTO. I write about technology and other interests on my [blog](https://blog.ericdaugherty.com/). You can find my open source work on [GitHub](https://github.com/ericdaugherty). I'm available for consulting and fractional CTO engagements through [Trestle Software Consulting](https://www.trestlesoftware.com/). Feel free to reach out at [eric@ericdaugherty.com](mailto:eric@ericdaugherty.com).
 
-Welcome to my personal website, where I host my blog and a collection of mostly-outdated projects.
+### Archives
 
-- [Blog](https://blog.ericdaugherty.com/)
 - [Applications](/apps/)
-- [Recent Open Source Projects (GitHub)](https://github.com/ericdaugherty)
-- [Older Open Source Projects](/dev/)
-
-You can email me at [eric@ericdaugherty.com](mailto:eric@ericdaugherty.com)
-or find me on [LinkedIn](https://www.linkedin.com/in/eric-daugherty-33031a).
+- [Open Source Projects](/dev/)
